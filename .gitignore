@@ -1,0 +1,12 @@
+.idea
+__pycache__
+db.sqlite3
+*.pyc
+antlr
+
+# Elastic Beanstalk Files
+web-application/dashboard/.ebextensions/*
+web-application/dashboard/.elasticbeanstalk/*
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
