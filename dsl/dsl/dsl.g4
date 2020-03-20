@@ -1,8 +1,8 @@
 grammar dsl;
 
-twitbot: (stat ';' )* ;
+twitbot: (stat SEMICOLON )* ;
 
-stat: action parameter (',' parameter)* ;
+stat: action parameter (COMMA parameter)* ;
 
 action
    :   'tweet'
@@ -18,14 +18,10 @@ parameter:   STRING ':' STRING ;
 
 STRING : '"' CHAR_NO_NL* '"' ;
 
-fragment CHAR_NO_NL : 'a'..'z'|'A'..'Z'|'\t'|'\\'|EOF;
+fragment CHAR_NO_NL : 'a'..'z'|'A'..'Z'|'0'..'9'|'\t'|'\\'|EOF;
 
 COMMA : ',' ;
 
 SEMICOLON : ';' ;
 
 WS  :   [ \t\n\r]+ -> skip ;
-
-
-
-
