@@ -2,7 +2,7 @@
 __pycache__
 db.sqlite3
 *.pyc
-antlr
+antlr4
 
 # Elastic Beanstalk Files
 web-application/dashboard/.ebextensions/*
