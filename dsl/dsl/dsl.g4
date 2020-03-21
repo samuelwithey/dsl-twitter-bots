@@ -1,27 +1,15 @@
 grammar dsl;
 
+import dslLexerGrammar;
+
 twitbot: (stat SEMICOLON )* ;
 
 stat: action parameter (COMMA parameter)* ;
 
-action
-   :   'tweet'
-   |   'retweet'
-   |   'reply'
-   |   'login'
-   |   'favourite'
-   |   'schedule-tweet'
-   |   'direct-message'
-   ;
+action: StringLiteral ;
 
-parameter:   STRING ':' STRING ;
-
-STRING : '"' CHAR_NO_NL* '"' ;
-
-fragment CHAR_NO_NL : 'a'..'z'|'A'..'Z'|'0'..'9'|'\t'|'\\'|EOF;
+parameter:   StringLiteral COLON StringLiteral ;
 
 COMMA : ',' ;
-
 SEMICOLON : ';' ;
-
-WS  :   [ \t\n\r]+ -> skip ;
+COLON : ':' ;
