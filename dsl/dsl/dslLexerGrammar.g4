@@ -1,5 +1,9 @@
 lexer grammar dslLexerGrammar;
 
+Login: 'login' ;
+
+LoginIdentifier : 'consumer-key' | 'consumer-secret' | 'access-token' | 'access-token-secret' ;
+
 StringLiteral
   : UnterminatedStringLiteral '"'
   ;
