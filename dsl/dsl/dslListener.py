@@ -17,6 +17,42 @@ class dslListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by dslParser#login_stat.
+    def enterLogin_stat(self, ctx:dslParser.Login_statContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#login_stat.
+    def exitLogin_stat(self, ctx:dslParser.Login_statContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#login.
+    def enterLogin(self, ctx:dslParser.LoginContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#login.
+    def exitLogin(self, ctx:dslParser.LoginContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#login_parameter.
+    def enterLogin_parameter(self, ctx:dslParser.Login_parameterContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#login_parameter.
+    def exitLogin_parameter(self, ctx:dslParser.Login_parameterContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#login_identifier.
+    def enterLogin_identifier(self, ctx:dslParser.Login_identifierContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#login_identifier.
+    def exitLogin_identifier(self, ctx:dslParser.Login_identifierContext):
+        pass
+
+
     # Enter a parse tree produced by dslParser#stat.
     def enterStat(self, ctx:dslParser.StatContext):
         pass
