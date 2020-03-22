@@ -8,9 +8,9 @@ UnterminatedStringLiteral
   : '"' (~["\\\r\n] | '\\' (. | EOF))*
   ;
 
-ACTION: 'tweet' | 'retweet' | 'reply' | 'favourite' | 'schedule' | 'direct-message' ;
+Action: 'tweet' | 'retweet' | 'reply' | 'favourite' | 'schedule' | 'direct-message' ;
 
-IDENTIFIER: [A-Za-z0-9]+ ;
+Identifier: [A-Za-z0-9]+ ;
 
 COMMA : ',' ;
 

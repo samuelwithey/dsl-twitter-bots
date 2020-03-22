@@ -6,10 +6,10 @@ twitbot: (stat SEMICOLON )* ;
 
 stat: action parameter (COMMA parameter)* ;
 
-action: ACTION ;
+action: Action ;
 
-parameter: identifier COLON string ;
+parameter: identifier COLON value ;
 
-identifier : IDENTIFIER ;
+identifier : Identifier ;
 
-string : StringLiteral ;
+value : StringLiteral ;
