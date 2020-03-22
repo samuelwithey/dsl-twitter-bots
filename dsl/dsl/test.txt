@@ -1,5 +1,3 @@
-tweet "status" : "HelloWorld" ;
-reply "id" : "jsofefk" ;
-tweet "status" : "9032093" ;
-tweet "status" : "hello1234" ;
-tweet "status" : "hello" , "status" : "goodbye" ;
+tweet status : "Hello World123" ;
+tweet status : "Hello World123" ;
+retweet status : "Hello World123" , reply "1232463" ;

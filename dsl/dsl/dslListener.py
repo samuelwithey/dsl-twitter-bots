@@ -1,4 +1,4 @@
-# Generated from dsl.g4 by ANTLR 4.7.2
+# Generated from dsl.g4 by ANTLR 4.8
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .dslParser import dslParser
@@ -44,3 +44,23 @@ class dslListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by dslParser#identifier.
+    def enterIdentifier(self, ctx:dslParser.IdentifierContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#identifier.
+    def exitIdentifier(self, ctx:dslParser.IdentifierContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#value.
+    def enterValue(self, ctx:dslParser.ValueContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#value.
+    def exitValue(self, ctx:dslParser.ValueContext):
+        pass
+
+
+
+del dslParser
