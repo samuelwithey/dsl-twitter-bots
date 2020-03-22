@@ -8,4 +8,8 @@ stat: action parameter (COMMA parameter)* ;
 
 action: ACTION ;
 
-parameter: IDENTIFIER COLON StringLiteral ;
+parameter: identifier COLON string ;
+
+identifier : IDENTIFIER ;
+
+string : StringLiteral ;
