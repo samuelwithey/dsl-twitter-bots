@@ -1,3 +1,21 @@
 from django.db import models
 
-# Create your models here.
+
+class TwitterAccount(models.Model):
+    username = models.CharField(max_length=200)
+    consumer_key = models.CharField(max_length=200)
+    consumer_secret_key = models.CharField(max_length=200)
+    access_token = models.CharField(max_length=200)
+    access_token_secret = models.CharField(max_length=200)
+
+
+class TwitterCampaign(models.Model):
+    username = models.CharField(max_length=200)
+    description = models.CharField(max_length=500)
+    twitter_account = models.ForeignKey(TwitterAccount, on_delete=models.CASCADE, related_name='twitter_account')
+
+
+class ScheduledPost(models.Model):
+    campaign_name = models.ForeignKey(TwitterCampaign, on_delete=models.CASCADE, related_name='campaign_name')
+    status = models.CharField(max_length=240)
+    scheduled_time = models.DateTimeField()
