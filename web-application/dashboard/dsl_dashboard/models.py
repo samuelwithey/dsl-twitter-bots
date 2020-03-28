@@ -10,7 +10,7 @@ class TwitterAccount(models.Model):
 
 
 class TwitterCampaign(models.Model):
-    username = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
     description = models.CharField(max_length=500)
     twitter_account = models.ForeignKey(TwitterAccount, on_delete=models.CASCADE, related_name='twitter_account')
 
