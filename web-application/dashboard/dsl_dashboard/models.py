@@ -1,6 +1,11 @@
 from django.db import models
 
 
+def user_directory_path(instance, filename):
+    # file will be uploaded to MEDIA_ROOT / user_<id>/<filename>
+    return 'user_{0}/{1}'.format(instance.user.id, filename)
+
+
 class TwitterAccount(models.Model):
     username = models.CharField(max_length=200)
     consumer_key = models.CharField(max_length=200)
@@ -15,6 +20,7 @@ class TwitterAccount(models.Model):
 class TwitterCampaign(models.Model):
     name = models.CharField(max_length=200)
     description = models.CharField(max_length=500)
+    upload = models.FileField(upload_to=user_directory_path)
     twitter_account = models.ForeignKey(TwitterAccount, on_delete=models.CASCADE, related_name='twitter_account')
 
     def __str__(self):
