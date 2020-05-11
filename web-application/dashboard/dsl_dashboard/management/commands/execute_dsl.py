@@ -1,6 +1,7 @@
 from django.core import management
 from django.core.management.base import BaseCommand
 
+from dsl_dashboard.management.commands.execute import Execute
 from dsl_dashboard.models import TwitterAccount, TwitterCampaign
 
 
@@ -20,3 +21,4 @@ class Command(BaseCommand):
     def execute(self, **options):
         account = self.get_account(account_id=options['account_id'])
         campaign = self.get_campaign(campaign_id=options['campaign_id'])
+        execute = Execute(campaign=campaign, account=account)
