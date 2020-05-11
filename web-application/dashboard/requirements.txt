@@ -42,3 +42,4 @@ wcwidth==0.1.8
 websocket-client==0.57.0
 zipp==3.0.0
 Django==3.0.3
+tweepy==3.8.0
