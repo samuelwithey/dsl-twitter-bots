@@ -14,9 +14,9 @@ class Command(BaseCommand):
     def get_account(self, account_id):
         return TwitterAccount.objects.get(id=account_id)
 
-    def get_campaign(self, account, campaign_id):
-        return TwitterCampaign.objects.get(twitter_account=account).filter(id=campaign_id)
+    def get_campaign(self, campaign_id):
+        return TwitterCampaign.objects.get(id=campaign_id)
 
-    def execute(self):
+    def execute(self, **options):
         account = self.get_account(account_id=options['account_id'])
-        campaign = self.get_campaign(account=account, campaign_id=options['campaign_id'])
+        campaign = self.get_campaign(campaign_id=options['campaign_id'])
