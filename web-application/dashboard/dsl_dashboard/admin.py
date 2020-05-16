@@ -9,8 +9,8 @@ class TwitterAccountAdmin(admin.ModelAdmin):
 
 
 class TwitterCampaignAdmin(admin.ModelAdmin):
-    fields = ['name', 'description', 'twitter_account']
-    list_display = ['name', 'description', 'twitter_account']
+    fields = ['name', 'description', 'twitter_account', 'upload']
+    list_display = ['name', 'description', 'twitter_account', 'upload']
 
 
 class ScheduledPostAdmin(admin.ModelAdmin):
