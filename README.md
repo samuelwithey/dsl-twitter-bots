@@ -1,1 +1,22 @@
-# final-year-project
+# Final Year Project
+A domain specific language designed to operate and automate Twitter accounts/bots through Tweepy API.
+## Setting up the virtual-env
+```bash
+git clone https://github.com/samuelwithey/final-year-project.git
+cd web-application/dashboard/
+. ./activate
+```
+## Running management commands to execute the domain specific language
+- Create a Twitter Account in Django admin
+- Create a Twitter Campagin in Django admin and upload dsl script as `.txt` file
+- Use Ubuntu terminal to execute the Django management command
+```bash
+python manage.py execute_dsl --account-id {id-number} --campaign-id {id-number}
+```
+## Generating ANTLR files and running dsl using Ubuntu Terminal (optional)
+```bash
+cd web-application/dashboard/dsl_dashboard/dsl/antlr4/
+module load ./antlr4module
+antlr4py3 dsl.g4
+pygrun dsl twitbot --tokens input.txt
+```
