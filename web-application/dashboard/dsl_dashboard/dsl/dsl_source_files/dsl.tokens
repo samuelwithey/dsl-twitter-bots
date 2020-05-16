@@ -1,0 +1,11 @@
+StringLiteral=1
+UnterminatedStringLiteral=2
+Action=3
+Identifier=4
+COMMA=5
+SEMICOLON=6
+COLON=7
+WS=8
+','=5
+';'=6
+':'=7

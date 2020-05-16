@@ -1,2 +1,0 @@
-login consumer-key : "12213414" , consumer-secret : "214441" , access-token : "399ri9wrrw2r3" , access-token-secret : "23ot3t23t3fe";
-tweet status : "Hello World123" ;
