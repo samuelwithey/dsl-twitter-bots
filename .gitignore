@@ -2,7 +2,6 @@
 __pycache__
 db.sqlite3
 *.pyc
-antlr4
 gen
 media
 
