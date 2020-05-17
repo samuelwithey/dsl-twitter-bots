@@ -19,7 +19,7 @@ python manage.py execute_dsl --account-id {id-number} --campaign-id {id-number}
 ```
 ## Generating ANTLR files and running dsl using Ubuntu Terminal (optional)
 ```bash
-cd web-application/dashboard/dsl_dashboard/dsl/antlr4/
+cd web-application/dashboard/core/dsl/antlr4/
 module load ./antlr4module
 antlr4py3 dsl.g4
 pygrun dsl twitbot --tokens input.txt
