@@ -8,7 +8,27 @@ UnterminatedStringLiteral
   : '"' (~["\\\r\n] | '\\' (. | EOF))*
   ;
 
-Action: 'tweet' | 'retweet' | 'reply' | 'favourite' | 'schedule' | 'direct-message' ;
+ID: 'id' ;
+
+Tweet: 'tweet' ;
+
+Status: 'status' ;
+
+Reply: 'reply' ;
+
+Retweet: 'retweet' ;
+
+Direct_message: 'direct_message' ;
+
+Favourite: 'favourite' ;
+
+Schedule: 'schedule' ;
+
+Tweet_parameter: 'attachment_url' | 'possibly_sensitive' | 'lat' | 'long' | 'place_id' | 'display_coordinates' ;
+
+Date_time: 'date_time' ;
+
+Text: 'text' ;
 
 Identifier: [A-Za-z0-9]+ ;
 
