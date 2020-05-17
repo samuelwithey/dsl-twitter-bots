@@ -1,8 +1,8 @@
 from django.core import management
 from django.core.management.base import BaseCommand
 
-from dsl_dashboard.management.commands.execute import Execute
-from dsl_dashboard.models import TwitterAccount, TwitterCampaign
+from core.management.commands.execute import Execute
+from core.models import TwitterAccount, TwitterCampaign
 
 
 class Command(BaseCommand):
