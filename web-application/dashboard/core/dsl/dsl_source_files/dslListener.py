@@ -35,21 +35,183 @@ class dslListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by dslParser#parameter.
-    def enterParameter(self, ctx:dslParser.ParameterContext):
+    # Enter a parse tree produced by dslParser#tweet.
+    def enterTweet(self, ctx:dslParser.TweetContext):
         pass
 
-    # Exit a parse tree produced by dslParser#parameter.
-    def exitParameter(self, ctx:dslParser.ParameterContext):
+    # Exit a parse tree produced by dslParser#tweet.
+    def exitTweet(self, ctx:dslParser.TweetContext):
         pass
 
 
-    # Enter a parse tree produced by dslParser#identifier.
-    def enterIdentifier(self, ctx:dslParser.IdentifierContext):
+    # Enter a parse tree produced by dslParser#tweet_required_parameter.
+    def enterTweet_required_parameter(self, ctx:dslParser.Tweet_required_parameterContext):
         pass
 
-    # Exit a parse tree produced by dslParser#identifier.
-    def exitIdentifier(self, ctx:dslParser.IdentifierContext):
+    # Exit a parse tree produced by dslParser#tweet_required_parameter.
+    def exitTweet_required_parameter(self, ctx:dslParser.Tweet_required_parameterContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#status.
+    def enterStatus(self, ctx:dslParser.StatusContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#status.
+    def exitStatus(self, ctx:dslParser.StatusContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#tweet_optional_parameter.
+    def enterTweet_optional_parameter(self, ctx:dslParser.Tweet_optional_parameterContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#tweet_optional_parameter.
+    def exitTweet_optional_parameter(self, ctx:dslParser.Tweet_optional_parameterContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#tweet_parameter.
+    def enterTweet_parameter(self, ctx:dslParser.Tweet_parameterContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#tweet_parameter.
+    def exitTweet_parameter(self, ctx:dslParser.Tweet_parameterContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#reply.
+    def enterReply(self, ctx:dslParser.ReplyContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#reply.
+    def exitReply(self, ctx:dslParser.ReplyContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#reply_required_parameter.
+    def enterReply_required_parameter(self, ctx:dslParser.Reply_required_parameterContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#reply_required_parameter.
+    def exitReply_required_parameter(self, ctx:dslParser.Reply_required_parameterContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#account_id.
+    def enterAccount_id(self, ctx:dslParser.Account_idContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#account_id.
+    def exitAccount_id(self, ctx:dslParser.Account_idContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#retweet.
+    def enterRetweet(self, ctx:dslParser.RetweetContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#retweet.
+    def exitRetweet(self, ctx:dslParser.RetweetContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#retweet_required_parameter.
+    def enterRetweet_required_parameter(self, ctx:dslParser.Retweet_required_parameterContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#retweet_required_parameter.
+    def exitRetweet_required_parameter(self, ctx:dslParser.Retweet_required_parameterContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#retweet_id.
+    def enterRetweet_id(self, ctx:dslParser.Retweet_idContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#retweet_id.
+    def exitRetweet_id(self, ctx:dslParser.Retweet_idContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#favourite.
+    def enterFavourite(self, ctx:dslParser.FavouriteContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#favourite.
+    def exitFavourite(self, ctx:dslParser.FavouriteContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#favourite_required_parameter.
+    def enterFavourite_required_parameter(self, ctx:dslParser.Favourite_required_parameterContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#favourite_required_parameter.
+    def exitFavourite_required_parameter(self, ctx:dslParser.Favourite_required_parameterContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#schedule.
+    def enterSchedule(self, ctx:dslParser.ScheduleContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#schedule.
+    def exitSchedule(self, ctx:dslParser.ScheduleContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#schedule_required_parameter.
+    def enterSchedule_required_parameter(self, ctx:dslParser.Schedule_required_parameterContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#schedule_required_parameter.
+    def exitSchedule_required_parameter(self, ctx:dslParser.Schedule_required_parameterContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#date_time.
+    def enterDate_time(self, ctx:dslParser.Date_timeContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#date_time.
+    def exitDate_time(self, ctx:dslParser.Date_timeContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#direct_message.
+    def enterDirect_message(self, ctx:dslParser.Direct_messageContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#direct_message.
+    def exitDirect_message(self, ctx:dslParser.Direct_messageContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#direct_message_required_parameter.
+    def enterDirect_message_required_parameter(self, ctx:dslParser.Direct_message_required_parameterContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#direct_message_required_parameter.
+    def exitDirect_message_required_parameter(self, ctx:dslParser.Direct_message_required_parameterContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#recipient_id.
+    def enterRecipient_id(self, ctx:dslParser.Recipient_idContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#recipient_id.
+    def exitRecipient_id(self, ctx:dslParser.Recipient_idContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#text.
+    def enterText(self, ctx:dslParser.TextContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#text.
+    def exitText(self, ctx:dslParser.TextContext):
         pass
 
 
