@@ -1,7 +1,7 @@
 import tweepy
-from dsl_dashboard.dsl.dsl_source_files.dslLexer import dslLexer
-from dsl_dashboard.dsl.dsl_source_files.dslParser import dslParser
-from dsl_dashboard.dsl.dsl_source_files.dslListener import dslListener
+from core.dsl.dsl_source_files.dslLexer import dslLexer
+from core.dsl.dsl_source_files.dslParser import dslParser
+from core.dsl.dsl_source_files.dslListener import dslListener
 import sys
 import os
 from antlr4 import *

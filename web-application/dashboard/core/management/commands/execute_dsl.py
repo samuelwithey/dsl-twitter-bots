@@ -22,3 +22,4 @@ class Command(BaseCommand):
         account = self.get_account(account_id=options['account_id'])
         campaign = self.get_campaign(campaign_id=options['campaign_id'])
         execute = Execute(campaign=campaign, account=account)
+        execute.build_lexer_parser()
