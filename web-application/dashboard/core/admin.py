@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from dsl_dashboard.models import TwitterAccount, TwitterCampaign, ScheduledPost
+from core.models import TwitterAccount, TwitterCampaign, ScheduledPost
 
 
 class TwitterAccountAdmin(admin.ModelAdmin):
