@@ -7,11 +7,17 @@ twitbot: stat SEMICOLON ( stat SEMICOLON )* ;
 stat: action ;
 
 // List of possible actions
-action: tweet | reply | retweet | favourite | schedule | direct_message ;
+action  : tweet
+        | reply
+        | retweet
+        | favourite
+        | schedule
+        | direct_message
+        ;
 
 // Tweet action
-tweet: Tweet tweet_required_parameter (COMMA tweet_optional_parameter)* ;
-tweet_required_parameter: status COLON value ;
+tweet : Tweet tweet_required_parameter (COMMA tweet_optional_parameter)* ;
+tweet_required_parameter : status COLON value ;
 status: Status ;
 tweet_optional_parameter: tweet_parameter COLON value ;
 tweet_parameter: Tweet_parameter ;
