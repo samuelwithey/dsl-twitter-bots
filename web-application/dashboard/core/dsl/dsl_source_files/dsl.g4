@@ -24,8 +24,11 @@ tweet_parameter: Tweet_parameter ;
 
 // Reply action
 reply: Reply reply_required_parameter (COMMA tweet_optional_parameter)* ;
-reply_required_parameter: status COLON value COMMA in_reply_to_status_id COLON value ;
-in_reply_to_status_id: 'in_reply_to_status_id' ;
+reply_required_parameter: reply_parameter COLON value COMMA reply_parameter COLON value ;
+reply_parameter : status
+                | reply_id
+                ;
+reply_id : Reply_ID ;
 
 // Retweet action
 retweet: Retweet retweet_required_parameter ;

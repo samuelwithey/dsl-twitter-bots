@@ -98,12 +98,21 @@ class dslListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by dslParser#in_reply_to_status_id.
-    def enterIn_reply_to_status_id(self, ctx:dslParser.In_reply_to_status_idContext):
+    # Enter a parse tree produced by dslParser#reply_parameter.
+    def enterReply_parameter(self, ctx:dslParser.Reply_parameterContext):
         pass
 
-    # Exit a parse tree produced by dslParser#in_reply_to_status_id.
-    def exitIn_reply_to_status_id(self, ctx:dslParser.In_reply_to_status_idContext):
+    # Exit a parse tree produced by dslParser#reply_parameter.
+    def exitReply_parameter(self, ctx:dslParser.Reply_parameterContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#reply_id.
+    def enterReply_id(self, ctx:dslParser.Reply_idContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#reply_id.
+    def exitReply_id(self, ctx:dslParser.Reply_idContext):
         pass
 
 

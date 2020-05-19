@@ -30,6 +30,8 @@ Date_time: 'date_time' ;
 
 Text: 'text' ;
 
+Reply_ID: 'in_reply_to_status_id' ;
+
 Identifier: [A-Za-z0-9]+ ;
 
 COMMA : ',' ;
