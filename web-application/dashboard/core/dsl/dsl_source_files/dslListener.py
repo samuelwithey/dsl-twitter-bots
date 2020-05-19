@@ -215,6 +215,15 @@ class dslListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by dslParser#direct_message_parameter.
+    def enterDirect_message_parameter(self, ctx:dslParser.Direct_message_parameterContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#direct_message_parameter.
+    def exitDirect_message_parameter(self, ctx:dslParser.Direct_message_parameterContext):
+        pass
+
+
     # Enter a parse tree produced by dslParser#recipient_id.
     def enterRecipient_id(self, ctx:dslParser.Recipient_idContext):
         pass

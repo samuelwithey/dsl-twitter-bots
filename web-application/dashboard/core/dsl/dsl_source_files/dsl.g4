@@ -47,7 +47,10 @@ date_time: Date_time ;
 
 // Direct_message action
 direct_message: Direct_message direct_message_required_parameter ;
-direct_message_required_parameter: recipient_id COLON value COMMA text COLON value ;
+direct_message_required_parameter: direct_message_parameter COLON value COMMA direct_message_parameter COLON value ;
+direct_message_parameter: recipient_id
+                        | text
+                        ;
 recipient_id: ID ;
 text: Text ;
 

@@ -12,58 +12,61 @@ else:
 def serializedATN():
     with StringIO() as buf:
         buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\25")
-        buf.write("\u00a5\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\u00ab\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
-        buf.write("\t\31\4\32\t\32\4\33\t\33\3\2\3\2\3\2\3\2\3\2\7\2<\n\2")
-        buf.write("\f\2\16\2?\13\2\3\3\3\3\3\4\3\4\3\4\3\4\3\4\3\4\5\4I\n")
-        buf.write("\4\3\5\3\5\3\5\3\5\7\5O\n\5\f\5\16\5R\13\5\3\6\3\6\3\6")
-        buf.write("\3\6\3\7\3\7\3\b\3\b\3\b\3\b\3\t\3\t\3\n\3\n\3\n\3\n\7")
-        buf.write("\nd\n\n\f\n\16\ng\13\n\3\13\3\13\3\13\3\13\3\13\3\13\3")
-        buf.write("\13\3\13\3\f\3\f\5\fs\n\f\3\r\3\r\3\16\3\16\3\16\3\17")
-        buf.write("\3\17\3\17\3\17\3\20\3\20\3\21\3\21\3\21\3\22\3\22\3\22")
-        buf.write("\3\22\3\23\3\23\3\24\3\24\3\24\3\25\3\25\3\25\3\25\3\25")
-        buf.write("\3\25\3\26\3\26\3\27\3\27\3\27\3\30\3\30\3\30\3\30\3\30")
-        buf.write("\3\30\3\30\3\30\3\31\3\31\3\32\3\32\3\33\3\33\3\33\2\2")
-        buf.write("\34\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60")
-        buf.write("\62\64\2\2\2\u0093\2\66\3\2\2\2\4@\3\2\2\2\6H\3\2\2\2")
-        buf.write("\bJ\3\2\2\2\nS\3\2\2\2\fW\3\2\2\2\16Y\3\2\2\2\20]\3\2")
-        buf.write("\2\2\22_\3\2\2\2\24h\3\2\2\2\26r\3\2\2\2\30t\3\2\2\2\32")
-        buf.write("v\3\2\2\2\34y\3\2\2\2\36}\3\2\2\2 \177\3\2\2\2\"\u0082")
-        buf.write("\3\2\2\2$\u0086\3\2\2\2&\u0088\3\2\2\2(\u008b\3\2\2\2")
-        buf.write("*\u0091\3\2\2\2,\u0093\3\2\2\2.\u0096\3\2\2\2\60\u009e")
-        buf.write("\3\2\2\2\62\u00a0\3\2\2\2\64\u00a2\3\2\2\2\66\67\5\4\3")
-        buf.write("\2\67=\7\23\2\289\5\4\3\29:\7\23\2\2:<\3\2\2\2;8\3\2\2")
-        buf.write("\2<?\3\2\2\2=;\3\2\2\2=>\3\2\2\2>\3\3\2\2\2?=\3\2\2\2")
-        buf.write("@A\5\6\4\2A\5\3\2\2\2BI\5\b\5\2CI\5\22\n\2DI\5\32\16\2")
-        buf.write("EI\5 \21\2FI\5&\24\2GI\5,\27\2HB\3\2\2\2HC\3\2\2\2HD\3")
-        buf.write("\2\2\2HE\3\2\2\2HF\3\2\2\2HG\3\2\2\2I\7\3\2\2\2JK\7\6")
-        buf.write("\2\2KP\5\n\6\2LM\7\22\2\2MO\5\16\b\2NL\3\2\2\2OR\3\2\2")
-        buf.write("\2PN\3\2\2\2PQ\3\2\2\2Q\t\3\2\2\2RP\3\2\2\2ST\5\f\7\2")
-        buf.write("TU\7\24\2\2UV\5\64\33\2V\13\3\2\2\2WX\7\7\2\2X\r\3\2\2")
-        buf.write("\2YZ\5\20\t\2Z[\7\24\2\2[\\\5\64\33\2\\\17\3\2\2\2]^\7")
-        buf.write("\r\2\2^\21\3\2\2\2_`\7\b\2\2`e\5\24\13\2ab\7\22\2\2bd")
-        buf.write("\5\16\b\2ca\3\2\2\2dg\3\2\2\2ec\3\2\2\2ef\3\2\2\2f\23")
-        buf.write("\3\2\2\2ge\3\2\2\2hi\5\26\f\2ij\7\24\2\2jk\5\64\33\2k")
-        buf.write("l\7\22\2\2lm\5\26\f\2mn\7\24\2\2no\5\64\33\2o\25\3\2\2")
-        buf.write("\2ps\5\f\7\2qs\5\30\r\2rp\3\2\2\2rq\3\2\2\2s\27\3\2\2")
-        buf.write("\2tu\7\20\2\2u\31\3\2\2\2vw\7\t\2\2wx\5\34\17\2x\33\3")
-        buf.write("\2\2\2yz\5\36\20\2z{\7\24\2\2{|\5\64\33\2|\35\3\2\2\2")
-        buf.write("}~\7\5\2\2~\37\3\2\2\2\177\u0080\7\13\2\2\u0080\u0081")
-        buf.write("\5\"\22\2\u0081!\3\2\2\2\u0082\u0083\5$\23\2\u0083\u0084")
-        buf.write("\7\24\2\2\u0084\u0085\5\64\33\2\u0085#\3\2\2\2\u0086\u0087")
-        buf.write("\7\5\2\2\u0087%\3\2\2\2\u0088\u0089\7\f\2\2\u0089\u008a")
-        buf.write("\5(\25\2\u008a\'\3\2\2\2\u008b\u008c\5*\26\2\u008c\u008d")
-        buf.write("\7\24\2\2\u008d\u008e\5\64\33\2\u008e\u008f\7\22\2\2\u008f")
-        buf.write("\u0090\5\b\5\2\u0090)\3\2\2\2\u0091\u0092\7\16\2\2\u0092")
-        buf.write("+\3\2\2\2\u0093\u0094\7\n\2\2\u0094\u0095\5.\30\2\u0095")
-        buf.write("-\3\2\2\2\u0096\u0097\5\60\31\2\u0097\u0098\7\24\2\2\u0098")
-        buf.write("\u0099\5\64\33\2\u0099\u009a\7\22\2\2\u009a\u009b\5\62")
-        buf.write("\32\2\u009b\u009c\7\24\2\2\u009c\u009d\5\64\33\2\u009d")
-        buf.write("/\3\2\2\2\u009e\u009f\7\5\2\2\u009f\61\3\2\2\2\u00a0\u00a1")
-        buf.write("\7\17\2\2\u00a1\63\3\2\2\2\u00a2\u00a3\7\3\2\2\u00a3\65")
-        buf.write("\3\2\2\2\7=HPer")
+        buf.write("\t\31\4\32\t\32\4\33\t\33\4\34\t\34\3\2\3\2\3\2\3\2\3")
+        buf.write("\2\7\2>\n\2\f\2\16\2A\13\2\3\3\3\3\3\4\3\4\3\4\3\4\3\4")
+        buf.write("\3\4\5\4K\n\4\3\5\3\5\3\5\3\5\7\5Q\n\5\f\5\16\5T\13\5")
+        buf.write("\3\6\3\6\3\6\3\6\3\7\3\7\3\b\3\b\3\b\3\b\3\t\3\t\3\n\3")
+        buf.write("\n\3\n\3\n\7\nf\n\n\f\n\16\ni\13\n\3\13\3\13\3\13\3\13")
+        buf.write("\3\13\3\13\3\13\3\13\3\f\3\f\5\fu\n\f\3\r\3\r\3\16\3\16")
+        buf.write("\3\16\3\17\3\17\3\17\3\17\3\20\3\20\3\21\3\21\3\21\3\22")
+        buf.write("\3\22\3\22\3\22\3\23\3\23\3\24\3\24\3\24\3\25\3\25\3\25")
+        buf.write("\3\25\3\25\3\25\3\26\3\26\3\27\3\27\3\27\3\30\3\30\3\30")
+        buf.write("\3\30\3\30\3\30\3\30\3\30\3\31\3\31\5\31\u00a3\n\31\3")
+        buf.write("\32\3\32\3\33\3\33\3\34\3\34\3\34\2\2\35\2\4\6\b\n\f\16")
+        buf.write("\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\66\2\2\2\u0099")
+        buf.write("\28\3\2\2\2\4B\3\2\2\2\6J\3\2\2\2\bL\3\2\2\2\nU\3\2\2")
+        buf.write("\2\fY\3\2\2\2\16[\3\2\2\2\20_\3\2\2\2\22a\3\2\2\2\24j")
+        buf.write("\3\2\2\2\26t\3\2\2\2\30v\3\2\2\2\32x\3\2\2\2\34{\3\2\2")
+        buf.write("\2\36\177\3\2\2\2 \u0081\3\2\2\2\"\u0084\3\2\2\2$\u0088")
+        buf.write("\3\2\2\2&\u008a\3\2\2\2(\u008d\3\2\2\2*\u0093\3\2\2\2")
+        buf.write(",\u0095\3\2\2\2.\u0098\3\2\2\2\60\u00a2\3\2\2\2\62\u00a4")
+        buf.write("\3\2\2\2\64\u00a6\3\2\2\2\66\u00a8\3\2\2\289\5\4\3\29")
+        buf.write("?\7\23\2\2:;\5\4\3\2;<\7\23\2\2<>\3\2\2\2=:\3\2\2\2>A")
+        buf.write("\3\2\2\2?=\3\2\2\2?@\3\2\2\2@\3\3\2\2\2A?\3\2\2\2BC\5")
+        buf.write("\6\4\2C\5\3\2\2\2DK\5\b\5\2EK\5\22\n\2FK\5\32\16\2GK\5")
+        buf.write(" \21\2HK\5&\24\2IK\5,\27\2JD\3\2\2\2JE\3\2\2\2JF\3\2\2")
+        buf.write("\2JG\3\2\2\2JH\3\2\2\2JI\3\2\2\2K\7\3\2\2\2LM\7\6\2\2")
+        buf.write("MR\5\n\6\2NO\7\22\2\2OQ\5\16\b\2PN\3\2\2\2QT\3\2\2\2R")
+        buf.write("P\3\2\2\2RS\3\2\2\2S\t\3\2\2\2TR\3\2\2\2UV\5\f\7\2VW\7")
+        buf.write("\24\2\2WX\5\66\34\2X\13\3\2\2\2YZ\7\7\2\2Z\r\3\2\2\2[")
+        buf.write("\\\5\20\t\2\\]\7\24\2\2]^\5\66\34\2^\17\3\2\2\2_`\7\r")
+        buf.write("\2\2`\21\3\2\2\2ab\7\b\2\2bg\5\24\13\2cd\7\22\2\2df\5")
+        buf.write("\16\b\2ec\3\2\2\2fi\3\2\2\2ge\3\2\2\2gh\3\2\2\2h\23\3")
+        buf.write("\2\2\2ig\3\2\2\2jk\5\26\f\2kl\7\24\2\2lm\5\66\34\2mn\7")
+        buf.write("\22\2\2no\5\26\f\2op\7\24\2\2pq\5\66\34\2q\25\3\2\2\2")
+        buf.write("ru\5\f\7\2su\5\30\r\2tr\3\2\2\2ts\3\2\2\2u\27\3\2\2\2")
+        buf.write("vw\7\20\2\2w\31\3\2\2\2xy\7\t\2\2yz\5\34\17\2z\33\3\2")
+        buf.write("\2\2{|\5\36\20\2|}\7\24\2\2}~\5\66\34\2~\35\3\2\2\2\177")
+        buf.write("\u0080\7\5\2\2\u0080\37\3\2\2\2\u0081\u0082\7\13\2\2\u0082")
+        buf.write("\u0083\5\"\22\2\u0083!\3\2\2\2\u0084\u0085\5$\23\2\u0085")
+        buf.write("\u0086\7\24\2\2\u0086\u0087\5\66\34\2\u0087#\3\2\2\2\u0088")
+        buf.write("\u0089\7\5\2\2\u0089%\3\2\2\2\u008a\u008b\7\f\2\2\u008b")
+        buf.write("\u008c\5(\25\2\u008c\'\3\2\2\2\u008d\u008e\5*\26\2\u008e")
+        buf.write("\u008f\7\24\2\2\u008f\u0090\5\66\34\2\u0090\u0091\7\22")
+        buf.write("\2\2\u0091\u0092\5\b\5\2\u0092)\3\2\2\2\u0093\u0094\7")
+        buf.write("\16\2\2\u0094+\3\2\2\2\u0095\u0096\7\n\2\2\u0096\u0097")
+        buf.write("\5.\30\2\u0097-\3\2\2\2\u0098\u0099\5\60\31\2\u0099\u009a")
+        buf.write("\7\24\2\2\u009a\u009b\5\66\34\2\u009b\u009c\7\22\2\2\u009c")
+        buf.write("\u009d\5\60\31\2\u009d\u009e\7\24\2\2\u009e\u009f\5\66")
+        buf.write("\34\2\u009f/\3\2\2\2\u00a0\u00a3\5\62\32\2\u00a1\u00a3")
+        buf.write("\5\64\33\2\u00a2\u00a0\3\2\2\2\u00a2\u00a1\3\2\2\2\u00a3")
+        buf.write("\61\3\2\2\2\u00a4\u00a5\7\5\2\2\u00a5\63\3\2\2\2\u00a6")
+        buf.write("\u00a7\7\17\2\2\u00a7\65\3\2\2\2\u00a8\u00a9\7\3\2\2\u00a9")
+        buf.write("\67\3\2\2\2\b?JRgt\u00a2")
         return buf.getvalue()
 
 
@@ -112,9 +115,10 @@ class dslParser ( Parser ):
     RULE_date_time = 20
     RULE_direct_message = 21
     RULE_direct_message_required_parameter = 22
-    RULE_recipient_id = 23
-    RULE_text = 24
-    RULE_value = 25
+    RULE_direct_message_parameter = 23
+    RULE_recipient_id = 24
+    RULE_text = 25
+    RULE_value = 26
 
     ruleNames =  [ "twitbot", "stat", "action", "tweet", "tweet_required_parameter", 
                    "status", "tweet_optional_parameter", "tweet_parameter", 
@@ -123,7 +127,7 @@ class dslParser ( Parser ):
                    "retweet_id", "favourite", "favourite_required_parameter", 
                    "account_id", "schedule", "schedule_required_parameter", 
                    "date_time", "direct_message", "direct_message_required_parameter", 
-                   "recipient_id", "text", "value" ]
+                   "direct_message_parameter", "recipient_id", "text", "value" ]
 
     EOF = Token.EOF
     StringLiteral=1
@@ -195,19 +199,19 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 52
+            self.state = 54
             self.stat()
-            self.state = 53
+            self.state = 55
             self.match(dslParser.SEMICOLON)
-            self.state = 59
+            self.state = 61
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << dslParser.Tweet) | (1 << dslParser.Reply) | (1 << dslParser.Retweet) | (1 << dslParser.Direct_message) | (1 << dslParser.Favourite) | (1 << dslParser.Schedule))) != 0):
-                self.state = 54
+                self.state = 56
                 self.stat()
-                self.state = 55
+                self.state = 57
                 self.match(dslParser.SEMICOLON)
-                self.state = 61
+                self.state = 63
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -250,7 +254,7 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 2, self.RULE_stat)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 62
+            self.state = 64
             self.action()
         except RecognitionException as re:
             localctx.exception = re
@@ -310,37 +314,37 @@ class dslParser ( Parser ):
         localctx = dslParser.ActionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_action)
         try:
-            self.state = 70
+            self.state = 72
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [dslParser.Tweet]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 64
+                self.state = 66
                 self.tweet()
                 pass
             elif token in [dslParser.Reply]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 65
+                self.state = 67
                 self.reply()
                 pass
             elif token in [dslParser.Retweet]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 66
+                self.state = 68
                 self.retweet()
                 pass
             elif token in [dslParser.Favourite]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 67
+                self.state = 69
                 self.favourite()
                 pass
             elif token in [dslParser.Schedule]:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 68
+                self.state = 70
                 self.schedule()
                 pass
             elif token in [dslParser.Direct_message]:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 69
+                self.state = 71
                 self.direct_message()
                 pass
             else:
@@ -402,19 +406,19 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 72
+            self.state = 74
             self.match(dslParser.Tweet)
-            self.state = 73
+            self.state = 75
             self.tweet_required_parameter()
-            self.state = 78
+            self.state = 80
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==dslParser.COMMA:
-                self.state = 74
+                self.state = 76
                 self.match(dslParser.COMMA)
-                self.state = 75
+                self.state = 77
                 self.tweet_optional_parameter()
-                self.state = 80
+                self.state = 82
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -464,11 +468,11 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 8, self.RULE_tweet_required_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 81
-            self.status()
-            self.state = 82
-            self.match(dslParser.COLON)
             self.state = 83
+            self.status()
+            self.state = 84
+            self.match(dslParser.COLON)
+            self.state = 85
             self.value()
         except RecognitionException as re:
             localctx.exception = re
@@ -508,7 +512,7 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 10, self.RULE_status)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 85
+            self.state = 87
             self.match(dslParser.Status)
         except RecognitionException as re:
             localctx.exception = re
@@ -556,11 +560,11 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_tweet_optional_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 87
-            self.tweet_parameter()
-            self.state = 88
-            self.match(dslParser.COLON)
             self.state = 89
+            self.tweet_parameter()
+            self.state = 90
+            self.match(dslParser.COLON)
+            self.state = 91
             self.value()
         except RecognitionException as re:
             localctx.exception = re
@@ -600,7 +604,7 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 14, self.RULE_tweet_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 91
+            self.state = 93
             self.match(dslParser.Tweet_parameter)
         except RecognitionException as re:
             localctx.exception = re
@@ -658,19 +662,19 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 93
+            self.state = 95
             self.match(dslParser.Reply)
-            self.state = 94
+            self.state = 96
             self.reply_required_parameter()
-            self.state = 99
+            self.state = 101
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==dslParser.COMMA:
-                self.state = 95
+                self.state = 97
                 self.match(dslParser.COMMA)
-                self.state = 96
+                self.state = 98
                 self.tweet_optional_parameter()
-                self.state = 101
+                self.state = 103
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -732,19 +736,19 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 18, self.RULE_reply_required_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 102
-            self.reply_parameter()
-            self.state = 103
-            self.match(dslParser.COLON)
             self.state = 104
-            self.value()
-            self.state = 105
-            self.match(dslParser.COMMA)
-            self.state = 106
             self.reply_parameter()
-            self.state = 107
+            self.state = 105
             self.match(dslParser.COLON)
+            self.state = 106
+            self.value()
+            self.state = 107
+            self.match(dslParser.COMMA)
             self.state = 108
+            self.reply_parameter()
+            self.state = 109
+            self.match(dslParser.COLON)
+            self.state = 110
             self.value()
         except RecognitionException as re:
             localctx.exception = re
@@ -788,17 +792,17 @@ class dslParser ( Parser ):
         localctx = dslParser.Reply_parameterContext(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_reply_parameter)
         try:
-            self.state = 112
+            self.state = 114
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [dslParser.Status]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 110
+                self.state = 112
                 self.status()
                 pass
             elif token in [dslParser.Reply_ID]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 111
+                self.state = 113
                 self.reply_id()
                 pass
             else:
@@ -842,7 +846,7 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 22, self.RULE_reply_id)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 114
+            self.state = 116
             self.match(dslParser.Reply_ID)
         except RecognitionException as re:
             localctx.exception = re
@@ -886,9 +890,9 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 24, self.RULE_retweet)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 116
+            self.state = 118
             self.match(dslParser.Retweet)
-            self.state = 117
+            self.state = 119
             self.retweet_required_parameter()
         except RecognitionException as re:
             localctx.exception = re
@@ -936,11 +940,11 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 26, self.RULE_retweet_required_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 119
-            self.retweet_id()
-            self.state = 120
-            self.match(dslParser.COLON)
             self.state = 121
+            self.retweet_id()
+            self.state = 122
+            self.match(dslParser.COLON)
+            self.state = 123
             self.value()
         except RecognitionException as re:
             localctx.exception = re
@@ -980,7 +984,7 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 28, self.RULE_retweet_id)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 123
+            self.state = 125
             self.match(dslParser.ID)
         except RecognitionException as re:
             localctx.exception = re
@@ -1024,9 +1028,9 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 30, self.RULE_favourite)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 125
+            self.state = 127
             self.match(dslParser.Favourite)
-            self.state = 126
+            self.state = 128
             self.favourite_required_parameter()
         except RecognitionException as re:
             localctx.exception = re
@@ -1074,11 +1078,11 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 32, self.RULE_favourite_required_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 128
-            self.account_id()
-            self.state = 129
-            self.match(dslParser.COLON)
             self.state = 130
+            self.account_id()
+            self.state = 131
+            self.match(dslParser.COLON)
+            self.state = 132
             self.value()
         except RecognitionException as re:
             localctx.exception = re
@@ -1118,7 +1122,7 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 34, self.RULE_account_id)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 132
+            self.state = 134
             self.match(dslParser.ID)
         except RecognitionException as re:
             localctx.exception = re
@@ -1162,9 +1166,9 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 36, self.RULE_schedule)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 134
+            self.state = 136
             self.match(dslParser.Schedule)
-            self.state = 135
+            self.state = 137
             self.schedule_required_parameter()
         except RecognitionException as re:
             localctx.exception = re
@@ -1219,15 +1223,15 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 38, self.RULE_schedule_required_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 137
-            self.date_time()
-            self.state = 138
-            self.match(dslParser.COLON)
             self.state = 139
-            self.value()
+            self.date_time()
             self.state = 140
-            self.match(dslParser.COMMA)
+            self.match(dslParser.COLON)
             self.state = 141
+            self.value()
+            self.state = 142
+            self.match(dslParser.COMMA)
+            self.state = 143
             self.tweet()
         except RecognitionException as re:
             localctx.exception = re
@@ -1267,7 +1271,7 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 40, self.RULE_date_time)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 143
+            self.state = 145
             self.match(dslParser.Date_time)
         except RecognitionException as re:
             localctx.exception = re
@@ -1311,9 +1315,9 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 42, self.RULE_direct_message)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 145
+            self.state = 147
             self.match(dslParser.Direct_message)
-            self.state = 146
+            self.state = 148
             self.direct_message_required_parameter()
         except RecognitionException as re:
             localctx.exception = re
@@ -1330,8 +1334,11 @@ class dslParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def recipient_id(self):
-            return self.getTypedRuleContext(dslParser.Recipient_idContext,0)
+        def direct_message_parameter(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(dslParser.Direct_message_parameterContext)
+            else:
+                return self.getTypedRuleContext(dslParser.Direct_message_parameterContext,i)
 
 
         def COLON(self, i:int=None):
@@ -1349,10 +1356,6 @@ class dslParser ( Parser ):
 
         def COMMA(self):
             return self.getToken(dslParser.COMMA, 0)
-
-        def text(self):
-            return self.getTypedRuleContext(dslParser.TextContext,0)
-
 
         def getRuleIndex(self):
             return dslParser.RULE_direct_message_required_parameter
@@ -1374,20 +1377,78 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 44, self.RULE_direct_message_required_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 148
-            self.recipient_id()
-            self.state = 149
-            self.match(dslParser.COLON)
             self.state = 150
-            self.value()
+            self.direct_message_parameter()
             self.state = 151
-            self.match(dslParser.COMMA)
-            self.state = 152
-            self.text()
-            self.state = 153
             self.match(dslParser.COLON)
-            self.state = 154
+            self.state = 152
             self.value()
+            self.state = 153
+            self.match(dslParser.COMMA)
+            self.state = 154
+            self.direct_message_parameter()
+            self.state = 155
+            self.match(dslParser.COLON)
+            self.state = 156
+            self.value()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Direct_message_parameterContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def recipient_id(self):
+            return self.getTypedRuleContext(dslParser.Recipient_idContext,0)
+
+
+        def text(self):
+            return self.getTypedRuleContext(dslParser.TextContext,0)
+
+
+        def getRuleIndex(self):
+            return dslParser.RULE_direct_message_parameter
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterDirect_message_parameter" ):
+                listener.enterDirect_message_parameter(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitDirect_message_parameter" ):
+                listener.exitDirect_message_parameter(self)
+
+
+
+
+    def direct_message_parameter(self):
+
+        localctx = dslParser.Direct_message_parameterContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 46, self.RULE_direct_message_parameter)
+        try:
+            self.state = 160
+            self._errHandler.sync(self)
+            token = self._input.LA(1)
+            if token in [dslParser.ID]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 158
+                self.recipient_id()
+                pass
+            elif token in [dslParser.Text]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 159
+                self.text()
+                pass
+            else:
+                raise NoViableAltException(self)
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1423,10 +1484,10 @@ class dslParser ( Parser ):
     def recipient_id(self):
 
         localctx = dslParser.Recipient_idContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 46, self.RULE_recipient_id)
+        self.enterRule(localctx, 48, self.RULE_recipient_id)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 156
+            self.state = 162
             self.match(dslParser.ID)
         except RecognitionException as re:
             localctx.exception = re
@@ -1463,10 +1524,10 @@ class dslParser ( Parser ):
     def text(self):
 
         localctx = dslParser.TextContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 48, self.RULE_text)
+        self.enterRule(localctx, 50, self.RULE_text)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 158
+            self.state = 164
             self.match(dslParser.Text)
         except RecognitionException as re:
             localctx.exception = re
@@ -1503,10 +1564,10 @@ class dslParser ( Parser ):
     def value(self):
 
         localctx = dslParser.ValueContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 50, self.RULE_value)
+        self.enterRule(localctx, 52, self.RULE_value)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 160
+            self.state = 166
             self.match(dslParser.StringLiteral)
         except RecognitionException as re:
             localctx.exception = re
