@@ -1,5 +1,7 @@
 lexer grammar dslLexerGrammar;
 
+import NumericLexer ;
+
 StringLiteral
   : UnterminatedStringLiteral '"'
   ;
@@ -8,36 +10,110 @@ UnterminatedStringLiteral
   : '"' (~["\\\r\n] | '\\' (. | EOF))*
   ;
 
-ID: 'id' ;
+UNSIGNED_INT
+    : ('0' | '1'..'9' '0'..'9'*)
+    ;
 
-Tweet: 'tweet' ;
+UNSIGNED_FLOAT
+    :   ('0'..'9')+ '.' ('0'..'9')*
+    ;
 
-Status: 'status' ;
+LAT
+    : 'lat'
+    ;
 
-Reply: 'reply' ;
+TRUE
+    : 'True'
+    ;
 
-Retweet: 'retweet' ;
+FALSE
+    : 'False'
+    ;
 
-Direct_message: 'direct_message' ;
+ID
+    : 'id'
+    ;
 
-Favourite: 'favourite' ;
+TWEET
+    : 'tweet'
+    ;
 
-Schedule: 'schedule' ;
+REPLY_ID
+    : 'in_reply_to_status_id'
+    ;
 
-Tweet_parameter: 'attachment_url' | 'possibly_sensitive' | 'lat' | 'long' | 'place_id' | 'display_coordinates' ;
+STATUS
+    : 'status'
+    ;
 
-Date_time: 'date_time' ;
+POSSIBLY_SENSITIVE
+    : 'possibly_sensitive'
+    ;
 
-Text: 'text' ;
+LONG
+    : 'long'
+    ;
 
-Reply_ID: 'in_reply_to_status_id' ;
+PLACE_ID
+    : 'place_id'
+    ;
 
-Identifier: [A-Za-z0-9]+ ;
+DISPLAY_COORDINATES
+    : 'display_coordinates'
+    ;
 
-COMMA : ',' ;
+REPLY
+    : 'reply'
+    ;
 
-SEMICOLON : ';' ;
+RETWEET
+    : 'retweet'
+    ;
 
-COLON : ':' ;
+DIRECT_MESSAGE
+    : 'direct_message'
+    ;
 
-WS  :   [ \t\n\r]+ -> skip;
+FAVOURITE
+    : 'favourite'
+    ;
+
+SCHEDULE
+    : 'schedule'
+    ;
+
+DATE
+    : 'date'
+    ;
+
+TIME
+    : 'time'
+    ;
+
+TEXT
+    : 'text'
+    ;
+
+COMMA
+    : ','
+    ;
+
+SEMICOLON
+    : ';'
+    ;
+
+COLON
+    : ':'
+    ;
+
+WS
+    : [ \t\n\r]+ -> skip
+    ;
+
+SLASH
+    : '/'
+    ;
+
+DOT
+    : '.'
+    ;

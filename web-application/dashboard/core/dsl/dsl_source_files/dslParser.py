@@ -11,62 +11,87 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\25")
-        buf.write("\u00ab\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3i")
+        buf.write("\u00e5\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
-        buf.write("\t\31\4\32\t\32\4\33\t\33\4\34\t\34\3\2\3\2\3\2\3\2\3")
-        buf.write("\2\7\2>\n\2\f\2\16\2A\13\2\3\3\3\3\3\4\3\4\3\4\3\4\3\4")
-        buf.write("\3\4\5\4K\n\4\3\5\3\5\3\5\3\5\7\5Q\n\5\f\5\16\5T\13\5")
-        buf.write("\3\6\3\6\3\6\3\6\3\7\3\7\3\b\3\b\3\b\3\b\3\t\3\t\3\n\3")
-        buf.write("\n\3\n\3\n\7\nf\n\n\f\n\16\ni\13\n\3\13\3\13\3\13\3\13")
-        buf.write("\3\13\3\13\3\13\3\13\3\f\3\f\5\fu\n\f\3\r\3\r\3\16\3\16")
-        buf.write("\3\16\3\17\3\17\3\17\3\17\3\20\3\20\3\21\3\21\3\21\3\22")
-        buf.write("\3\22\3\22\3\22\3\23\3\23\3\24\3\24\3\24\3\25\3\25\3\25")
-        buf.write("\3\25\3\25\3\25\3\26\3\26\3\27\3\27\3\27\3\30\3\30\3\30")
-        buf.write("\3\30\3\30\3\30\3\30\3\30\3\31\3\31\5\31\u00a3\n\31\3")
-        buf.write("\32\3\32\3\33\3\33\3\34\3\34\3\34\2\2\35\2\4\6\b\n\f\16")
-        buf.write("\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\66\2\2\2\u0099")
-        buf.write("\28\3\2\2\2\4B\3\2\2\2\6J\3\2\2\2\bL\3\2\2\2\nU\3\2\2")
-        buf.write("\2\fY\3\2\2\2\16[\3\2\2\2\20_\3\2\2\2\22a\3\2\2\2\24j")
-        buf.write("\3\2\2\2\26t\3\2\2\2\30v\3\2\2\2\32x\3\2\2\2\34{\3\2\2")
-        buf.write("\2\36\177\3\2\2\2 \u0081\3\2\2\2\"\u0084\3\2\2\2$\u0088")
-        buf.write("\3\2\2\2&\u008a\3\2\2\2(\u008d\3\2\2\2*\u0093\3\2\2\2")
-        buf.write(",\u0095\3\2\2\2.\u0098\3\2\2\2\60\u00a2\3\2\2\2\62\u00a4")
-        buf.write("\3\2\2\2\64\u00a6\3\2\2\2\66\u00a8\3\2\2\289\5\4\3\29")
-        buf.write("?\7\23\2\2:;\5\4\3\2;<\7\23\2\2<>\3\2\2\2=:\3\2\2\2>A")
-        buf.write("\3\2\2\2?=\3\2\2\2?@\3\2\2\2@\3\3\2\2\2A?\3\2\2\2BC\5")
-        buf.write("\6\4\2C\5\3\2\2\2DK\5\b\5\2EK\5\22\n\2FK\5\32\16\2GK\5")
-        buf.write(" \21\2HK\5&\24\2IK\5,\27\2JD\3\2\2\2JE\3\2\2\2JF\3\2\2")
-        buf.write("\2JG\3\2\2\2JH\3\2\2\2JI\3\2\2\2K\7\3\2\2\2LM\7\6\2\2")
-        buf.write("MR\5\n\6\2NO\7\22\2\2OQ\5\16\b\2PN\3\2\2\2QT\3\2\2\2R")
-        buf.write("P\3\2\2\2RS\3\2\2\2S\t\3\2\2\2TR\3\2\2\2UV\5\f\7\2VW\7")
-        buf.write("\24\2\2WX\5\66\34\2X\13\3\2\2\2YZ\7\7\2\2Z\r\3\2\2\2[")
-        buf.write("\\\5\20\t\2\\]\7\24\2\2]^\5\66\34\2^\17\3\2\2\2_`\7\r")
-        buf.write("\2\2`\21\3\2\2\2ab\7\b\2\2bg\5\24\13\2cd\7\22\2\2df\5")
-        buf.write("\16\b\2ec\3\2\2\2fi\3\2\2\2ge\3\2\2\2gh\3\2\2\2h\23\3")
-        buf.write("\2\2\2ig\3\2\2\2jk\5\26\f\2kl\7\24\2\2lm\5\66\34\2mn\7")
-        buf.write("\22\2\2no\5\26\f\2op\7\24\2\2pq\5\66\34\2q\25\3\2\2\2")
-        buf.write("ru\5\f\7\2su\5\30\r\2tr\3\2\2\2ts\3\2\2\2u\27\3\2\2\2")
-        buf.write("vw\7\20\2\2w\31\3\2\2\2xy\7\t\2\2yz\5\34\17\2z\33\3\2")
-        buf.write("\2\2{|\5\36\20\2|}\7\24\2\2}~\5\66\34\2~\35\3\2\2\2\177")
-        buf.write("\u0080\7\5\2\2\u0080\37\3\2\2\2\u0081\u0082\7\13\2\2\u0082")
-        buf.write("\u0083\5\"\22\2\u0083!\3\2\2\2\u0084\u0085\5$\23\2\u0085")
-        buf.write("\u0086\7\24\2\2\u0086\u0087\5\66\34\2\u0087#\3\2\2\2\u0088")
-        buf.write("\u0089\7\5\2\2\u0089%\3\2\2\2\u008a\u008b\7\f\2\2\u008b")
-        buf.write("\u008c\5(\25\2\u008c\'\3\2\2\2\u008d\u008e\5*\26\2\u008e")
-        buf.write("\u008f\7\24\2\2\u008f\u0090\5\66\34\2\u0090\u0091\7\22")
-        buf.write("\2\2\u0091\u0092\5\b\5\2\u0092)\3\2\2\2\u0093\u0094\7")
-        buf.write("\16\2\2\u0094+\3\2\2\2\u0095\u0096\7\n\2\2\u0096\u0097")
-        buf.write("\5.\30\2\u0097-\3\2\2\2\u0098\u0099\5\60\31\2\u0099\u009a")
-        buf.write("\7\24\2\2\u009a\u009b\5\66\34\2\u009b\u009c\7\22\2\2\u009c")
-        buf.write("\u009d\5\60\31\2\u009d\u009e\7\24\2\2\u009e\u009f\5\66")
-        buf.write("\34\2\u009f/\3\2\2\2\u00a0\u00a3\5\62\32\2\u00a1\u00a3")
-        buf.write("\5\64\33\2\u00a2\u00a0\3\2\2\2\u00a2\u00a1\3\2\2\2\u00a3")
-        buf.write("\61\3\2\2\2\u00a4\u00a5\7\5\2\2\u00a5\63\3\2\2\2\u00a6")
-        buf.write("\u00a7\7\17\2\2\u00a7\65\3\2\2\2\u00a8\u00a9\7\3\2\2\u00a9")
-        buf.write("\67\3\2\2\2\b?JRgt\u00a2")
+        buf.write("\t\31\4\32\t\32\4\33\t\33\4\34\t\34\4\35\t\35\4\36\t\36")
+        buf.write("\4\37\t\37\4 \t \4!\t!\4\"\t\"\4#\t#\4$\t$\4%\t%\3\2\3")
+        buf.write("\2\3\2\3\2\3\2\7\2P\n\2\f\2\16\2S\13\2\3\3\3\3\3\4\3\4")
+        buf.write("\3\4\3\4\3\4\3\4\5\4]\n\4\3\5\3\5\3\5\3\5\7\5c\n\5\f\5")
+        buf.write("\16\5f\13\5\3\6\3\6\3\6\3\6\3\7\3\7\3\b\3\b\3\b\3\b\3")
+        buf.write("\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\3\b\5\b}\n\b\3")
+        buf.write("\t\3\t\3\t\3\t\7\t\u0083\n\t\f\t\16\t\u0086\13\t\3\n\3")
+        buf.write("\n\3\n\3\n\3\n\3\n\3\n\3\n\3\13\3\13\3\13\3\f\3\f\3\f")
+        buf.write("\3\f\3\r\3\r\3\r\3\16\3\16\3\16\3\16\3\17\3\17\3\17\3")
+        buf.write("\20\3\20\3\20\3\20\3\21\3\21\3\21\3\21\3\21\3\21\3\21")
+        buf.write("\3\21\3\22\3\22\3\23\3\23\3\23\3\23\3\24\3\24\3\24\3\24")
+        buf.write("\3\25\3\25\3\26\3\26\3\27\3\27\3\30\3\30\3\31\3\31\3\32")
+        buf.write("\3\32\3\33\3\33\3\33\3\33\3\34\3\34\3\35\3\35\3\36\3\36")
+        buf.write("\3\37\3\37\3\37\3 \3 \3 \3 \3 \3 \3 \3 \3!\3!\3\"\5\"")
+        buf.write("\u00db\n\"\3\"\3\"\3#\3#\3$\3$\3%\3%\3%\2\2&\2\4\6\b\n")
+        buf.write("\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\668:<")
+        buf.write(">@BDFH\2\t\4\2%-/:\4\2%-/M\3\2.F\3\2.i\3\2\3\4\3\2\7\b")
+        buf.write("\3\2\n\13\2\u00cd\2J\3\2\2\2\4T\3\2\2\2\6\\\3\2\2\2\b")
+        buf.write("^\3\2\2\2\ng\3\2\2\2\fk\3\2\2\2\16|\3\2\2\2\20~\3\2\2")
+        buf.write("\2\22\u0087\3\2\2\2\24\u008f\3\2\2\2\26\u0092\3\2\2\2")
+        buf.write("\30\u0096\3\2\2\2\32\u0099\3\2\2\2\34\u009d\3\2\2\2\36")
+        buf.write("\u00a0\3\2\2\2 \u00a4\3\2\2\2\"\u00ac\3\2\2\2$\u00ae\3")
+        buf.write("\2\2\2&\u00b2\3\2\2\2(\u00b6\3\2\2\2*\u00b8\3\2\2\2,\u00ba")
+        buf.write("\3\2\2\2.\u00bc\3\2\2\2\60\u00be\3\2\2\2\62\u00c0\3\2")
+        buf.write("\2\2\64\u00c2\3\2\2\2\66\u00c6\3\2\2\28\u00c8\3\2\2\2")
+        buf.write(":\u00ca\3\2\2\2<\u00cc\3\2\2\2>\u00cf\3\2\2\2@\u00d7\3")
+        buf.write("\2\2\2B\u00da\3\2\2\2D\u00de\3\2\2\2F\u00e0\3\2\2\2H\u00e2")
+        buf.write("\3\2\2\2JK\5\4\3\2KQ\7\35\2\2LM\5\4\3\2MN\7\35\2\2NP\3")
+        buf.write("\2\2\2OL\3\2\2\2PS\3\2\2\2QO\3\2\2\2QR\3\2\2\2R\3\3\2")
+        buf.write("\2\2SQ\3\2\2\2TU\5\6\4\2U\5\3\2\2\2V]\5\b\5\2W]\5\20\t")
+        buf.write("\2X]\5\24\13\2Y]\5\30\r\2Z]\5\34\17\2[]\5<\37\2\\V\3\2")
+        buf.write("\2\2\\W\3\2\2\2\\X\3\2\2\2\\Y\3\2\2\2\\Z\3\2\2\2\\[\3")
+        buf.write("\2\2\2]\7\3\2\2\2^_\7\r\2\2_d\5\n\6\2`a\7\34\2\2ac\5\f")
+        buf.write("\7\2b`\3\2\2\2cf\3\2\2\2db\3\2\2\2de\3\2\2\2e\t\3\2\2")
+        buf.write("\2fd\3\2\2\2gh\7\17\2\2hi\7\36\2\2ij\5@!\2j\13\3\2\2\2")
+        buf.write("kl\5\16\b\2l\r\3\2\2\2mn\7\20\2\2no\7\36\2\2o}\5H%\2p")
+        buf.write("q\7\t\2\2qr\7\36\2\2r}\5B\"\2st\7\21\2\2tu\7\36\2\2u}")
+        buf.write("\5B\"\2vw\7\22\2\2wx\7\36\2\2x}\5@!\2yz\7\23\2\2z{\7\36")
+        buf.write("\2\2{}\5H%\2|m\3\2\2\2|p\3\2\2\2|s\3\2\2\2|v\3\2\2\2|")
+        buf.write("y\3\2\2\2}\17\3\2\2\2~\177\7\24\2\2\177\u0084\5\22\n\2")
+        buf.write("\u0080\u0081\7\34\2\2\u0081\u0083\5\f\7\2\u0082\u0080")
+        buf.write("\3\2\2\2\u0083\u0086\3\2\2\2\u0084\u0082\3\2\2\2\u0084")
+        buf.write("\u0085\3\2\2\2\u0085\21\3\2\2\2\u0086\u0084\3\2\2\2\u0087")
+        buf.write("\u0088\7\16\2\2\u0088\u0089\7\36\2\2\u0089\u008a\5B\"")
+        buf.write("\2\u008a\u008b\7\34\2\2\u008b\u008c\7\17\2\2\u008c\u008d")
+        buf.write("\7\36\2\2\u008d\u008e\5@!\2\u008e\23\3\2\2\2\u008f\u0090")
+        buf.write("\7\25\2\2\u0090\u0091\5\26\f\2\u0091\25\3\2\2\2\u0092")
+        buf.write("\u0093\7\f\2\2\u0093\u0094\7\36\2\2\u0094\u0095\5B\"\2")
+        buf.write("\u0095\27\3\2\2\2\u0096\u0097\7\27\2\2\u0097\u0098\5\32")
+        buf.write("\16\2\u0098\31\3\2\2\2\u0099\u009a\7\f\2\2\u009a\u009b")
+        buf.write("\7\36\2\2\u009b\u009c\5B\"\2\u009c\33\3\2\2\2\u009d\u009e")
+        buf.write("\7\30\2\2\u009e\u009f\5\36\20\2\u009f\35\3\2\2\2\u00a0")
+        buf.write("\u00a1\5 \21\2\u00a1\u00a2\7\34\2\2\u00a2\u00a3\5\b\5")
+        buf.write("\2\u00a3\37\3\2\2\2\u00a4\u00a5\7\31\2\2\u00a5\u00a6\7")
+        buf.write("\36\2\2\u00a6\u00a7\5\"\22\2\u00a7\u00a8\7\34\2\2\u00a8")
+        buf.write("\u00a9\7\32\2\2\u00a9\u00aa\7\36\2\2\u00aa\u00ab\5\62")
+        buf.write("\32\2\u00ab!\3\2\2\2\u00ac\u00ad\5$\23\2\u00ad#\3\2\2")
+        buf.write("\2\u00ae\u00af\5&\24\2\u00af\u00b0\5\60\31\2\u00b0\u00b1")
+        buf.write("\5.\30\2\u00b1%\3\2\2\2\u00b2\u00b3\5,\27\2\u00b3\u00b4")
+        buf.write("\5\60\31\2\u00b4\u00b5\5(\25\2\u00b5\'\3\2\2\2\u00b6\u00b7")
+        buf.write("\5*\26\2\u00b7)\3\2\2\2\u00b8\u00b9\t\2\2\2\u00b9+\3\2")
+        buf.write("\2\2\u00ba\u00bb\t\3\2\2\u00bb-\3\2\2\2\u00bc\u00bd\7")
+        buf.write("\"\2\2\u00bd/\3\2\2\2\u00be\u00bf\7 \2\2\u00bf\61\3\2")
+        buf.write("\2\2\u00c0\u00c1\5\64\33\2\u00c1\63\3\2\2\2\u00c2\u00c3")
+        buf.write("\58\35\2\u00c3\u00c4\5\66\34\2\u00c4\u00c5\5:\36\2\u00c5")
+        buf.write("\65\3\2\2\2\u00c6\u00c7\7!\2\2\u00c7\67\3\2\2\2\u00c8")
+        buf.write("\u00c9\t\4\2\2\u00c99\3\2\2\2\u00ca\u00cb\t\5\2\2\u00cb")
+        buf.write(";\3\2\2\2\u00cc\u00cd\7\26\2\2\u00cd\u00ce\5> \2\u00ce")
+        buf.write("=\3\2\2\2\u00cf\u00d0\7\f\2\2\u00d0\u00d1\7\36\2\2\u00d1")
+        buf.write("\u00d2\5B\"\2\u00d2\u00d3\7\34\2\2\u00d3\u00d4\7\33\2")
+        buf.write("\2\u00d4\u00d5\7\36\2\2\u00d5\u00d6\5@!\2\u00d6?\3\2\2")
+        buf.write("\2\u00d7\u00d8\7\5\2\2\u00d8A\3\2\2\2\u00d9\u00db\5D#")
+        buf.write("\2\u00da\u00d9\3\2\2\2\u00da\u00db\3\2\2\2\u00db\u00dc")
+        buf.write("\3\2\2\2\u00dc\u00dd\5F$\2\u00ddC\3\2\2\2\u00de\u00df")
+        buf.write("\t\6\2\2\u00dfE\3\2\2\2\u00e0\u00e1\t\7\2\2\u00e1G\3\2")
+        buf.write("\2\2\u00e2\u00e3\t\b\2\2\u00e3I\3\2\2\2\bQ\\d|\u0084\u00da")
         return buf.getvalue()
 
 
@@ -80,75 +105,199 @@ class dslParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "'id'", "'tweet'", 
-                     "'status'", "'reply'", "'retweet'", "'direct_message'", 
-                     "'favourite'", "'schedule'", "<INVALID>", "'date_time'", 
-                     "'text'", "'in_reply_to_status_id'", "<INVALID>", "','", 
-                     "';'", "':'" ]
+    literalNames = [ "<INVALID>", "'+'", "'-'", "<INVALID>", "<INVALID>", 
+                     "<INVALID>", "<INVALID>", "'lat'", "'True'", "'False'", 
+                     "'id'", "'tweet'", "'in_reply_to_status_id'", "'status'", 
+                     "'possibly_sensitive'", "'long'", "'place_id'", "'display_coordinates'", 
+                     "'reply'", "'retweet'", "'direct_message'", "'favourite'", 
+                     "'schedule'", "'date'", "'time'", "'text'", "','", 
+                     "';'", "':'", "<INVALID>", "'/'", "'.'", "<INVALID>", 
+                     "<INVALID>", "'0'", "'1'", "'2'", "'3'", "'4'", "'5'", 
+                     "'6'", "'7'", "'8'", "'9'", "'00'", "'01'", "'02'", 
+                     "'03'", "'04'", "'05'", "'06'", "'07'", "'08'", "'09'", 
+                     "'10'", "'11'", "'12'", "'13'", "'14'", "'15'", "'16'", 
+                     "'17'", "'18'", "'19'", "'20'", "'21'", "'22'", "'23'", 
+                     "'24'", "'25'", "'26'", "'27'", "'28'", "'29'", "'30'", 
+                     "'31'", "'32'", "'33'", "'34'", "'35'", "'36'", "'37'", 
+                     "'38'", "'39'", "'40'", "'41'", "'42'", "'43'", "'44'", 
+                     "'45'", "'46'", "'47'", "'48'", "'49'", "'50'", "'51'", 
+                     "'52'", "'53'", "'54'", "'55'", "'56'", "'57'", "'58'", 
+                     "'59'" ]
 
-    symbolicNames = [ "<INVALID>", "StringLiteral", "UnterminatedStringLiteral", 
-                      "ID", "Tweet", "Status", "Reply", "Retweet", "Direct_message", 
-                      "Favourite", "Schedule", "Tweet_parameter", "Date_time", 
-                      "Text", "Reply_ID", "Identifier", "COMMA", "SEMICOLON", 
-                      "COLON", "WS" ]
+    symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "StringLiteral", 
+                      "UnterminatedStringLiteral", "UNSIGNED_INT", "UNSIGNED_FLOAT", 
+                      "LAT", "TRUE", "FALSE", "ID", "TWEET", "REPLY_ID", 
+                      "STATUS", "POSSIBLY_SENSITIVE", "LONG", "PLACE_ID", 
+                      "DISPLAY_COORDINATES", "REPLY", "RETWEET", "DIRECT_MESSAGE", 
+                      "FAVOURITE", "SCHEDULE", "DATE", "TIME", "TEXT", "COMMA", 
+                      "SEMICOLON", "COLON", "WS", "SLASH", "DOT", "FOUR_DIGIT", 
+                      "DIGIT", "INT_0", "INT_1", "INT_2", "INT_3", "INT_4", 
+                      "INT_5", "INT_6", "INT_7", "INT_8", "INT_9", "INT_00", 
+                      "INT_01", "INT_02", "INT_03", "INT_04", "INT_05", 
+                      "INT_06", "INT_07", "INT_08", "INT_09", "INT_10", 
+                      "INT_11", "INT_12", "INT_13", "INT_14", "INT_15", 
+                      "INT_16", "INT_17", "INT_18", "INT_19", "INT_20", 
+                      "INT_21", "INT_22", "INT_23", "INT_24", "INT_25", 
+                      "INT_26", "INT_27", "INT_28", "INT_29", "INT_30", 
+                      "INT_31", "INT_32", "INT_33", "INT_34", "INT_35", 
+                      "INT_36", "INT_37", "INT_38", "INT_39", "INT_40", 
+                      "INT_41", "INT_42", "INT_43", "INT_44", "INT_45", 
+                      "INT_46", "INT_47", "INT_48", "INT_49", "INT_50", 
+                      "INT_51", "INT_52", "INT_53", "INT_54", "INT_55", 
+                      "INT_56", "INT_57", "INT_58", "INT_59" ]
 
     RULE_twitbot = 0
     RULE_stat = 1
     RULE_action = 2
     RULE_tweet = 3
     RULE_tweet_required_parameter = 4
-    RULE_status = 5
-    RULE_tweet_optional_parameter = 6
-    RULE_tweet_parameter = 7
-    RULE_reply = 8
-    RULE_reply_required_parameter = 9
-    RULE_reply_parameter = 10
-    RULE_reply_id = 11
-    RULE_retweet = 12
-    RULE_retweet_required_parameter = 13
-    RULE_retweet_id = 14
-    RULE_favourite = 15
-    RULE_favourite_required_parameter = 16
-    RULE_account_id = 17
-    RULE_schedule = 18
-    RULE_schedule_required_parameter = 19
-    RULE_date_time = 20
-    RULE_directMessage = 21
-    RULE_direct_message_required_parameter = 22
-    RULE_direct_message_parameter = 23
-    RULE_recipient_id = 24
-    RULE_text = 25
-    RULE_value = 26
+    RULE_tweet_optional_parameters = 5
+    RULE_tweet_parameters = 6
+    RULE_reply = 7
+    RULE_reply_required_parameters = 8
+    RULE_retweet = 9
+    RULE_retweet_required_parameter = 10
+    RULE_favourite = 11
+    RULE_favourite_required_parameter = 12
+    RULE_scheduleTweet = 13
+    RULE_schedule_tweet_required_parameter = 14
+    RULE_date_time_parameter = 15
+    RULE_date = 16
+    RULE_day_month_year = 17
+    RULE_day_month = 18
+    RULE_month = 19
+    RULE_numeric_month = 20
+    RULE_numeric_day = 21
+    RULE_year = 22
+    RULE_date_separator = 23
+    RULE_time = 24
+    RULE_hour_minute = 25
+    RULE_time_separator = 26
+    RULE_numeric_hour = 27
+    RULE_numeric_minute = 28
+    RULE_directMessage = 29
+    RULE_direct_message_required_parameters = 30
+    RULE_stringValue = 31
+    RULE_number = 32
+    RULE_unary_operator = 33
+    RULE_unsigned_number = 34
+    RULE_boolean = 35
 
     ruleNames =  [ "twitbot", "stat", "action", "tweet", "tweet_required_parameter", 
-                   "status", "tweet_optional_parameter", "tweet_parameter", 
-                   "reply", "reply_required_parameter", "reply_parameter", 
-                   "reply_id", "retweet", "retweet_required_parameter", 
-                   "retweet_id", "favourite", "favourite_required_parameter", 
-                   "account_id", "schedule", "schedule_required_parameter", 
-                   "date_time", "directMessage", "direct_message_required_parameter", 
-                   "direct_message_parameter", "recipient_id", "text", "value" ]
+                   "tweet_optional_parameters", "tweet_parameters", "reply", 
+                   "reply_required_parameters", "retweet", "retweet_required_parameter", 
+                   "favourite", "favourite_required_parameter", "scheduleTweet", 
+                   "schedule_tweet_required_parameter", "date_time_parameter", 
+                   "date", "day_month_year", "day_month", "month", "numeric_month", 
+                   "numeric_day", "year", "date_separator", "time", "hour_minute", 
+                   "time_separator", "numeric_hour", "numeric_minute", "directMessage", 
+                   "direct_message_required_parameters", "stringValue", 
+                   "number", "unary_operator", "unsigned_number", "boolean" ]
 
     EOF = Token.EOF
-    StringLiteral=1
-    UnterminatedStringLiteral=2
-    ID=3
-    Tweet=4
-    Status=5
-    Reply=6
-    Retweet=7
-    Direct_message=8
-    Favourite=9
-    Schedule=10
-    Tweet_parameter=11
-    Date_time=12
-    Text=13
-    Reply_ID=14
-    Identifier=15
-    COMMA=16
-    SEMICOLON=17
-    COLON=18
-    WS=19
+    T__0=1
+    T__1=2
+    StringLiteral=3
+    UnterminatedStringLiteral=4
+    UNSIGNED_INT=5
+    UNSIGNED_FLOAT=6
+    LAT=7
+    TRUE=8
+    FALSE=9
+    ID=10
+    TWEET=11
+    REPLY_ID=12
+    STATUS=13
+    POSSIBLY_SENSITIVE=14
+    LONG=15
+    PLACE_ID=16
+    DISPLAY_COORDINATES=17
+    REPLY=18
+    RETWEET=19
+    DIRECT_MESSAGE=20
+    FAVOURITE=21
+    SCHEDULE=22
+    DATE=23
+    TIME=24
+    TEXT=25
+    COMMA=26
+    SEMICOLON=27
+    COLON=28
+    WS=29
+    SLASH=30
+    DOT=31
+    FOUR_DIGIT=32
+    DIGIT=33
+    INT_0=34
+    INT_1=35
+    INT_2=36
+    INT_3=37
+    INT_4=38
+    INT_5=39
+    INT_6=40
+    INT_7=41
+    INT_8=42
+    INT_9=43
+    INT_00=44
+    INT_01=45
+    INT_02=46
+    INT_03=47
+    INT_04=48
+    INT_05=49
+    INT_06=50
+    INT_07=51
+    INT_08=52
+    INT_09=53
+    INT_10=54
+    INT_11=55
+    INT_12=56
+    INT_13=57
+    INT_14=58
+    INT_15=59
+    INT_16=60
+    INT_17=61
+    INT_18=62
+    INT_19=63
+    INT_20=64
+    INT_21=65
+    INT_22=66
+    INT_23=67
+    INT_24=68
+    INT_25=69
+    INT_26=70
+    INT_27=71
+    INT_28=72
+    INT_29=73
+    INT_30=74
+    INT_31=75
+    INT_32=76
+    INT_33=77
+    INT_34=78
+    INT_35=79
+    INT_36=80
+    INT_37=81
+    INT_38=82
+    INT_39=83
+    INT_40=84
+    INT_41=85
+    INT_42=86
+    INT_43=87
+    INT_44=88
+    INT_45=89
+    INT_46=90
+    INT_47=91
+    INT_48=92
+    INT_49=93
+    INT_50=94
+    INT_51=95
+    INT_52=96
+    INT_53=97
+    INT_54=98
+    INT_55=99
+    INT_56=100
+    INT_57=101
+    INT_58=102
+    INT_59=103
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -205,19 +354,19 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 54
+            self.state = 72
             self.stat()
-            self.state = 55
+            self.state = 73
             self.match(dslParser.SEMICOLON)
-            self.state = 61
+            self.state = 79
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << dslParser.Tweet) | (1 << dslParser.Reply) | (1 << dslParser.Retweet) | (1 << dslParser.Direct_message) | (1 << dslParser.Favourite) | (1 << dslParser.Schedule))) != 0):
-                self.state = 56
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << dslParser.TWEET) | (1 << dslParser.REPLY) | (1 << dslParser.RETWEET) | (1 << dslParser.DIRECT_MESSAGE) | (1 << dslParser.FAVOURITE) | (1 << dslParser.SCHEDULE))) != 0):
+                self.state = 74
                 self.stat()
-                self.state = 57
+                self.state = 75
                 self.match(dslParser.SEMICOLON)
-                self.state = 63
+                self.state = 81
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -266,7 +415,7 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 2, self.RULE_stat)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 64
+            self.state = 82
             self.action()
         except RecognitionException as re:
             localctx.exception = re
@@ -299,8 +448,8 @@ class dslParser ( Parser ):
             return self.getTypedRuleContext(dslParser.FavouriteContext,0)
 
 
-        def schedule(self):
-            return self.getTypedRuleContext(dslParser.ScheduleContext,0)
+        def scheduleTweet(self):
+            return self.getTypedRuleContext(dslParser.ScheduleTweetContext,0)
 
 
         def directMessage(self):
@@ -332,37 +481,37 @@ class dslParser ( Parser ):
         localctx = dslParser.ActionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_action)
         try:
-            self.state = 72
+            self.state = 90
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [dslParser.Tweet]:
+            if token in [dslParser.TWEET]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 66
+                self.state = 84
                 self.tweet()
                 pass
-            elif token in [dslParser.Reply]:
+            elif token in [dslParser.REPLY]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 67
+                self.state = 85
                 self.reply()
                 pass
-            elif token in [dslParser.Retweet]:
+            elif token in [dslParser.RETWEET]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 68
+                self.state = 86
                 self.retweet()
                 pass
-            elif token in [dslParser.Favourite]:
+            elif token in [dslParser.FAVOURITE]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 69
+                self.state = 87
                 self.favourite()
                 pass
-            elif token in [dslParser.Schedule]:
+            elif token in [dslParser.SCHEDULE]:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 70
-                self.schedule()
+                self.state = 88
+                self.scheduleTweet()
                 pass
-            elif token in [dslParser.Direct_message]:
+            elif token in [dslParser.DIRECT_MESSAGE]:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 71
+                self.state = 89
                 self.directMessage()
                 pass
             else:
@@ -383,8 +532,8 @@ class dslParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def Tweet(self):
-            return self.getToken(dslParser.Tweet, 0)
+        def TWEET(self):
+            return self.getToken(dslParser.TWEET, 0)
 
         def tweet_required_parameter(self):
             return self.getTypedRuleContext(dslParser.Tweet_required_parameterContext,0)
@@ -396,11 +545,11 @@ class dslParser ( Parser ):
             else:
                 return self.getToken(dslParser.COMMA, i)
 
-        def tweet_optional_parameter(self, i:int=None):
+        def tweet_optional_parameters(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(dslParser.Tweet_optional_parameterContext)
+                return self.getTypedRuleContexts(dslParser.Tweet_optional_parametersContext)
             else:
-                return self.getTypedRuleContext(dslParser.Tweet_optional_parameterContext,i)
+                return self.getTypedRuleContext(dslParser.Tweet_optional_parametersContext,i)
 
 
         def getRuleIndex(self):
@@ -430,19 +579,19 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 74
-            self.match(dslParser.Tweet)
-            self.state = 75
+            self.state = 92
+            self.match(dslParser.TWEET)
+            self.state = 93
             self.tweet_required_parameter()
-            self.state = 80
+            self.state = 98
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==dslParser.COMMA:
-                self.state = 76
+                self.state = 94
                 self.match(dslParser.COMMA)
-                self.state = 77
-                self.tweet_optional_parameter()
-                self.state = 82
+                self.state = 95
+                self.tweet_optional_parameters()
+                self.state = 100
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -461,15 +610,14 @@ class dslParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def status(self):
-            return self.getTypedRuleContext(dslParser.StatusContext,0)
-
+        def STATUS(self):
+            return self.getToken(dslParser.STATUS, 0)
 
         def COLON(self):
             return self.getToken(dslParser.COLON, 0)
 
-        def value(self):
-            return self.getTypedRuleContext(dslParser.ValueContext,0)
+        def stringValue(self):
+            return self.getTypedRuleContext(dslParser.StringValueContext,0)
 
 
         def getRuleIndex(self):
@@ -498,12 +646,12 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 8, self.RULE_tweet_required_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 83
-            self.status()
-            self.state = 84
+            self.state = 101
+            self.match(dslParser.STATUS)
+            self.state = 102
             self.match(dslParser.COLON)
-            self.state = 85
-            self.value()
+            self.state = 103
+            self.stringValue()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -513,43 +661,44 @@ class dslParser ( Parser ):
         return localctx
 
 
-    class StatusContext(ParserRuleContext):
+    class Tweet_optional_parametersContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def Status(self):
-            return self.getToken(dslParser.Status, 0)
+        def tweet_parameters(self):
+            return self.getTypedRuleContext(dslParser.Tweet_parametersContext,0)
+
 
         def getRuleIndex(self):
-            return dslParser.RULE_status
+            return dslParser.RULE_tweet_optional_parameters
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterStatus" ):
-                listener.enterStatus(self)
+            if hasattr( listener, "enterTweet_optional_parameters" ):
+                listener.enterTweet_optional_parameters(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitStatus" ):
-                listener.exitStatus(self)
+            if hasattr( listener, "exitTweet_optional_parameters" ):
+                listener.exitTweet_optional_parameters(self)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitStatus" ):
-                return visitor.visitStatus(self)
+            if hasattr( visitor, "visitTweet_optional_parameters" ):
+                return visitor.visitTweet_optional_parameters(self)
             else:
                 return visitor.visitChildren(self)
 
 
 
 
-    def status(self):
+    def tweet_optional_parameters(self):
 
-        localctx = dslParser.StatusContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 10, self.RULE_status)
+        localctx = dslParser.Tweet_optional_parametersContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 10, self.RULE_tweet_optional_parameters)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 87
-            self.match(dslParser.Status)
+            self.state = 105
+            self.tweet_parameters()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -559,101 +708,118 @@ class dslParser ( Parser ):
         return localctx
 
 
-    class Tweet_optional_parameterContext(ParserRuleContext):
+    class Tweet_parametersContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def tweet_parameter(self):
-            return self.getTypedRuleContext(dslParser.Tweet_parameterContext,0)
-
+        def POSSIBLY_SENSITIVE(self):
+            return self.getToken(dslParser.POSSIBLY_SENSITIVE, 0)
 
         def COLON(self):
             return self.getToken(dslParser.COLON, 0)
 
-        def value(self):
-            return self.getTypedRuleContext(dslParser.ValueContext,0)
+        def boolean(self):
+            return self.getTypedRuleContext(dslParser.BooleanContext,0)
 
+
+        def LAT(self):
+            return self.getToken(dslParser.LAT, 0)
+
+        def number(self):
+            return self.getTypedRuleContext(dslParser.NumberContext,0)
+
+
+        def LONG(self):
+            return self.getToken(dslParser.LONG, 0)
+
+        def PLACE_ID(self):
+            return self.getToken(dslParser.PLACE_ID, 0)
+
+        def stringValue(self):
+            return self.getTypedRuleContext(dslParser.StringValueContext,0)
+
+
+        def DISPLAY_COORDINATES(self):
+            return self.getToken(dslParser.DISPLAY_COORDINATES, 0)
 
         def getRuleIndex(self):
-            return dslParser.RULE_tweet_optional_parameter
+            return dslParser.RULE_tweet_parameters
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterTweet_optional_parameter" ):
-                listener.enterTweet_optional_parameter(self)
+            if hasattr( listener, "enterTweet_parameters" ):
+                listener.enterTweet_parameters(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitTweet_optional_parameter" ):
-                listener.exitTweet_optional_parameter(self)
+            if hasattr( listener, "exitTweet_parameters" ):
+                listener.exitTweet_parameters(self)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTweet_optional_parameter" ):
-                return visitor.visitTweet_optional_parameter(self)
+            if hasattr( visitor, "visitTweet_parameters" ):
+                return visitor.visitTweet_parameters(self)
             else:
                 return visitor.visitChildren(self)
 
 
 
 
-    def tweet_optional_parameter(self):
+    def tweet_parameters(self):
 
-        localctx = dslParser.Tweet_optional_parameterContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 12, self.RULE_tweet_optional_parameter)
+        localctx = dslParser.Tweet_parametersContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 12, self.RULE_tweet_parameters)
         try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 89
-            self.tweet_parameter()
-            self.state = 90
-            self.match(dslParser.COLON)
-            self.state = 91
-            self.value()
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Tweet_parameterContext(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def Tweet_parameter(self):
-            return self.getToken(dslParser.Tweet_parameter, 0)
-
-        def getRuleIndex(self):
-            return dslParser.RULE_tweet_parameter
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterTweet_parameter" ):
-                listener.enterTweet_parameter(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitTweet_parameter" ):
-                listener.exitTweet_parameter(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTweet_parameter" ):
-                return visitor.visitTweet_parameter(self)
+            self.state = 122
+            self._errHandler.sync(self)
+            token = self._input.LA(1)
+            if token in [dslParser.POSSIBLY_SENSITIVE]:
+                self.enterOuterAlt(localctx, 1)
+                self.state = 107
+                self.match(dslParser.POSSIBLY_SENSITIVE)
+                self.state = 108
+                self.match(dslParser.COLON)
+                self.state = 109
+                self.boolean()
+                pass
+            elif token in [dslParser.LAT]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 110
+                self.match(dslParser.LAT)
+                self.state = 111
+                self.match(dslParser.COLON)
+                self.state = 112
+                self.number()
+                pass
+            elif token in [dslParser.LONG]:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 113
+                self.match(dslParser.LONG)
+                self.state = 114
+                self.match(dslParser.COLON)
+                self.state = 115
+                self.number()
+                pass
+            elif token in [dslParser.PLACE_ID]:
+                self.enterOuterAlt(localctx, 4)
+                self.state = 116
+                self.match(dslParser.PLACE_ID)
+                self.state = 117
+                self.match(dslParser.COLON)
+                self.state = 118
+                self.stringValue()
+                pass
+            elif token in [dslParser.DISPLAY_COORDINATES]:
+                self.enterOuterAlt(localctx, 5)
+                self.state = 119
+                self.match(dslParser.DISPLAY_COORDINATES)
+                self.state = 120
+                self.match(dslParser.COLON)
+                self.state = 121
+                self.boolean()
+                pass
             else:
-                return visitor.visitChildren(self)
+                raise NoViableAltException(self)
 
-
-
-
-    def tweet_parameter(self):
-
-        localctx = dslParser.Tweet_parameterContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 14, self.RULE_tweet_parameter)
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 93
-            self.match(dslParser.Tweet_parameter)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -669,11 +835,11 @@ class dslParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def Reply(self):
-            return self.getToken(dslParser.Reply, 0)
+        def REPLY(self):
+            return self.getToken(dslParser.REPLY, 0)
 
-        def reply_required_parameter(self):
-            return self.getTypedRuleContext(dslParser.Reply_required_parameterContext,0)
+        def reply_required_parameters(self):
+            return self.getTypedRuleContext(dslParser.Reply_required_parametersContext,0)
 
 
         def COMMA(self, i:int=None):
@@ -682,11 +848,11 @@ class dslParser ( Parser ):
             else:
                 return self.getToken(dslParser.COMMA, i)
 
-        def tweet_optional_parameter(self, i:int=None):
+        def tweet_optional_parameters(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(dslParser.Tweet_optional_parameterContext)
+                return self.getTypedRuleContexts(dslParser.Tweet_optional_parametersContext)
             else:
-                return self.getTypedRuleContext(dslParser.Tweet_optional_parameterContext,i)
+                return self.getTypedRuleContext(dslParser.Tweet_optional_parametersContext,i)
 
 
         def getRuleIndex(self):
@@ -712,23 +878,23 @@ class dslParser ( Parser ):
     def reply(self):
 
         localctx = dslParser.ReplyContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 16, self.RULE_reply)
+        self.enterRule(localctx, 14, self.RULE_reply)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 95
-            self.match(dslParser.Reply)
-            self.state = 96
-            self.reply_required_parameter()
-            self.state = 101
+            self.state = 124
+            self.match(dslParser.REPLY)
+            self.state = 125
+            self.reply_required_parameters()
+            self.state = 130
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==dslParser.COMMA:
-                self.state = 97
+                self.state = 126
                 self.match(dslParser.COMMA)
-                self.state = 98
-                self.tweet_optional_parameter()
-                self.state = 103
+                self.state = 127
+                self.tweet_optional_parameters()
+                self.state = 132
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -741,18 +907,14 @@ class dslParser ( Parser ):
         return localctx
 
 
-    class Reply_required_parameterContext(ParserRuleContext):
+    class Reply_required_parametersContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def reply_parameter(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(dslParser.Reply_parameterContext)
-            else:
-                return self.getTypedRuleContext(dslParser.Reply_parameterContext,i)
-
+        def REPLY_ID(self):
+            return self.getToken(dslParser.REPLY_ID, 0)
 
         def COLON(self, i:int=None):
             if i is None:
@@ -760,166 +922,60 @@ class dslParser ( Parser ):
             else:
                 return self.getToken(dslParser.COLON, i)
 
-        def value(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(dslParser.ValueContext)
-            else:
-                return self.getTypedRuleContext(dslParser.ValueContext,i)
+        def number(self):
+            return self.getTypedRuleContext(dslParser.NumberContext,0)
 
 
         def COMMA(self):
             return self.getToken(dslParser.COMMA, 0)
 
+        def STATUS(self):
+            return self.getToken(dslParser.STATUS, 0)
+
+        def stringValue(self):
+            return self.getTypedRuleContext(dslParser.StringValueContext,0)
+
+
         def getRuleIndex(self):
-            return dslParser.RULE_reply_required_parameter
+            return dslParser.RULE_reply_required_parameters
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterReply_required_parameter" ):
-                listener.enterReply_required_parameter(self)
+            if hasattr( listener, "enterReply_required_parameters" ):
+                listener.enterReply_required_parameters(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitReply_required_parameter" ):
-                listener.exitReply_required_parameter(self)
+            if hasattr( listener, "exitReply_required_parameters" ):
+                listener.exitReply_required_parameters(self)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitReply_required_parameter" ):
-                return visitor.visitReply_required_parameter(self)
+            if hasattr( visitor, "visitReply_required_parameters" ):
+                return visitor.visitReply_required_parameters(self)
             else:
                 return visitor.visitChildren(self)
 
 
 
 
-    def reply_required_parameter(self):
+    def reply_required_parameters(self):
 
-        localctx = dslParser.Reply_required_parameterContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 18, self.RULE_reply_required_parameter)
+        localctx = dslParser.Reply_required_parametersContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 16, self.RULE_reply_required_parameters)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 104
-            self.reply_parameter()
-            self.state = 105
+            self.state = 133
+            self.match(dslParser.REPLY_ID)
+            self.state = 134
             self.match(dslParser.COLON)
-            self.state = 106
-            self.value()
-            self.state = 107
+            self.state = 135
+            self.number()
+            self.state = 136
             self.match(dslParser.COMMA)
-            self.state = 108
-            self.reply_parameter()
-            self.state = 109
+            self.state = 137
+            self.match(dslParser.STATUS)
+            self.state = 138
             self.match(dslParser.COLON)
-            self.state = 110
-            self.value()
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Reply_parameterContext(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def status(self):
-            return self.getTypedRuleContext(dslParser.StatusContext,0)
-
-
-        def reply_id(self):
-            return self.getTypedRuleContext(dslParser.Reply_idContext,0)
-
-
-        def getRuleIndex(self):
-            return dslParser.RULE_reply_parameter
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterReply_parameter" ):
-                listener.enterReply_parameter(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitReply_parameter" ):
-                listener.exitReply_parameter(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitReply_parameter" ):
-                return visitor.visitReply_parameter(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-
-
-    def reply_parameter(self):
-
-        localctx = dslParser.Reply_parameterContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 20, self.RULE_reply_parameter)
-        try:
-            self.state = 114
-            self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [dslParser.Status]:
-                self.enterOuterAlt(localctx, 1)
-                self.state = 112
-                self.status()
-                pass
-            elif token in [dslParser.Reply_ID]:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 113
-                self.reply_id()
-                pass
-            else:
-                raise NoViableAltException(self)
-
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Reply_idContext(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def Reply_ID(self):
-            return self.getToken(dslParser.Reply_ID, 0)
-
-        def getRuleIndex(self):
-            return dslParser.RULE_reply_id
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterReply_id" ):
-                listener.enterReply_id(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitReply_id" ):
-                listener.exitReply_id(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitReply_id" ):
-                return visitor.visitReply_id(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-
-
-    def reply_id(self):
-
-        localctx = dslParser.Reply_idContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 22, self.RULE_reply_id)
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 116
-            self.match(dslParser.Reply_ID)
+            self.state = 139
+            self.stringValue()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -935,8 +991,8 @@ class dslParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def Retweet(self):
-            return self.getToken(dslParser.Retweet, 0)
+        def RETWEET(self):
+            return self.getToken(dslParser.RETWEET, 0)
 
         def retweet_required_parameter(self):
             return self.getTypedRuleContext(dslParser.Retweet_required_parameterContext,0)
@@ -965,12 +1021,12 @@ class dslParser ( Parser ):
     def retweet(self):
 
         localctx = dslParser.RetweetContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 24, self.RULE_retweet)
+        self.enterRule(localctx, 18, self.RULE_retweet)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 118
-            self.match(dslParser.Retweet)
-            self.state = 119
+            self.state = 141
+            self.match(dslParser.RETWEET)
+            self.state = 142
             self.retweet_required_parameter()
         except RecognitionException as re:
             localctx.exception = re
@@ -987,15 +1043,14 @@ class dslParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def retweet_id(self):
-            return self.getTypedRuleContext(dslParser.Retweet_idContext,0)
-
+        def ID(self):
+            return self.getToken(dslParser.ID, 0)
 
         def COLON(self):
             return self.getToken(dslParser.COLON, 0)
 
-        def value(self):
-            return self.getTypedRuleContext(dslParser.ValueContext,0)
+        def number(self):
+            return self.getTypedRuleContext(dslParser.NumberContext,0)
 
 
         def getRuleIndex(self):
@@ -1021,61 +1076,15 @@ class dslParser ( Parser ):
     def retweet_required_parameter(self):
 
         localctx = dslParser.Retweet_required_parameterContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 26, self.RULE_retweet_required_parameter)
+        self.enterRule(localctx, 20, self.RULE_retweet_required_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 121
-            self.retweet_id()
-            self.state = 122
-            self.match(dslParser.COLON)
-            self.state = 123
-            self.value()
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Retweet_idContext(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def ID(self):
-            return self.getToken(dslParser.ID, 0)
-
-        def getRuleIndex(self):
-            return dslParser.RULE_retweet_id
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRetweet_id" ):
-                listener.enterRetweet_id(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRetweet_id" ):
-                listener.exitRetweet_id(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRetweet_id" ):
-                return visitor.visitRetweet_id(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-
-
-    def retweet_id(self):
-
-        localctx = dslParser.Retweet_idContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 28, self.RULE_retweet_id)
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 125
+            self.state = 144
             self.match(dslParser.ID)
+            self.state = 145
+            self.match(dslParser.COLON)
+            self.state = 146
+            self.number()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1091,8 +1100,8 @@ class dslParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def Favourite(self):
-            return self.getToken(dslParser.Favourite, 0)
+        def FAVOURITE(self):
+            return self.getToken(dslParser.FAVOURITE, 0)
 
         def favourite_required_parameter(self):
             return self.getTypedRuleContext(dslParser.Favourite_required_parameterContext,0)
@@ -1121,12 +1130,12 @@ class dslParser ( Parser ):
     def favourite(self):
 
         localctx = dslParser.FavouriteContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 30, self.RULE_favourite)
+        self.enterRule(localctx, 22, self.RULE_favourite)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 127
-            self.match(dslParser.Favourite)
-            self.state = 128
+            self.state = 148
+            self.match(dslParser.FAVOURITE)
+            self.state = 149
             self.favourite_required_parameter()
         except RecognitionException as re:
             localctx.exception = re
@@ -1143,15 +1152,14 @@ class dslParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def account_id(self):
-            return self.getTypedRuleContext(dslParser.Account_idContext,0)
-
+        def ID(self):
+            return self.getToken(dslParser.ID, 0)
 
         def COLON(self):
             return self.getToken(dslParser.COLON, 0)
 
-        def value(self):
-            return self.getTypedRuleContext(dslParser.ValueContext,0)
+        def number(self):
+            return self.getTypedRuleContext(dslParser.NumberContext,0)
 
 
         def getRuleIndex(self):
@@ -1177,61 +1185,15 @@ class dslParser ( Parser ):
     def favourite_required_parameter(self):
 
         localctx = dslParser.Favourite_required_parameterContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 32, self.RULE_favourite_required_parameter)
+        self.enterRule(localctx, 24, self.RULE_favourite_required_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 130
-            self.account_id()
-            self.state = 131
-            self.match(dslParser.COLON)
-            self.state = 132
-            self.value()
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Account_idContext(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def ID(self):
-            return self.getToken(dslParser.ID, 0)
-
-        def getRuleIndex(self):
-            return dslParser.RULE_account_id
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterAccount_id" ):
-                listener.enterAccount_id(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitAccount_id" ):
-                listener.exitAccount_id(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAccount_id" ):
-                return visitor.visitAccount_id(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-
-
-    def account_id(self):
-
-        localctx = dslParser.Account_idContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 34, self.RULE_account_id)
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 134
+            self.state = 151
             self.match(dslParser.ID)
+            self.state = 152
+            self.match(dslParser.COLON)
+            self.state = 153
+            self.number()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1241,49 +1203,49 @@ class dslParser ( Parser ):
         return localctx
 
 
-    class ScheduleContext(ParserRuleContext):
+    class ScheduleTweetContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def Schedule(self):
-            return self.getToken(dslParser.Schedule, 0)
+        def SCHEDULE(self):
+            return self.getToken(dslParser.SCHEDULE, 0)
 
-        def schedule_required_parameter(self):
-            return self.getTypedRuleContext(dslParser.Schedule_required_parameterContext,0)
+        def schedule_tweet_required_parameter(self):
+            return self.getTypedRuleContext(dslParser.Schedule_tweet_required_parameterContext,0)
 
 
         def getRuleIndex(self):
-            return dslParser.RULE_schedule
+            return dslParser.RULE_scheduleTweet
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterSchedule" ):
-                listener.enterSchedule(self)
+            if hasattr( listener, "enterScheduleTweet" ):
+                listener.enterScheduleTweet(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitSchedule" ):
-                listener.exitSchedule(self)
+            if hasattr( listener, "exitScheduleTweet" ):
+                listener.exitScheduleTweet(self)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitSchedule" ):
-                return visitor.visitSchedule(self)
+            if hasattr( visitor, "visitScheduleTweet" ):
+                return visitor.visitScheduleTweet(self)
             else:
                 return visitor.visitChildren(self)
 
 
 
 
-    def schedule(self):
+    def scheduleTweet(self):
 
-        localctx = dslParser.ScheduleContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 36, self.RULE_schedule)
+        localctx = dslParser.ScheduleTweetContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 26, self.RULE_scheduleTweet)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 136
-            self.match(dslParser.Schedule)
-            self.state = 137
-            self.schedule_required_parameter()
+            self.state = 155
+            self.match(dslParser.SCHEDULE)
+            self.state = 156
+            self.schedule_tweet_required_parameter()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1293,21 +1255,14 @@ class dslParser ( Parser ):
         return localctx
 
 
-    class Schedule_required_parameterContext(ParserRuleContext):
+    class Schedule_tweet_required_parameterContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def date_time(self):
-            return self.getTypedRuleContext(dslParser.Date_timeContext,0)
-
-
-        def COLON(self):
-            return self.getToken(dslParser.COLON, 0)
-
-        def value(self):
-            return self.getTypedRuleContext(dslParser.ValueContext,0)
+        def date_time_parameter(self):
+            return self.getTypedRuleContext(dslParser.Date_time_parameterContext,0)
 
 
         def COMMA(self):
@@ -1318,40 +1273,36 @@ class dslParser ( Parser ):
 
 
         def getRuleIndex(self):
-            return dslParser.RULE_schedule_required_parameter
+            return dslParser.RULE_schedule_tweet_required_parameter
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterSchedule_required_parameter" ):
-                listener.enterSchedule_required_parameter(self)
+            if hasattr( listener, "enterSchedule_tweet_required_parameter" ):
+                listener.enterSchedule_tweet_required_parameter(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitSchedule_required_parameter" ):
-                listener.exitSchedule_required_parameter(self)
+            if hasattr( listener, "exitSchedule_tweet_required_parameter" ):
+                listener.exitSchedule_tweet_required_parameter(self)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitSchedule_required_parameter" ):
-                return visitor.visitSchedule_required_parameter(self)
+            if hasattr( visitor, "visitSchedule_tweet_required_parameter" ):
+                return visitor.visitSchedule_tweet_required_parameter(self)
             else:
                 return visitor.visitChildren(self)
 
 
 
 
-    def schedule_required_parameter(self):
+    def schedule_tweet_required_parameter(self):
 
-        localctx = dslParser.Schedule_required_parameterContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 38, self.RULE_schedule_required_parameter)
+        localctx = dslParser.Schedule_tweet_required_parameterContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 28, self.RULE_schedule_tweet_required_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 139
-            self.date_time()
-            self.state = 140
-            self.match(dslParser.COLON)
-            self.state = 141
-            self.value()
-            self.state = 142
+            self.state = 158
+            self.date_time_parameter()
+            self.state = 159
             self.match(dslParser.COMMA)
-            self.state = 143
+            self.state = 160
             self.tweet()
         except RecognitionException as re:
             localctx.exception = re
@@ -1362,43 +1313,1165 @@ class dslParser ( Parser ):
         return localctx
 
 
-    class Date_timeContext(ParserRuleContext):
+    class Date_time_parameterContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def Date_time(self):
-            return self.getToken(dslParser.Date_time, 0)
+        def DATE(self):
+            return self.getToken(dslParser.DATE, 0)
+
+        def COLON(self, i:int=None):
+            if i is None:
+                return self.getTokens(dslParser.COLON)
+            else:
+                return self.getToken(dslParser.COLON, i)
+
+        def date(self):
+            return self.getTypedRuleContext(dslParser.DateContext,0)
+
+
+        def COMMA(self):
+            return self.getToken(dslParser.COMMA, 0)
+
+        def TIME(self):
+            return self.getToken(dslParser.TIME, 0)
+
+        def time(self):
+            return self.getTypedRuleContext(dslParser.TimeContext,0)
+
 
         def getRuleIndex(self):
-            return dslParser.RULE_date_time
+            return dslParser.RULE_date_time_parameter
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterDate_time" ):
-                listener.enterDate_time(self)
+            if hasattr( listener, "enterDate_time_parameter" ):
+                listener.enterDate_time_parameter(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitDate_time" ):
-                listener.exitDate_time(self)
+            if hasattr( listener, "exitDate_time_parameter" ):
+                listener.exitDate_time_parameter(self)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDate_time" ):
-                return visitor.visitDate_time(self)
+            if hasattr( visitor, "visitDate_time_parameter" ):
+                return visitor.visitDate_time_parameter(self)
             else:
                 return visitor.visitChildren(self)
 
 
 
 
-    def date_time(self):
+    def date_time_parameter(self):
 
-        localctx = dslParser.Date_timeContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 40, self.RULE_date_time)
+        localctx = dslParser.Date_time_parameterContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 30, self.RULE_date_time_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 145
-            self.match(dslParser.Date_time)
+            self.state = 162
+            self.match(dslParser.DATE)
+            self.state = 163
+            self.match(dslParser.COLON)
+            self.state = 164
+            self.date()
+            self.state = 165
+            self.match(dslParser.COMMA)
+            self.state = 166
+            self.match(dslParser.TIME)
+            self.state = 167
+            self.match(dslParser.COLON)
+            self.state = 168
+            self.time()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class DateContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def day_month_year(self):
+            return self.getTypedRuleContext(dslParser.Day_month_yearContext,0)
+
+
+        def getRuleIndex(self):
+            return dslParser.RULE_date
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterDate" ):
+                listener.enterDate(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitDate" ):
+                listener.exitDate(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDate" ):
+                return visitor.visitDate(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def date(self):
+
+        localctx = dslParser.DateContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 32, self.RULE_date)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 170
+            self.day_month_year()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Day_month_yearContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def day_month(self):
+            return self.getTypedRuleContext(dslParser.Day_monthContext,0)
+
+
+        def date_separator(self):
+            return self.getTypedRuleContext(dslParser.Date_separatorContext,0)
+
+
+        def year(self):
+            return self.getTypedRuleContext(dslParser.YearContext,0)
+
+
+        def getRuleIndex(self):
+            return dslParser.RULE_day_month_year
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterDay_month_year" ):
+                listener.enterDay_month_year(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitDay_month_year" ):
+                listener.exitDay_month_year(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDay_month_year" ):
+                return visitor.visitDay_month_year(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def day_month_year(self):
+
+        localctx = dslParser.Day_month_yearContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 34, self.RULE_day_month_year)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 172
+            self.day_month()
+            self.state = 173
+            self.date_separator()
+            self.state = 174
+            self.year()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Day_monthContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def numeric_day(self):
+            return self.getTypedRuleContext(dslParser.Numeric_dayContext,0)
+
+
+        def date_separator(self):
+            return self.getTypedRuleContext(dslParser.Date_separatorContext,0)
+
+
+        def month(self):
+            return self.getTypedRuleContext(dslParser.MonthContext,0)
+
+
+        def getRuleIndex(self):
+            return dslParser.RULE_day_month
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterDay_month" ):
+                listener.enterDay_month(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitDay_month" ):
+                listener.exitDay_month(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDay_month" ):
+                return visitor.visitDay_month(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def day_month(self):
+
+        localctx = dslParser.Day_monthContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 36, self.RULE_day_month)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 176
+            self.numeric_day()
+            self.state = 177
+            self.date_separator()
+            self.state = 178
+            self.month()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class MonthContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def numeric_month(self):
+            return self.getTypedRuleContext(dslParser.Numeric_monthContext,0)
+
+
+        def getRuleIndex(self):
+            return dslParser.RULE_month
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterMonth" ):
+                listener.enterMonth(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitMonth" ):
+                listener.exitMonth(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMonth" ):
+                return visitor.visitMonth(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def month(self):
+
+        localctx = dslParser.MonthContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 38, self.RULE_month)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 180
+            self.numeric_month()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Numeric_monthContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def INT_1(self):
+            return self.getToken(dslParser.INT_1, 0)
+
+        def INT_2(self):
+            return self.getToken(dslParser.INT_2, 0)
+
+        def INT_3(self):
+            return self.getToken(dslParser.INT_3, 0)
+
+        def INT_4(self):
+            return self.getToken(dslParser.INT_4, 0)
+
+        def INT_5(self):
+            return self.getToken(dslParser.INT_5, 0)
+
+        def INT_6(self):
+            return self.getToken(dslParser.INT_6, 0)
+
+        def INT_7(self):
+            return self.getToken(dslParser.INT_7, 0)
+
+        def INT_8(self):
+            return self.getToken(dslParser.INT_8, 0)
+
+        def INT_9(self):
+            return self.getToken(dslParser.INT_9, 0)
+
+        def INT_01(self):
+            return self.getToken(dslParser.INT_01, 0)
+
+        def INT_02(self):
+            return self.getToken(dslParser.INT_02, 0)
+
+        def INT_03(self):
+            return self.getToken(dslParser.INT_03, 0)
+
+        def INT_04(self):
+            return self.getToken(dslParser.INT_04, 0)
+
+        def INT_05(self):
+            return self.getToken(dslParser.INT_05, 0)
+
+        def INT_06(self):
+            return self.getToken(dslParser.INT_06, 0)
+
+        def INT_07(self):
+            return self.getToken(dslParser.INT_07, 0)
+
+        def INT_08(self):
+            return self.getToken(dslParser.INT_08, 0)
+
+        def INT_09(self):
+            return self.getToken(dslParser.INT_09, 0)
+
+        def INT_10(self):
+            return self.getToken(dslParser.INT_10, 0)
+
+        def INT_11(self):
+            return self.getToken(dslParser.INT_11, 0)
+
+        def INT_12(self):
+            return self.getToken(dslParser.INT_12, 0)
+
+        def getRuleIndex(self):
+            return dslParser.RULE_numeric_month
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterNumeric_month" ):
+                listener.enterNumeric_month(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitNumeric_month" ):
+                listener.exitNumeric_month(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitNumeric_month" ):
+                return visitor.visitNumeric_month(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def numeric_month(self):
+
+        localctx = dslParser.Numeric_monthContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 40, self.RULE_numeric_month)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 182
+            _la = self._input.LA(1)
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << dslParser.INT_1) | (1 << dslParser.INT_2) | (1 << dslParser.INT_3) | (1 << dslParser.INT_4) | (1 << dslParser.INT_5) | (1 << dslParser.INT_6) | (1 << dslParser.INT_7) | (1 << dslParser.INT_8) | (1 << dslParser.INT_9) | (1 << dslParser.INT_01) | (1 << dslParser.INT_02) | (1 << dslParser.INT_03) | (1 << dslParser.INT_04) | (1 << dslParser.INT_05) | (1 << dslParser.INT_06) | (1 << dslParser.INT_07) | (1 << dslParser.INT_08) | (1 << dslParser.INT_09) | (1 << dslParser.INT_10) | (1 << dslParser.INT_11) | (1 << dslParser.INT_12))) != 0)):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Numeric_dayContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def INT_1(self):
+            return self.getToken(dslParser.INT_1, 0)
+
+        def INT_2(self):
+            return self.getToken(dslParser.INT_2, 0)
+
+        def INT_3(self):
+            return self.getToken(dslParser.INT_3, 0)
+
+        def INT_4(self):
+            return self.getToken(dslParser.INT_4, 0)
+
+        def INT_5(self):
+            return self.getToken(dslParser.INT_5, 0)
+
+        def INT_6(self):
+            return self.getToken(dslParser.INT_6, 0)
+
+        def INT_7(self):
+            return self.getToken(dslParser.INT_7, 0)
+
+        def INT_8(self):
+            return self.getToken(dslParser.INT_8, 0)
+
+        def INT_9(self):
+            return self.getToken(dslParser.INT_9, 0)
+
+        def INT_01(self):
+            return self.getToken(dslParser.INT_01, 0)
+
+        def INT_02(self):
+            return self.getToken(dslParser.INT_02, 0)
+
+        def INT_03(self):
+            return self.getToken(dslParser.INT_03, 0)
+
+        def INT_04(self):
+            return self.getToken(dslParser.INT_04, 0)
+
+        def INT_05(self):
+            return self.getToken(dslParser.INT_05, 0)
+
+        def INT_06(self):
+            return self.getToken(dslParser.INT_06, 0)
+
+        def INT_07(self):
+            return self.getToken(dslParser.INT_07, 0)
+
+        def INT_08(self):
+            return self.getToken(dslParser.INT_08, 0)
+
+        def INT_09(self):
+            return self.getToken(dslParser.INT_09, 0)
+
+        def INT_10(self):
+            return self.getToken(dslParser.INT_10, 0)
+
+        def INT_11(self):
+            return self.getToken(dslParser.INT_11, 0)
+
+        def INT_12(self):
+            return self.getToken(dslParser.INT_12, 0)
+
+        def INT_13(self):
+            return self.getToken(dslParser.INT_13, 0)
+
+        def INT_14(self):
+            return self.getToken(dslParser.INT_14, 0)
+
+        def INT_15(self):
+            return self.getToken(dslParser.INT_15, 0)
+
+        def INT_16(self):
+            return self.getToken(dslParser.INT_16, 0)
+
+        def INT_17(self):
+            return self.getToken(dslParser.INT_17, 0)
+
+        def INT_18(self):
+            return self.getToken(dslParser.INT_18, 0)
+
+        def INT_19(self):
+            return self.getToken(dslParser.INT_19, 0)
+
+        def INT_20(self):
+            return self.getToken(dslParser.INT_20, 0)
+
+        def INT_21(self):
+            return self.getToken(dslParser.INT_21, 0)
+
+        def INT_22(self):
+            return self.getToken(dslParser.INT_22, 0)
+
+        def INT_23(self):
+            return self.getToken(dslParser.INT_23, 0)
+
+        def INT_24(self):
+            return self.getToken(dslParser.INT_24, 0)
+
+        def INT_25(self):
+            return self.getToken(dslParser.INT_25, 0)
+
+        def INT_26(self):
+            return self.getToken(dslParser.INT_26, 0)
+
+        def INT_27(self):
+            return self.getToken(dslParser.INT_27, 0)
+
+        def INT_28(self):
+            return self.getToken(dslParser.INT_28, 0)
+
+        def INT_29(self):
+            return self.getToken(dslParser.INT_29, 0)
+
+        def INT_30(self):
+            return self.getToken(dslParser.INT_30, 0)
+
+        def INT_31(self):
+            return self.getToken(dslParser.INT_31, 0)
+
+        def getRuleIndex(self):
+            return dslParser.RULE_numeric_day
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterNumeric_day" ):
+                listener.enterNumeric_day(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitNumeric_day" ):
+                listener.exitNumeric_day(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitNumeric_day" ):
+                return visitor.visitNumeric_day(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def numeric_day(self):
+
+        localctx = dslParser.Numeric_dayContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 42, self.RULE_numeric_day)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 184
+            _la = self._input.LA(1)
+            if not(((((_la - 35)) & ~0x3f) == 0 and ((1 << (_la - 35)) & ((1 << (dslParser.INT_1 - 35)) | (1 << (dslParser.INT_2 - 35)) | (1 << (dslParser.INT_3 - 35)) | (1 << (dslParser.INT_4 - 35)) | (1 << (dslParser.INT_5 - 35)) | (1 << (dslParser.INT_6 - 35)) | (1 << (dslParser.INT_7 - 35)) | (1 << (dslParser.INT_8 - 35)) | (1 << (dslParser.INT_9 - 35)) | (1 << (dslParser.INT_01 - 35)) | (1 << (dslParser.INT_02 - 35)) | (1 << (dslParser.INT_03 - 35)) | (1 << (dslParser.INT_04 - 35)) | (1 << (dslParser.INT_05 - 35)) | (1 << (dslParser.INT_06 - 35)) | (1 << (dslParser.INT_07 - 35)) | (1 << (dslParser.INT_08 - 35)) | (1 << (dslParser.INT_09 - 35)) | (1 << (dslParser.INT_10 - 35)) | (1 << (dslParser.INT_11 - 35)) | (1 << (dslParser.INT_12 - 35)) | (1 << (dslParser.INT_13 - 35)) | (1 << (dslParser.INT_14 - 35)) | (1 << (dslParser.INT_15 - 35)) | (1 << (dslParser.INT_16 - 35)) | (1 << (dslParser.INT_17 - 35)) | (1 << (dslParser.INT_18 - 35)) | (1 << (dslParser.INT_19 - 35)) | (1 << (dslParser.INT_20 - 35)) | (1 << (dslParser.INT_21 - 35)) | (1 << (dslParser.INT_22 - 35)) | (1 << (dslParser.INT_23 - 35)) | (1 << (dslParser.INT_24 - 35)) | (1 << (dslParser.INT_25 - 35)) | (1 << (dslParser.INT_26 - 35)) | (1 << (dslParser.INT_27 - 35)) | (1 << (dslParser.INT_28 - 35)) | (1 << (dslParser.INT_29 - 35)) | (1 << (dslParser.INT_30 - 35)) | (1 << (dslParser.INT_31 - 35)))) != 0)):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class YearContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def FOUR_DIGIT(self):
+            return self.getToken(dslParser.FOUR_DIGIT, 0)
+
+        def getRuleIndex(self):
+            return dslParser.RULE_year
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterYear" ):
+                listener.enterYear(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitYear" ):
+                listener.exitYear(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitYear" ):
+                return visitor.visitYear(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def year(self):
+
+        localctx = dslParser.YearContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 44, self.RULE_year)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 186
+            self.match(dslParser.FOUR_DIGIT)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Date_separatorContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def SLASH(self):
+            return self.getToken(dslParser.SLASH, 0)
+
+        def getRuleIndex(self):
+            return dslParser.RULE_date_separator
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterDate_separator" ):
+                listener.enterDate_separator(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitDate_separator" ):
+                listener.exitDate_separator(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDate_separator" ):
+                return visitor.visitDate_separator(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def date_separator(self):
+
+        localctx = dslParser.Date_separatorContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 46, self.RULE_date_separator)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 188
+            self.match(dslParser.SLASH)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class TimeContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def hour_minute(self):
+            return self.getTypedRuleContext(dslParser.Hour_minuteContext,0)
+
+
+        def getRuleIndex(self):
+            return dslParser.RULE_time
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterTime" ):
+                listener.enterTime(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitTime" ):
+                listener.exitTime(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitTime" ):
+                return visitor.visitTime(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def time(self):
+
+        localctx = dslParser.TimeContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 48, self.RULE_time)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 190
+            self.hour_minute()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Hour_minuteContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def numeric_hour(self):
+            return self.getTypedRuleContext(dslParser.Numeric_hourContext,0)
+
+
+        def time_separator(self):
+            return self.getTypedRuleContext(dslParser.Time_separatorContext,0)
+
+
+        def numeric_minute(self):
+            return self.getTypedRuleContext(dslParser.Numeric_minuteContext,0)
+
+
+        def getRuleIndex(self):
+            return dslParser.RULE_hour_minute
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterHour_minute" ):
+                listener.enterHour_minute(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitHour_minute" ):
+                listener.exitHour_minute(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitHour_minute" ):
+                return visitor.visitHour_minute(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def hour_minute(self):
+
+        localctx = dslParser.Hour_minuteContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 50, self.RULE_hour_minute)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 192
+            self.numeric_hour()
+            self.state = 193
+            self.time_separator()
+            self.state = 194
+            self.numeric_minute()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Time_separatorContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def DOT(self):
+            return self.getToken(dslParser.DOT, 0)
+
+        def getRuleIndex(self):
+            return dslParser.RULE_time_separator
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterTime_separator" ):
+                listener.enterTime_separator(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitTime_separator" ):
+                listener.exitTime_separator(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitTime_separator" ):
+                return visitor.visitTime_separator(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def time_separator(self):
+
+        localctx = dslParser.Time_separatorContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 52, self.RULE_time_separator)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 196
+            self.match(dslParser.DOT)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Numeric_hourContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def INT_01(self):
+            return self.getToken(dslParser.INT_01, 0)
+
+        def INT_02(self):
+            return self.getToken(dslParser.INT_02, 0)
+
+        def INT_03(self):
+            return self.getToken(dslParser.INT_03, 0)
+
+        def INT_04(self):
+            return self.getToken(dslParser.INT_04, 0)
+
+        def INT_05(self):
+            return self.getToken(dslParser.INT_05, 0)
+
+        def INT_06(self):
+            return self.getToken(dslParser.INT_06, 0)
+
+        def INT_07(self):
+            return self.getToken(dslParser.INT_07, 0)
+
+        def INT_08(self):
+            return self.getToken(dslParser.INT_08, 0)
+
+        def INT_09(self):
+            return self.getToken(dslParser.INT_09, 0)
+
+        def INT_10(self):
+            return self.getToken(dslParser.INT_10, 0)
+
+        def INT_11(self):
+            return self.getToken(dslParser.INT_11, 0)
+
+        def INT_12(self):
+            return self.getToken(dslParser.INT_12, 0)
+
+        def INT_13(self):
+            return self.getToken(dslParser.INT_13, 0)
+
+        def INT_14(self):
+            return self.getToken(dslParser.INT_14, 0)
+
+        def INT_15(self):
+            return self.getToken(dslParser.INT_15, 0)
+
+        def INT_16(self):
+            return self.getToken(dslParser.INT_16, 0)
+
+        def INT_17(self):
+            return self.getToken(dslParser.INT_17, 0)
+
+        def INT_18(self):
+            return self.getToken(dslParser.INT_18, 0)
+
+        def INT_19(self):
+            return self.getToken(dslParser.INT_19, 0)
+
+        def INT_20(self):
+            return self.getToken(dslParser.INT_20, 0)
+
+        def INT_21(self):
+            return self.getToken(dslParser.INT_21, 0)
+
+        def INT_22(self):
+            return self.getToken(dslParser.INT_22, 0)
+
+        def INT_23(self):
+            return self.getToken(dslParser.INT_23, 0)
+
+        def INT_24(self):
+            return self.getToken(dslParser.INT_24, 0)
+
+        def INT_00(self):
+            return self.getToken(dslParser.INT_00, 0)
+
+        def getRuleIndex(self):
+            return dslParser.RULE_numeric_hour
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterNumeric_hour" ):
+                listener.enterNumeric_hour(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitNumeric_hour" ):
+                listener.exitNumeric_hour(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitNumeric_hour" ):
+                return visitor.visitNumeric_hour(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def numeric_hour(self):
+
+        localctx = dslParser.Numeric_hourContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 54, self.RULE_numeric_hour)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 198
+            _la = self._input.LA(1)
+            if not(((((_la - 44)) & ~0x3f) == 0 and ((1 << (_la - 44)) & ((1 << (dslParser.INT_00 - 44)) | (1 << (dslParser.INT_01 - 44)) | (1 << (dslParser.INT_02 - 44)) | (1 << (dslParser.INT_03 - 44)) | (1 << (dslParser.INT_04 - 44)) | (1 << (dslParser.INT_05 - 44)) | (1 << (dslParser.INT_06 - 44)) | (1 << (dslParser.INT_07 - 44)) | (1 << (dslParser.INT_08 - 44)) | (1 << (dslParser.INT_09 - 44)) | (1 << (dslParser.INT_10 - 44)) | (1 << (dslParser.INT_11 - 44)) | (1 << (dslParser.INT_12 - 44)) | (1 << (dslParser.INT_13 - 44)) | (1 << (dslParser.INT_14 - 44)) | (1 << (dslParser.INT_15 - 44)) | (1 << (dslParser.INT_16 - 44)) | (1 << (dslParser.INT_17 - 44)) | (1 << (dslParser.INT_18 - 44)) | (1 << (dslParser.INT_19 - 44)) | (1 << (dslParser.INT_20 - 44)) | (1 << (dslParser.INT_21 - 44)) | (1 << (dslParser.INT_22 - 44)) | (1 << (dslParser.INT_23 - 44)) | (1 << (dslParser.INT_24 - 44)))) != 0)):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Numeric_minuteContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def INT_01(self):
+            return self.getToken(dslParser.INT_01, 0)
+
+        def INT_02(self):
+            return self.getToken(dslParser.INT_02, 0)
+
+        def INT_03(self):
+            return self.getToken(dslParser.INT_03, 0)
+
+        def INT_04(self):
+            return self.getToken(dslParser.INT_04, 0)
+
+        def INT_05(self):
+            return self.getToken(dslParser.INT_05, 0)
+
+        def INT_06(self):
+            return self.getToken(dslParser.INT_06, 0)
+
+        def INT_07(self):
+            return self.getToken(dslParser.INT_07, 0)
+
+        def INT_08(self):
+            return self.getToken(dslParser.INT_08, 0)
+
+        def INT_09(self):
+            return self.getToken(dslParser.INT_09, 0)
+
+        def INT_10(self):
+            return self.getToken(dslParser.INT_10, 0)
+
+        def INT_11(self):
+            return self.getToken(dslParser.INT_11, 0)
+
+        def INT_12(self):
+            return self.getToken(dslParser.INT_12, 0)
+
+        def INT_13(self):
+            return self.getToken(dslParser.INT_13, 0)
+
+        def INT_14(self):
+            return self.getToken(dslParser.INT_14, 0)
+
+        def INT_15(self):
+            return self.getToken(dslParser.INT_15, 0)
+
+        def INT_16(self):
+            return self.getToken(dslParser.INT_16, 0)
+
+        def INT_17(self):
+            return self.getToken(dslParser.INT_17, 0)
+
+        def INT_18(self):
+            return self.getToken(dslParser.INT_18, 0)
+
+        def INT_19(self):
+            return self.getToken(dslParser.INT_19, 0)
+
+        def INT_20(self):
+            return self.getToken(dslParser.INT_20, 0)
+
+        def INT_21(self):
+            return self.getToken(dslParser.INT_21, 0)
+
+        def INT_22(self):
+            return self.getToken(dslParser.INT_22, 0)
+
+        def INT_23(self):
+            return self.getToken(dslParser.INT_23, 0)
+
+        def INT_24(self):
+            return self.getToken(dslParser.INT_24, 0)
+
+        def INT_25(self):
+            return self.getToken(dslParser.INT_25, 0)
+
+        def INT_26(self):
+            return self.getToken(dslParser.INT_26, 0)
+
+        def INT_27(self):
+            return self.getToken(dslParser.INT_27, 0)
+
+        def INT_28(self):
+            return self.getToken(dslParser.INT_28, 0)
+
+        def INT_29(self):
+            return self.getToken(dslParser.INT_29, 0)
+
+        def INT_30(self):
+            return self.getToken(dslParser.INT_30, 0)
+
+        def INT_31(self):
+            return self.getToken(dslParser.INT_31, 0)
+
+        def INT_32(self):
+            return self.getToken(dslParser.INT_32, 0)
+
+        def INT_33(self):
+            return self.getToken(dslParser.INT_33, 0)
+
+        def INT_34(self):
+            return self.getToken(dslParser.INT_34, 0)
+
+        def INT_35(self):
+            return self.getToken(dslParser.INT_35, 0)
+
+        def INT_36(self):
+            return self.getToken(dslParser.INT_36, 0)
+
+        def INT_37(self):
+            return self.getToken(dslParser.INT_37, 0)
+
+        def INT_38(self):
+            return self.getToken(dslParser.INT_38, 0)
+
+        def INT_39(self):
+            return self.getToken(dslParser.INT_39, 0)
+
+        def INT_40(self):
+            return self.getToken(dslParser.INT_40, 0)
+
+        def INT_41(self):
+            return self.getToken(dslParser.INT_41, 0)
+
+        def INT_42(self):
+            return self.getToken(dslParser.INT_42, 0)
+
+        def INT_43(self):
+            return self.getToken(dslParser.INT_43, 0)
+
+        def INT_44(self):
+            return self.getToken(dslParser.INT_44, 0)
+
+        def INT_45(self):
+            return self.getToken(dslParser.INT_45, 0)
+
+        def INT_46(self):
+            return self.getToken(dslParser.INT_46, 0)
+
+        def INT_47(self):
+            return self.getToken(dslParser.INT_47, 0)
+
+        def INT_48(self):
+            return self.getToken(dslParser.INT_48, 0)
+
+        def INT_49(self):
+            return self.getToken(dslParser.INT_49, 0)
+
+        def INT_50(self):
+            return self.getToken(dslParser.INT_50, 0)
+
+        def INT_51(self):
+            return self.getToken(dslParser.INT_51, 0)
+
+        def INT_52(self):
+            return self.getToken(dslParser.INT_52, 0)
+
+        def INT_53(self):
+            return self.getToken(dslParser.INT_53, 0)
+
+        def INT_54(self):
+            return self.getToken(dslParser.INT_54, 0)
+
+        def INT_55(self):
+            return self.getToken(dslParser.INT_55, 0)
+
+        def INT_56(self):
+            return self.getToken(dslParser.INT_56, 0)
+
+        def INT_57(self):
+            return self.getToken(dslParser.INT_57, 0)
+
+        def INT_58(self):
+            return self.getToken(dslParser.INT_58, 0)
+
+        def INT_59(self):
+            return self.getToken(dslParser.INT_59, 0)
+
+        def INT_00(self):
+            return self.getToken(dslParser.INT_00, 0)
+
+        def getRuleIndex(self):
+            return dslParser.RULE_numeric_minute
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterNumeric_minute" ):
+                listener.enterNumeric_minute(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitNumeric_minute" ):
+                listener.exitNumeric_minute(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitNumeric_minute" ):
+                return visitor.visitNumeric_minute(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def numeric_minute(self):
+
+        localctx = dslParser.Numeric_minuteContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 56, self.RULE_numeric_minute)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 200
+            _la = self._input.LA(1)
+            if not(((((_la - 44)) & ~0x3f) == 0 and ((1 << (_la - 44)) & ((1 << (dslParser.INT_00 - 44)) | (1 << (dslParser.INT_01 - 44)) | (1 << (dslParser.INT_02 - 44)) | (1 << (dslParser.INT_03 - 44)) | (1 << (dslParser.INT_04 - 44)) | (1 << (dslParser.INT_05 - 44)) | (1 << (dslParser.INT_06 - 44)) | (1 << (dslParser.INT_07 - 44)) | (1 << (dslParser.INT_08 - 44)) | (1 << (dslParser.INT_09 - 44)) | (1 << (dslParser.INT_10 - 44)) | (1 << (dslParser.INT_11 - 44)) | (1 << (dslParser.INT_12 - 44)) | (1 << (dslParser.INT_13 - 44)) | (1 << (dslParser.INT_14 - 44)) | (1 << (dslParser.INT_15 - 44)) | (1 << (dslParser.INT_16 - 44)) | (1 << (dslParser.INT_17 - 44)) | (1 << (dslParser.INT_18 - 44)) | (1 << (dslParser.INT_19 - 44)) | (1 << (dslParser.INT_20 - 44)) | (1 << (dslParser.INT_21 - 44)) | (1 << (dslParser.INT_22 - 44)) | (1 << (dslParser.INT_23 - 44)) | (1 << (dslParser.INT_24 - 44)) | (1 << (dslParser.INT_25 - 44)) | (1 << (dslParser.INT_26 - 44)) | (1 << (dslParser.INT_27 - 44)) | (1 << (dslParser.INT_28 - 44)) | (1 << (dslParser.INT_29 - 44)) | (1 << (dslParser.INT_30 - 44)) | (1 << (dslParser.INT_31 - 44)) | (1 << (dslParser.INT_32 - 44)) | (1 << (dslParser.INT_33 - 44)) | (1 << (dslParser.INT_34 - 44)) | (1 << (dslParser.INT_35 - 44)) | (1 << (dslParser.INT_36 - 44)) | (1 << (dslParser.INT_37 - 44)) | (1 << (dslParser.INT_38 - 44)) | (1 << (dslParser.INT_39 - 44)) | (1 << (dslParser.INT_40 - 44)) | (1 << (dslParser.INT_41 - 44)) | (1 << (dslParser.INT_42 - 44)) | (1 << (dslParser.INT_43 - 44)) | (1 << (dslParser.INT_44 - 44)) | (1 << (dslParser.INT_45 - 44)) | (1 << (dslParser.INT_46 - 44)) | (1 << (dslParser.INT_47 - 44)) | (1 << (dslParser.INT_48 - 44)) | (1 << (dslParser.INT_49 - 44)) | (1 << (dslParser.INT_50 - 44)) | (1 << (dslParser.INT_51 - 44)) | (1 << (dslParser.INT_52 - 44)) | (1 << (dslParser.INT_53 - 44)) | (1 << (dslParser.INT_54 - 44)) | (1 << (dslParser.INT_55 - 44)) | (1 << (dslParser.INT_56 - 44)) | (1 << (dslParser.INT_57 - 44)) | (1 << (dslParser.INT_58 - 44)) | (1 << (dslParser.INT_59 - 44)))) != 0)):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1414,11 +2487,11 @@ class dslParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def Direct_message(self):
-            return self.getToken(dslParser.Direct_message, 0)
+        def DIRECT_MESSAGE(self):
+            return self.getToken(dslParser.DIRECT_MESSAGE, 0)
 
-        def direct_message_required_parameter(self):
-            return self.getTypedRuleContext(dslParser.Direct_message_required_parameterContext,0)
+        def direct_message_required_parameters(self):
+            return self.getTypedRuleContext(dslParser.Direct_message_required_parametersContext,0)
 
 
         def getRuleIndex(self):
@@ -1444,13 +2517,13 @@ class dslParser ( Parser ):
     def directMessage(self):
 
         localctx = dslParser.DirectMessageContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 42, self.RULE_directMessage)
+        self.enterRule(localctx, 58, self.RULE_directMessage)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 147
-            self.match(dslParser.Direct_message)
-            self.state = 148
-            self.direct_message_required_parameter()
+            self.state = 202
+            self.match(dslParser.DIRECT_MESSAGE)
+            self.state = 203
+            self.direct_message_required_parameters()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1460,149 +2533,7 @@ class dslParser ( Parser ):
         return localctx
 
 
-    class Direct_message_required_parameterContext(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def direct_message_parameter(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(dslParser.Direct_message_parameterContext)
-            else:
-                return self.getTypedRuleContext(dslParser.Direct_message_parameterContext,i)
-
-
-        def COLON(self, i:int=None):
-            if i is None:
-                return self.getTokens(dslParser.COLON)
-            else:
-                return self.getToken(dslParser.COLON, i)
-
-        def value(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(dslParser.ValueContext)
-            else:
-                return self.getTypedRuleContext(dslParser.ValueContext,i)
-
-
-        def COMMA(self):
-            return self.getToken(dslParser.COMMA, 0)
-
-        def getRuleIndex(self):
-            return dslParser.RULE_direct_message_required_parameter
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterDirect_message_required_parameter" ):
-                listener.enterDirect_message_required_parameter(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitDirect_message_required_parameter" ):
-                listener.exitDirect_message_required_parameter(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDirect_message_required_parameter" ):
-                return visitor.visitDirect_message_required_parameter(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-
-
-    def direct_message_required_parameter(self):
-
-        localctx = dslParser.Direct_message_required_parameterContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 44, self.RULE_direct_message_required_parameter)
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 150
-            self.direct_message_parameter()
-            self.state = 151
-            self.match(dslParser.COLON)
-            self.state = 152
-            self.value()
-            self.state = 153
-            self.match(dslParser.COMMA)
-            self.state = 154
-            self.direct_message_parameter()
-            self.state = 155
-            self.match(dslParser.COLON)
-            self.state = 156
-            self.value()
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Direct_message_parameterContext(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def recipient_id(self):
-            return self.getTypedRuleContext(dslParser.Recipient_idContext,0)
-
-
-        def text(self):
-            return self.getTypedRuleContext(dslParser.TextContext,0)
-
-
-        def getRuleIndex(self):
-            return dslParser.RULE_direct_message_parameter
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterDirect_message_parameter" ):
-                listener.enterDirect_message_parameter(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitDirect_message_parameter" ):
-                listener.exitDirect_message_parameter(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDirect_message_parameter" ):
-                return visitor.visitDirect_message_parameter(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-
-
-    def direct_message_parameter(self):
-
-        localctx = dslParser.Direct_message_parameterContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 46, self.RULE_direct_message_parameter)
-        try:
-            self.state = 160
-            self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [dslParser.ID]:
-                self.enterOuterAlt(localctx, 1)
-                self.state = 158
-                self.recipient_id()
-                pass
-            elif token in [dslParser.Text]:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 159
-                self.text()
-                pass
-            else:
-                raise NoViableAltException(self)
-
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class Recipient_idContext(ParserRuleContext):
+    class Direct_message_required_parametersContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1611,34 +2542,66 @@ class dslParser ( Parser ):
         def ID(self):
             return self.getToken(dslParser.ID, 0)
 
+        def COLON(self, i:int=None):
+            if i is None:
+                return self.getTokens(dslParser.COLON)
+            else:
+                return self.getToken(dslParser.COLON, i)
+
+        def number(self):
+            return self.getTypedRuleContext(dslParser.NumberContext,0)
+
+
+        def COMMA(self):
+            return self.getToken(dslParser.COMMA, 0)
+
+        def TEXT(self):
+            return self.getToken(dslParser.TEXT, 0)
+
+        def stringValue(self):
+            return self.getTypedRuleContext(dslParser.StringValueContext,0)
+
+
         def getRuleIndex(self):
-            return dslParser.RULE_recipient_id
+            return dslParser.RULE_direct_message_required_parameters
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRecipient_id" ):
-                listener.enterRecipient_id(self)
+            if hasattr( listener, "enterDirect_message_required_parameters" ):
+                listener.enterDirect_message_required_parameters(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRecipient_id" ):
-                listener.exitRecipient_id(self)
+            if hasattr( listener, "exitDirect_message_required_parameters" ):
+                listener.exitDirect_message_required_parameters(self)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRecipient_id" ):
-                return visitor.visitRecipient_id(self)
+            if hasattr( visitor, "visitDirect_message_required_parameters" ):
+                return visitor.visitDirect_message_required_parameters(self)
             else:
                 return visitor.visitChildren(self)
 
 
 
 
-    def recipient_id(self):
+    def direct_message_required_parameters(self):
 
-        localctx = dslParser.Recipient_idContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 48, self.RULE_recipient_id)
+        localctx = dslParser.Direct_message_required_parametersContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 60, self.RULE_direct_message_required_parameters)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 162
+            self.state = 205
             self.match(dslParser.ID)
+            self.state = 206
+            self.match(dslParser.COLON)
+            self.state = 207
+            self.number()
+            self.state = 208
+            self.match(dslParser.COMMA)
+            self.state = 209
+            self.match(dslParser.TEXT)
+            self.state = 210
+            self.match(dslParser.COLON)
+            self.state = 211
+            self.stringValue()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1648,53 +2611,7 @@ class dslParser ( Parser ):
         return localctx
 
 
-    class TextContext(ParserRuleContext):
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def Text(self):
-            return self.getToken(dslParser.Text, 0)
-
-        def getRuleIndex(self):
-            return dslParser.RULE_text
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterText" ):
-                listener.enterText(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitText" ):
-                listener.exitText(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitText" ):
-                return visitor.visitText(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-
-
-    def text(self):
-
-        localctx = dslParser.TextContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 50, self.RULE_text)
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 164
-            self.match(dslParser.Text)
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class ValueContext(ParserRuleContext):
+    class StringValueContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1704,33 +2621,253 @@ class dslParser ( Parser ):
             return self.getToken(dslParser.StringLiteral, 0)
 
         def getRuleIndex(self):
-            return dslParser.RULE_value
+            return dslParser.RULE_stringValue
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterValue" ):
-                listener.enterValue(self)
+            if hasattr( listener, "enterStringValue" ):
+                listener.enterStringValue(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitValue" ):
-                listener.exitValue(self)
+            if hasattr( listener, "exitStringValue" ):
+                listener.exitStringValue(self)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitValue" ):
-                return visitor.visitValue(self)
+            if hasattr( visitor, "visitStringValue" ):
+                return visitor.visitStringValue(self)
             else:
                 return visitor.visitChildren(self)
 
 
 
 
-    def value(self):
+    def stringValue(self):
 
-        localctx = dslParser.ValueContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 52, self.RULE_value)
+        localctx = dslParser.StringValueContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 62, self.RULE_stringValue)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 166
+            self.state = 213
             self.match(dslParser.StringLiteral)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class NumberContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def unsigned_number(self):
+            return self.getTypedRuleContext(dslParser.Unsigned_numberContext,0)
+
+
+        def unary_operator(self):
+            return self.getTypedRuleContext(dslParser.Unary_operatorContext,0)
+
+
+        def getRuleIndex(self):
+            return dslParser.RULE_number
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterNumber" ):
+                listener.enterNumber(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitNumber" ):
+                listener.exitNumber(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitNumber" ):
+                return visitor.visitNumber(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def number(self):
+
+        localctx = dslParser.NumberContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 64, self.RULE_number)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 216
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if _la==dslParser.T__0 or _la==dslParser.T__1:
+                self.state = 215
+                self.unary_operator()
+
+
+            self.state = 218
+            self.unsigned_number()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Unary_operatorContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+
+        def getRuleIndex(self):
+            return dslParser.RULE_unary_operator
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterUnary_operator" ):
+                listener.enterUnary_operator(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitUnary_operator" ):
+                listener.exitUnary_operator(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitUnary_operator" ):
+                return visitor.visitUnary_operator(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def unary_operator(self):
+
+        localctx = dslParser.Unary_operatorContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 66, self.RULE_unary_operator)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 220
+            _la = self._input.LA(1)
+            if not(_la==dslParser.T__0 or _la==dslParser.T__1):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Unsigned_numberContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def UNSIGNED_INT(self):
+            return self.getToken(dslParser.UNSIGNED_INT, 0)
+
+        def UNSIGNED_FLOAT(self):
+            return self.getToken(dslParser.UNSIGNED_FLOAT, 0)
+
+        def getRuleIndex(self):
+            return dslParser.RULE_unsigned_number
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterUnsigned_number" ):
+                listener.enterUnsigned_number(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitUnsigned_number" ):
+                listener.exitUnsigned_number(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitUnsigned_number" ):
+                return visitor.visitUnsigned_number(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def unsigned_number(self):
+
+        localctx = dslParser.Unsigned_numberContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 68, self.RULE_unsigned_number)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 222
+            _la = self._input.LA(1)
+            if not(_la==dslParser.UNSIGNED_INT or _la==dslParser.UNSIGNED_FLOAT):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class BooleanContext(ParserRuleContext):
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def TRUE(self):
+            return self.getToken(dslParser.TRUE, 0)
+
+        def FALSE(self):
+            return self.getToken(dslParser.FALSE, 0)
+
+        def getRuleIndex(self):
+            return dslParser.RULE_boolean
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterBoolean" ):
+                listener.enterBoolean(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitBoolean" ):
+                listener.exitBoolean(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitBoolean" ):
+                return visitor.visitBoolean(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def boolean(self):
+
+        localctx = dslParser.BooleanContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 70, self.RULE_boolean)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 224
+            _la = self._input.LA(1)
+            if not(_la==dslParser.TRUE or _la==dslParser.FALSE):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)

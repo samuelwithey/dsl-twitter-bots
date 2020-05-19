@@ -2,57 +2,172 @@ grammar dsl;
 
 import dslLexerGrammar;
 
-twitbot: stat SEMICOLON ( stat SEMICOLON )* ;
+twitbot
+    : stat SEMICOLON ( stat SEMICOLON )*
+    ;
 
-stat: action ;
+stat
+    : action
+    ;
 
-// List of possible actions
-action  : tweet
-        | reply
-        | retweet
-        | favourite
-        | schedule
-        | directMessage
-        ;
+action
+    : tweet
+    | reply
+    | retweet
+    | favourite
+    | scheduleTweet
+    | directMessage
+    ;
 
-// Tweet action
-tweet : Tweet tweet_required_parameter (COMMA tweet_optional_parameter)* ;
-tweet_required_parameter : status COLON value ;
-status: Status ;
-tweet_optional_parameter: tweet_parameter COLON value ;
-tweet_parameter: Tweet_parameter ;
+tweet
+    : TWEET tweet_required_parameter (COMMA tweet_optional_parameters)*
+    ;
 
-// Reply action
-reply: Reply reply_required_parameter (COMMA tweet_optional_parameter)* ;
-reply_required_parameter: reply_parameter COLON value COMMA reply_parameter COLON value ;
-reply_parameter : status
-                | reply_id
-                ;
-reply_id : Reply_ID ;
+tweet_required_parameter
+    : STATUS COLON stringValue
+    ;
 
-// Retweet action
-retweet: Retweet retweet_required_parameter ;
-retweet_required_parameter: retweet_id COLON value ;
-retweet_id: ID ;
+tweet_optional_parameters
+    : tweet_parameters
+    ;
 
-// Favourite action
-favourite: Favourite favourite_required_parameter ;
-favourite_required_parameter: account_id COLON value;
-account_id: 'id' ;
+tweet_parameters
+    :  POSSIBLY_SENSITIVE COLON boolean
+    |  LAT COLON number
+    |  LONG COLON number
+    |  PLACE_ID COLON stringValue
+    |  DISPLAY_COORDINATES COLON boolean
+    ;
 
-// Schedule action
-schedule: Schedule schedule_required_parameter ;
-schedule_required_parameter: date_time COLON value COMMA tweet ;
-date_time: Date_time ;
+reply
+    : REPLY reply_required_parameters (COMMA tweet_optional_parameters)*
+    ;
 
-// Direct_message action
-directMessage: Direct_message direct_message_required_parameter ;
-direct_message_required_parameter: direct_message_parameter COLON value COMMA direct_message_parameter COLON value ;
-direct_message_parameter: recipient_id
-                        | text
-                        ;
-recipient_id: ID ;
-text: Text ;
+reply_required_parameters
+    : REPLY_ID COLON number COMMA STATUS COLON stringValue
+    ;
 
-// Value
-value: StringLiteral;
+retweet
+    : RETWEET retweet_required_parameter
+    ;
+
+retweet_required_parameter
+    : ID COLON number
+    ;
+
+favourite
+    : FAVOURITE favourite_required_parameter
+    ;
+
+favourite_required_parameter
+    : ID COLON number
+    ;
+
+scheduleTweet
+    : SCHEDULE schedule_tweet_required_parameter
+    ;
+
+schedule_tweet_required_parameter
+    : date_time_parameter COMMA tweet
+    ;
+
+date_time_parameter
+    : DATE COLON date COMMA TIME COLON time
+    ;
+
+date
+    : day_month_year
+    ;
+
+day_month_year
+    : day_month date_separator year
+    ;
+
+day_month
+    : numeric_day date_separator month
+    ;
+
+month
+    : numeric_month
+    ;
+
+numeric_month
+    : INT_1  | INT_2  | INT_3  | INT_4  | INT_5  | INT_6  | INT_7  | INT_8  | INT_9
+    | INT_01 | INT_02 | INT_03 | INT_04 | INT_05 | INT_06 | INT_07 | INT_08 | INT_09
+    | INT_10 | INT_11 | INT_12
+    ;
+
+numeric_day
+    : INT_1  | INT_2  | INT_3  | INT_4  | INT_5  | INT_6  | INT_7  | INT_8  | INT_9
+    | INT_01 | INT_02 | INT_03 | INT_04 | INT_05 | INT_06 | INT_07 | INT_08 | INT_09
+    | INT_10 | INT_11 | INT_12 | INT_13 | INT_14 | INT_15 | INT_16 | INT_17 | INT_18
+    | INT_19 | INT_20 | INT_21 | INT_22 | INT_23 | INT_24 | INT_25 | INT_26 | INT_27
+    | INT_28 | INT_29 | INT_30 | INT_31
+    ;
+
+year
+    : FOUR_DIGIT
+    ;
+
+date_separator
+    : SLASH
+    ;
+
+time
+    : hour_minute
+    ;
+
+hour_minute
+    : numeric_hour time_separator numeric_minute
+    ;
+
+time_separator
+    : DOT
+    ;
+
+numeric_hour
+    : INT_01 | INT_02 | INT_03 | INT_04 | INT_05 | INT_06 | INT_07 | INT_08 | INT_09
+    | INT_10 | INT_11 | INT_12 | INT_13 | INT_14 | INT_15 | INT_16 | INT_17 | INT_18
+    | INT_19 | INT_20 | INT_21 | INT_22 | INT_23 | INT_24 | INT_00
+    ;
+
+numeric_minute
+    : INT_01 | INT_02 | INT_03 | INT_04 | INT_05 | INT_06 | INT_07 | INT_08 | INT_09
+    | INT_10 | INT_11 | INT_12 | INT_13 | INT_14 | INT_15 | INT_16 | INT_17 | INT_18
+    | INT_19 | INT_20 | INT_21 | INT_22 | INT_23 | INT_24 | INT_25 | INT_26 | INT_27
+    | INT_28 | INT_29 | INT_30 | INT_31 | INT_32 | INT_33 | INT_34 | INT_35 | INT_36
+    | INT_37 | INT_38 | INT_39 | INT_40 | INT_41 | INT_42 | INT_43 | INT_44 | INT_45
+    | INT_46 | INT_47 | INT_48 | INT_49 | INT_50 | INT_51 | INT_52 | INT_53 | INT_54
+    | INT_55 | INT_56 | INT_57 | INT_58 | INT_59 | INT_00
+    ;
+
+directMessage
+    : DIRECT_MESSAGE direct_message_required_parameters
+    ;
+
+direct_message_required_parameters
+    : ID COLON number COMMA TEXT COLON stringValue
+    ;
+
+stringValue
+    : StringLiteral
+    ;
+
+number
+    : unary_operator? unsigned_number
+    ;
+
+unary_operator
+    : '+'
+    | '-'
+    ;
+
+unsigned_number
+    : UNSIGNED_INT
+    | UNSIGNED_FLOAT
+    ;
+
+boolean
+    : TRUE
+    | FALSE
+    ;
