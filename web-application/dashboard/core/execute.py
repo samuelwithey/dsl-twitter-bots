@@ -2,6 +2,7 @@ import tweepy
 from core.dsl.dsl_source_files.dslLexer import dslLexer
 from core.dsl.dsl_source_files.dslParser import dslParser
 from core.dsl.dsl_source_files.dslListener import dslListener
+from core.dsl.dsl_source_files.dslVisitorWalker import DSLVisitorWalker
 import sys
 import os
 from antlr4 import *
@@ -33,10 +34,14 @@ class Execute:
 
     def build_lexer_parser(self):
         input_stream = FileStream(self.get_user_filename())
+        print(input_stream)
         lexer = dslLexer(input_stream)
         token_stream = CommonTokenStream(lexer)
         parser = dslParser(token_stream)
-        self.build_tree(parser=parser)
+        tree = parser.twitbot()
+        visitor = DSLVisitorWalker(self.tweepy_auth())
+        visitor.visit(tree)
+        # self.build_tree(parser=parser)
 
     def build_tree(self, parser):
         tree = parser.twitbot()
