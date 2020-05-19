@@ -12,7 +12,7 @@ action  : tweet
         | retweet
         | favourite
         | schedule
-        | direct_message
+        | directMessage
         ;
 
 // Tweet action
@@ -46,7 +46,7 @@ schedule_required_parameter: date_time COLON value COMMA tweet ;
 date_time: Date_time ;
 
 // Direct_message action
-direct_message: Direct_message direct_message_required_parameter ;
+directMessage: Direct_message direct_message_required_parameter ;
 direct_message_required_parameter: direct_message_parameter COLON value COMMA direct_message_parameter COLON value ;
 direct_message_parameter: recipient_id
                         | text

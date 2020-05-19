@@ -64,7 +64,7 @@ account_id
 schedule
 schedule_required_parameter
 date_time
-direct_message
+directMessage
 direct_message_required_parameter
 direct_message_parameter
 recipient_id

@@ -59,8 +59,13 @@ class dslVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by dslParser#account_id.
-    def visitAccount_id(self, ctx:dslParser.Account_idContext):
+    # Visit a parse tree produced by dslParser#reply_parameter.
+    def visitReply_parameter(self, ctx:dslParser.Reply_parameterContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by dslParser#reply_id.
+    def visitReply_id(self, ctx:dslParser.Reply_idContext):
         return self.visitChildren(ctx)
 
 
@@ -89,6 +94,11 @@ class dslVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by dslParser#account_id.
+    def visitAccount_id(self, ctx:dslParser.Account_idContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by dslParser#schedule.
     def visitSchedule(self, ctx:dslParser.ScheduleContext):
         return self.visitChildren(ctx)
@@ -104,13 +114,18 @@ class dslVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by dslParser#direct_message.
-    def visitDirect_message(self, ctx:dslParser.Direct_messageContext):
+    # Visit a parse tree produced by dslParser#directMessage.
+    def visitDirectMessage(self, ctx:dslParser.DirectMessageContext):
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by dslParser#direct_message_required_parameter.
     def visitDirect_message_required_parameter(self, ctx:dslParser.Direct_message_required_parameterContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by dslParser#direct_message_parameter.
+    def visitDirect_message_parameter(self, ctx:dslParser.Direct_message_parameterContext):
         return self.visitChildren(ctx)
 
 

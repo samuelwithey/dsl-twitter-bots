@@ -34,7 +34,7 @@ class DSLVisitorWalker(dslVisitor):
     def visitSchedule(self, ctx:dslParser.ScheduleContext):
         pass
 
-    def visitDirect_message(self, ctx:dslParser.Direct_messageContext):
+    def visitDirectMessage(self, ctx:dslParser.DirectMessageContext):
         kwargs = {}
         for required_param in ctx.direct_message_required_parameter():
             kwargs[required_param.direct_message_parameter().getText()] = required_param.direct_message_parameter.value().getText()
