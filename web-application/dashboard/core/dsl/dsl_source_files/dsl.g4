@@ -24,8 +24,8 @@ tweet_parameter: Tweet_parameter ;
 
 // Reply action
 reply: Reply reply_required_parameter (COMMA tweet_optional_parameter)* ;
-reply_required_parameter: account_id COLON value COMMA status COLON value ;
-account_id: ID ;
+reply_required_parameter: status COLON value COMMA in_reply_to_status_id COLON value ;
+in_reply_to_status_id: 'in_reply_to_status_id' ;
 
 // Retweet action
 retweet: Retweet retweet_required_parameter ;
@@ -35,6 +35,7 @@ retweet_id: ID ;
 // Favourite action
 favourite: Favourite favourite_required_parameter ;
 favourite_required_parameter: account_id COLON value;
+account_id: 'id' ;
 
 // Schedule action
 schedule: Schedule schedule_required_parameter ;
