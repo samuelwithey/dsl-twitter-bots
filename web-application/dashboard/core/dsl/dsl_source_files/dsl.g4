@@ -28,10 +28,6 @@ tweet_required_parameter
     ;
 
 tweet_optional_parameters
-    : tweet_parameters
-    ;
-
-tweet_parameters
     :  POSSIBLY_SENSITIVE COLON boolean
     |  LAT COLON number
     |  LONG COLON number

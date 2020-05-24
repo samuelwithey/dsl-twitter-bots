@@ -62,15 +62,6 @@ class dslListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by dslParser#tweet_parameters.
-    def enterTweet_parameters(self, ctx:dslParser.Tweet_parametersContext):
-        pass
-
-    # Exit a parse tree produced by dslParser#tweet_parameters.
-    def exitTweet_parameters(self, ctx:dslParser.Tweet_parametersContext):
-        pass
-
-
     # Enter a parse tree produced by dslParser#reply.
     def enterReply(self, ctx:dslParser.ReplyContext):
         pass

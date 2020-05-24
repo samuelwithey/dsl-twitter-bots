@@ -39,11 +39,6 @@ class dslVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by dslParser#tweet_parameters.
-    def visitTweet_parameters(self, ctx:dslParser.Tweet_parametersContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by dslParser#reply.
     def visitReply(self, ctx:dslParser.ReplyContext):
         return self.visitChildren(ctx)
