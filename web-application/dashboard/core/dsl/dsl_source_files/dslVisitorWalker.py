@@ -14,7 +14,6 @@ class DSLVisitorWalker(dslVisitor):
         kwargs = {ctx.tweet_required_parameter().STATUS().getText(): ctx.tweet_required_parameter().stringValue().getText()}
         if ctx.tweet_optional_parameters():
             kwargs.update(self.getTweetOptionalParameters(ctx=ctx, kwargs=kwargs))
-        print(kwargs)
         self.tweepy_api.update_status(**kwargs)
 
     def visitReply(self, ctx: dslParser.ReplyContext):
@@ -22,12 +21,10 @@ class DSLVisitorWalker(dslVisitor):
                   ctx.reply_required_parameters().getChild(4).getText(): ctx.reply_required_parameters().getChild(6).getText()}
         if ctx.tweet_optional_parameters():
             kwargs.update(self.getTweetOptionalParameters(ctx=ctx, kwargs=kwargs))
-        print(kwargs)
         self.tweepy_api.update_status(**kwargs)
 
     def visitRetweet(self, ctx: dslParser.RetweetContext):
         kwargs = {ctx.retweet_required_parameter().ID().getText(): ctx.retweet_required_parameter().number().getText()}
-        print(kwargs)
         self.tweepy_api.retweet(**kwargs)
 
     def visitFavourite(self, ctx: dslParser.FavouriteContext):
