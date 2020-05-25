@@ -1,7 +1,9 @@
 from .dslVisitor import dslVisitor
 from .dslParser import dslParser
-import inspect
-import pprint
+from core.bot_scripts import FavRetweetListener
+from core.bot_scripts import followFollowers
+from core.bot_scripts import replyMentions
+import tweepy
 
 
 class DSLVisitorWalker(dslVisitor):
@@ -38,6 +40,28 @@ class DSLVisitorWalker(dslVisitor):
         kwargs = {ctx.direct_message_required_parameters().getChild(0).getText(): ctx.direct_message_required_parameters().getChild(2).getText(),
                   ctx.direct_message_required_parameters().getChild(4).getText(): ctx.direct_message_required_parameters().getChild(6).getText()}
         self.tweepy_api.send_direct_message(**kwargs)
+
+    def visitAutoFavouriteRetweet(self, ctx:dslParser.AutoFavouriteRetweetContext):
+        keywords_list = []
+        for keyword in ctx.keywords():
+            keywords_list.append(keyword.getChild(2))
+        tweets_listener = FavRetweetListener.FavRetweetListener(self.tweepy_api)
+        stream = tweepy.Stream(self.tweepy_api.auth, tweets_listener)
+        stream.filter(track=keywords_list, languages=["en"])
+
+    def visitAutoFollowFollowers(self, ctx:dslParser.AutoFollowFollowersContext):
+        follow_followers = followFollowers.FollowFollowers(tweepy_api=self.tweepy_api)
+        follow_followers.follow_followers()
+
+    def visitAutoReplyMentions(self, ctx:dslParser.AutoReplyMentionsContext):
+        automate_loop_time = int(ctx.automateReplyParameter().getChild(2).getText())
+        response = ctx.automateReplyParameter().getChild(6).getText()
+        keywords_list = []
+        for keyword in ctx.keywords():
+            keywords_list.append(keyword.getChild(2))
+        reply_to_mentions = replyMentions.ReplyMentions(tweepy_api=self.tweepy_api, keywords=keywords_list,
+                                                        response=response, loop_time=automate_loop_time)
+        reply_to_mentions.execute()
 
     def getTweetOptionalParameters(self, ctx, kwargs):
         for optional_parameter in ctx.tweet_optional_parameters():
