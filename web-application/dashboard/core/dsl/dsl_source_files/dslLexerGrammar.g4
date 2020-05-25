@@ -114,6 +114,10 @@ FOLLOWALL
     : 'follow_all_followers'
     ;
 
+AUTOMATE_TIME
+    : 'automate_time'
+    ;
+
 WS
     : [ \t\n\r]+ -> skip
     ;

@@ -157,7 +157,7 @@ autoFollowFollowers
     ;
 
 autoReplyMentions
-    :   (keywords)+
+    :   AUTOMATE_TIME COLON number COMMA (keywords)+
     ;
 
 keywords
