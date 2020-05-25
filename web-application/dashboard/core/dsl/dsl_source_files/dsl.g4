@@ -149,7 +149,7 @@ direct_message_required_parameters
     ;
 
 autoFavouriteRetweet
-    : keyword (COMMA keyword)*
+    : AUTO_FAV_RETWEET keyword (COMMA keyword)*
     ;
 
 autoFollowFollowers

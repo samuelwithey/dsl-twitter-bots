@@ -11,8 +11,8 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3n")
-        buf.write("\u010c\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3o")
+        buf.write("\u010d\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
@@ -30,36 +30,36 @@ def serializedATN():
         buf.write("\3\22\3\22\3\23\3\23\3\23\3\23\3\24\3\24\3\25\3\25\3\26")
         buf.write("\3\26\3\27\3\27\3\30\3\30\3\31\3\31\3\32\3\32\3\32\3\32")
         buf.write("\3\33\3\33\3\34\3\34\3\35\3\35\3\36\3\36\3\36\3\37\3\37")
-        buf.write("\3\37\3\37\3\37\3\37\3\37\3\37\3 \3 \3 \7 \u00e4\n \f")
-        buf.write(" \16 \u00e7\13 \3!\3!\3\"\3\"\3\"\3\"\6\"\u00ef\n\"\r")
-        buf.write("\"\16\"\u00f0\3#\3#\3#\3#\3#\3#\3#\3#\3$\3$\3$\3$\3%\3")
-        buf.write("%\3&\5&\u0102\n&\3&\3&\3\'\3\'\3(\3(\3)\3)\3)\2\2*\2\4")
-        buf.write("\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64")
-        buf.write("\668:<>@BDFHJLNP\2\t\4\2*\62\64?\4\2*\62\64R\3\2\63K\3")
-        buf.write("\2\63n\3\2\3\4\3\2\7\b\3\2\n\13\2\u00f5\2R\3\2\2\2\4\\")
-        buf.write("\3\2\2\2\6g\3\2\2\2\bi\3\2\2\2\nr\3\2\2\2\f\u0085\3\2")
-        buf.write("\2\2\16\u0087\3\2\2\2\20\u0090\3\2\2\2\22\u0098\3\2\2")
-        buf.write("\2\24\u009b\3\2\2\2\26\u009f\3\2\2\2\30\u00a2\3\2\2\2")
-        buf.write("\32\u00a6\3\2\2\2\34\u00a9\3\2\2\2\36\u00ad\3\2\2\2 \u00b5")
-        buf.write("\3\2\2\2\"\u00b7\3\2\2\2$\u00bb\3\2\2\2&\u00bf\3\2\2\2")
-        buf.write("(\u00c1\3\2\2\2*\u00c3\3\2\2\2,\u00c5\3\2\2\2.\u00c7\3")
-        buf.write("\2\2\2\60\u00c9\3\2\2\2\62\u00cb\3\2\2\2\64\u00cf\3\2")
-        buf.write("\2\2\66\u00d1\3\2\2\28\u00d3\3\2\2\2:\u00d5\3\2\2\2<\u00d8")
-        buf.write("\3\2\2\2>\u00e0\3\2\2\2@\u00e8\3\2\2\2B\u00ea\3\2\2\2")
-        buf.write("D\u00f2\3\2\2\2F\u00fa\3\2\2\2H\u00fe\3\2\2\2J\u0101\3")
-        buf.write("\2\2\2L\u0105\3\2\2\2N\u0107\3\2\2\2P\u0109\3\2\2\2RS")
-        buf.write("\5\4\3\2SY\7\35\2\2TU\5\4\3\2UV\7\35\2\2VX\3\2\2\2WT\3")
-        buf.write("\2\2\2X[\3\2\2\2YW\3\2\2\2YZ\3\2\2\2Z\3\3\2\2\2[Y\3\2")
-        buf.write("\2\2\\]\5\6\4\2]\5\3\2\2\2^h\5\b\5\2_h\5\16\b\2`h\5\22")
-        buf.write("\n\2ah\5\26\f\2bh\5\32\16\2ch\5:\36\2dh\5> \2eh\5@!\2")
-        buf.write("fh\5B\"\2g^\3\2\2\2g_\3\2\2\2g`\3\2\2\2ga\3\2\2\2gb\3")
-        buf.write("\2\2\2gc\3\2\2\2gd\3\2\2\2ge\3\2\2\2gf\3\2\2\2h\7\3\2")
-        buf.write("\2\2ij\7\r\2\2jo\5\n\6\2kl\7\34\2\2ln\5\f\7\2mk\3\2\2")
-        buf.write("\2nq\3\2\2\2om\3\2\2\2op\3\2\2\2p\t\3\2\2\2qo\3\2\2\2")
-        buf.write("rs\7\17\2\2st\7\36\2\2tu\5H%\2u\13\3\2\2\2vw\7\20\2\2")
-        buf.write("wx\7\36\2\2x\u0086\5P)\2yz\7\t\2\2z{\7\36\2\2{\u0086\5")
-        buf.write("J&\2|}\7\21\2\2}~\7\36\2\2~\u0086\5J&\2\177\u0080\7\22")
-        buf.write("\2\2\u0080\u0081\7\36\2\2\u0081\u0086\5H%\2\u0082\u0083")
+        buf.write("\3\37\3\37\3\37\3\37\3\37\3\37\3 \3 \3 \3 \7 \u00e5\n")
+        buf.write(" \f \16 \u00e8\13 \3!\3!\3\"\3\"\3\"\3\"\6\"\u00f0\n\"")
+        buf.write("\r\"\16\"\u00f1\3#\3#\3#\3#\3#\3#\3#\3#\3$\3$\3$\3$\3")
+        buf.write("%\3%\3&\5&\u0103\n&\3&\3&\3\'\3\'\3(\3(\3)\3)\3)\2\2*")
+        buf.write("\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60\62")
+        buf.write("\64\668:<>@BDFHJLNP\2\t\4\2+\63\65@\4\2+\63\65S\3\2\64")
+        buf.write("L\3\2\64o\3\2\3\4\3\2\7\b\3\2\n\13\2\u00f6\2R\3\2\2\2")
+        buf.write("\4\\\3\2\2\2\6g\3\2\2\2\bi\3\2\2\2\nr\3\2\2\2\f\u0085")
+        buf.write("\3\2\2\2\16\u0087\3\2\2\2\20\u0090\3\2\2\2\22\u0098\3")
+        buf.write("\2\2\2\24\u009b\3\2\2\2\26\u009f\3\2\2\2\30\u00a2\3\2")
+        buf.write("\2\2\32\u00a6\3\2\2\2\34\u00a9\3\2\2\2\36\u00ad\3\2\2")
+        buf.write("\2 \u00b5\3\2\2\2\"\u00b7\3\2\2\2$\u00bb\3\2\2\2&\u00bf")
+        buf.write("\3\2\2\2(\u00c1\3\2\2\2*\u00c3\3\2\2\2,\u00c5\3\2\2\2")
+        buf.write(".\u00c7\3\2\2\2\60\u00c9\3\2\2\2\62\u00cb\3\2\2\2\64\u00cf")
+        buf.write("\3\2\2\2\66\u00d1\3\2\2\28\u00d3\3\2\2\2:\u00d5\3\2\2")
+        buf.write("\2<\u00d8\3\2\2\2>\u00e0\3\2\2\2@\u00e9\3\2\2\2B\u00eb")
+        buf.write("\3\2\2\2D\u00f3\3\2\2\2F\u00fb\3\2\2\2H\u00ff\3\2\2\2")
+        buf.write("J\u0102\3\2\2\2L\u0106\3\2\2\2N\u0108\3\2\2\2P\u010a\3")
+        buf.write("\2\2\2RS\5\4\3\2SY\7\35\2\2TU\5\4\3\2UV\7\35\2\2VX\3\2")
+        buf.write("\2\2WT\3\2\2\2X[\3\2\2\2YW\3\2\2\2YZ\3\2\2\2Z\3\3\2\2")
+        buf.write("\2[Y\3\2\2\2\\]\5\6\4\2]\5\3\2\2\2^h\5\b\5\2_h\5\16\b")
+        buf.write("\2`h\5\22\n\2ah\5\26\f\2bh\5\32\16\2ch\5:\36\2dh\5> \2")
+        buf.write("eh\5@!\2fh\5B\"\2g^\3\2\2\2g_\3\2\2\2g`\3\2\2\2ga\3\2")
+        buf.write("\2\2gb\3\2\2\2gc\3\2\2\2gd\3\2\2\2ge\3\2\2\2gf\3\2\2\2")
+        buf.write("h\7\3\2\2\2ij\7\r\2\2jo\5\n\6\2kl\7\34\2\2ln\5\f\7\2m")
+        buf.write("k\3\2\2\2nq\3\2\2\2om\3\2\2\2op\3\2\2\2p\t\3\2\2\2qo\3")
+        buf.write("\2\2\2rs\7\17\2\2st\7\36\2\2tu\5H%\2u\13\3\2\2\2vw\7\20")
+        buf.write("\2\2wx\7\36\2\2x\u0086\5P)\2yz\7\t\2\2z{\7\36\2\2{\u0086")
+        buf.write("\5J&\2|}\7\21\2\2}~\7\36\2\2~\u0086\5J&\2\177\u0080\7")
+        buf.write("\22\2\2\u0080\u0081\7\36\2\2\u0081\u0086\5H%\2\u0082\u0083")
         buf.write("\7\23\2\2\u0083\u0084\7\36\2\2\u0084\u0086\5P)\2\u0085")
         buf.write("v\3\2\2\2\u0085y\3\2\2\2\u0085|\3\2\2\2\u0085\177\3\2")
         buf.write("\2\2\u0085\u0082\3\2\2\2\u0086\r\3\2\2\2\u0087\u0088\7")
@@ -85,32 +85,33 @@ def serializedATN():
         buf.write("\5*\26\2\u00bc\u00bd\5.\30\2\u00bd\u00be\5&\24\2\u00be")
         buf.write("%\3\2\2\2\u00bf\u00c0\5(\25\2\u00c0\'\3\2\2\2\u00c1\u00c2")
         buf.write("\t\2\2\2\u00c2)\3\2\2\2\u00c3\u00c4\t\3\2\2\u00c4+\3\2")
-        buf.write("\2\2\u00c5\u00c6\7\'\2\2\u00c6-\3\2\2\2\u00c7\u00c8\7")
-        buf.write("%\2\2\u00c8/\3\2\2\2\u00c9\u00ca\5\62\32\2\u00ca\61\3")
-        buf.write("\2\2\2\u00cb\u00cc\5\66\34\2\u00cc\u00cd\5\64\33\2\u00cd")
-        buf.write("\u00ce\58\35\2\u00ce\63\3\2\2\2\u00cf\u00d0\7&\2\2\u00d0")
+        buf.write("\2\2\u00c5\u00c6\7(\2\2\u00c6-\3\2\2\2\u00c7\u00c8\7&")
+        buf.write("\2\2\u00c8/\3\2\2\2\u00c9\u00ca\5\62\32\2\u00ca\61\3\2")
+        buf.write("\2\2\u00cb\u00cc\5\66\34\2\u00cc\u00cd\5\64\33\2\u00cd")
+        buf.write("\u00ce\58\35\2\u00ce\63\3\2\2\2\u00cf\u00d0\7\'\2\2\u00d0")
         buf.write("\65\3\2\2\2\u00d1\u00d2\t\4\2\2\u00d2\67\3\2\2\2\u00d3")
         buf.write("\u00d4\t\5\2\2\u00d49\3\2\2\2\u00d5\u00d6\7\26\2\2\u00d6")
         buf.write("\u00d7\5<\37\2\u00d7;\3\2\2\2\u00d8\u00d9\7\f\2\2\u00d9")
         buf.write("\u00da\7\36\2\2\u00da\u00db\5J&\2\u00db\u00dc\7\34\2\2")
         buf.write("\u00dc\u00dd\7\33\2\2\u00dd\u00de\7\36\2\2\u00de\u00df")
-        buf.write("\5H%\2\u00df=\3\2\2\2\u00e0\u00e5\5F$\2\u00e1\u00e2\7")
-        buf.write("\34\2\2\u00e2\u00e4\5F$\2\u00e3\u00e1\3\2\2\2\u00e4\u00e7")
-        buf.write("\3\2\2\2\u00e5\u00e3\3\2\2\2\u00e5\u00e6\3\2\2\2\u00e6")
-        buf.write("?\3\2\2\2\u00e7\u00e5\3\2\2\2\u00e8\u00e9\7 \2\2\u00e9")
-        buf.write("A\3\2\2\2\u00ea\u00eb\7#\2\2\u00eb\u00ee\5D#\2\u00ec\u00ed")
-        buf.write("\7\34\2\2\u00ed\u00ef\5F$\2\u00ee\u00ec\3\2\2\2\u00ef")
-        buf.write("\u00f0\3\2\2\2\u00f0\u00ee\3\2\2\2\u00f0\u00f1\3\2\2\2")
-        buf.write("\u00f1C\3\2\2\2\u00f2\u00f3\7!\2\2\u00f3\u00f4\7\36\2")
-        buf.write("\2\u00f4\u00f5\5J&\2\u00f5\u00f6\7\34\2\2\u00f6\u00f7")
-        buf.write("\7\"\2\2\u00f7\u00f8\7\36\2\2\u00f8\u00f9\5H%\2\u00f9")
-        buf.write("E\3\2\2\2\u00fa\u00fb\7\37\2\2\u00fb\u00fc\7\36\2\2\u00fc")
-        buf.write("\u00fd\5H%\2\u00fdG\3\2\2\2\u00fe\u00ff\7\5\2\2\u00ff")
-        buf.write("I\3\2\2\2\u0100\u0102\5L\'\2\u0101\u0100\3\2\2\2\u0101")
-        buf.write("\u0102\3\2\2\2\u0102\u0103\3\2\2\2\u0103\u0104\5N(\2\u0104")
-        buf.write("K\3\2\2\2\u0105\u0106\t\6\2\2\u0106M\3\2\2\2\u0107\u0108")
-        buf.write("\t\7\2\2\u0108O\3\2\2\2\u0109\u010a\t\b\2\2\u010aQ\3\2")
-        buf.write("\2\2\nYgo\u0085\u008d\u00e5\u00f0\u0101")
+        buf.write("\5H%\2\u00df=\3\2\2\2\u00e0\u00e1\7%\2\2\u00e1\u00e6\5")
+        buf.write("F$\2\u00e2\u00e3\7\34\2\2\u00e3\u00e5\5F$\2\u00e4\u00e2")
+        buf.write("\3\2\2\2\u00e5\u00e8\3\2\2\2\u00e6\u00e4\3\2\2\2\u00e6")
+        buf.write("\u00e7\3\2\2\2\u00e7?\3\2\2\2\u00e8\u00e6\3\2\2\2\u00e9")
+        buf.write("\u00ea\7 \2\2\u00eaA\3\2\2\2\u00eb\u00ec\7#\2\2\u00ec")
+        buf.write("\u00ef\5D#\2\u00ed\u00ee\7\34\2\2\u00ee\u00f0\5F$\2\u00ef")
+        buf.write("\u00ed\3\2\2\2\u00f0\u00f1\3\2\2\2\u00f1\u00ef\3\2\2\2")
+        buf.write("\u00f1\u00f2\3\2\2\2\u00f2C\3\2\2\2\u00f3\u00f4\7!\2\2")
+        buf.write("\u00f4\u00f5\7\36\2\2\u00f5\u00f6\5J&\2\u00f6\u00f7\7")
+        buf.write("\34\2\2\u00f7\u00f8\7\"\2\2\u00f8\u00f9\7\36\2\2\u00f9")
+        buf.write("\u00fa\5H%\2\u00faE\3\2\2\2\u00fb\u00fc\7\37\2\2\u00fc")
+        buf.write("\u00fd\7\36\2\2\u00fd\u00fe\5H%\2\u00feG\3\2\2\2\u00ff")
+        buf.write("\u0100\7\5\2\2\u0100I\3\2\2\2\u0101\u0103\5L\'\2\u0102")
+        buf.write("\u0101\3\2\2\2\u0102\u0103\3\2\2\2\u0103\u0104\3\2\2\2")
+        buf.write("\u0104\u0105\5N(\2\u0105K\3\2\2\2\u0106\u0107\t\6\2\2")
+        buf.write("\u0107M\3\2\2\2\u0108\u0109\t\7\2\2\u0109O\3\2\2\2\u010a")
+        buf.write("\u010b\t\b\2\2\u010bQ\3\2\2\2\nYgo\u0085\u008d\u00e6\u00f1")
+        buf.write("\u0102")
         return buf.getvalue()
 
 
@@ -132,17 +133,18 @@ class dslParser ( Parser ):
                      "'schedule'", "'date'", "'time'", "'text'", "','", 
                      "';'", "':'", "'keyword'", "'follow_all_followers'", 
                      "'automate_time_minutes'", "'response'", "'automate_reply_to_mentions'", 
-                     "<INVALID>", "'/'", "'.'", "<INVALID>", "<INVALID>", 
-                     "'0'", "'1'", "'2'", "'3'", "'4'", "'5'", "'6'", "'7'", 
-                     "'8'", "'9'", "'00'", "'01'", "'02'", "'03'", "'04'", 
-                     "'05'", "'06'", "'07'", "'08'", "'09'", "'10'", "'11'", 
-                     "'12'", "'13'", "'14'", "'15'", "'16'", "'17'", "'18'", 
-                     "'19'", "'20'", "'21'", "'22'", "'23'", "'24'", "'25'", 
-                     "'26'", "'27'", "'28'", "'29'", "'30'", "'31'", "'32'", 
-                     "'33'", "'34'", "'35'", "'36'", "'37'", "'38'", "'39'", 
-                     "'40'", "'41'", "'42'", "'43'", "'44'", "'45'", "'46'", 
-                     "'47'", "'48'", "'49'", "'50'", "'51'", "'52'", "'53'", 
-                     "'54'", "'55'", "'56'", "'57'", "'58'", "'59'" ]
+                     "<INVALID>", "'automate_favourites_retweets'", "'/'", 
+                     "'.'", "<INVALID>", "<INVALID>", "'0'", "'1'", "'2'", 
+                     "'3'", "'4'", "'5'", "'6'", "'7'", "'8'", "'9'", "'00'", 
+                     "'01'", "'02'", "'03'", "'04'", "'05'", "'06'", "'07'", 
+                     "'08'", "'09'", "'10'", "'11'", "'12'", "'13'", "'14'", 
+                     "'15'", "'16'", "'17'", "'18'", "'19'", "'20'", "'21'", 
+                     "'22'", "'23'", "'24'", "'25'", "'26'", "'27'", "'28'", 
+                     "'29'", "'30'", "'31'", "'32'", "'33'", "'34'", "'35'", 
+                     "'36'", "'37'", "'38'", "'39'", "'40'", "'41'", "'42'", 
+                     "'43'", "'44'", "'45'", "'46'", "'47'", "'48'", "'49'", 
+                     "'50'", "'51'", "'52'", "'53'", "'54'", "'55'", "'56'", 
+                     "'57'", "'58'", "'59'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "StringLiteral", 
                       "UnterminatedStringLiteral", "UNSIGNED_INT", "UNSIGNED_FLOAT", 
@@ -151,21 +153,22 @@ class dslParser ( Parser ):
                       "DISPLAY_COORDINATES", "REPLY", "RETWEET", "DIRECT_MESSAGE", 
                       "FAVOURITE", "SCHEDULE", "DATE", "TIME", "TEXT", "COMMA", 
                       "SEMICOLON", "COLON", "KEYWORD", "FOLLOWALL", "AUTOMATE_TIME", 
-                      "RESPONSE", "AUTOMATE_REPLY_MENTIONS", "WS", "SLASH", 
-                      "DOT", "FOUR_DIGIT", "DIGIT", "INT_0", "INT_1", "INT_2", 
-                      "INT_3", "INT_4", "INT_5", "INT_6", "INT_7", "INT_8", 
-                      "INT_9", "INT_00", "INT_01", "INT_02", "INT_03", "INT_04", 
-                      "INT_05", "INT_06", "INT_07", "INT_08", "INT_09", 
-                      "INT_10", "INT_11", "INT_12", "INT_13", "INT_14", 
-                      "INT_15", "INT_16", "INT_17", "INT_18", "INT_19", 
-                      "INT_20", "INT_21", "INT_22", "INT_23", "INT_24", 
-                      "INT_25", "INT_26", "INT_27", "INT_28", "INT_29", 
-                      "INT_30", "INT_31", "INT_32", "INT_33", "INT_34", 
-                      "INT_35", "INT_36", "INT_37", "INT_38", "INT_39", 
-                      "INT_40", "INT_41", "INT_42", "INT_43", "INT_44", 
-                      "INT_45", "INT_46", "INT_47", "INT_48", "INT_49", 
-                      "INT_50", "INT_51", "INT_52", "INT_53", "INT_54", 
-                      "INT_55", "INT_56", "INT_57", "INT_58", "INT_59" ]
+                      "RESPONSE", "AUTOMATE_REPLY_MENTIONS", "WS", "AUTO_FAV_RETWEET", 
+                      "SLASH", "DOT", "FOUR_DIGIT", "DIGIT", "INT_0", "INT_1", 
+                      "INT_2", "INT_3", "INT_4", "INT_5", "INT_6", "INT_7", 
+                      "INT_8", "INT_9", "INT_00", "INT_01", "INT_02", "INT_03", 
+                      "INT_04", "INT_05", "INT_06", "INT_07", "INT_08", 
+                      "INT_09", "INT_10", "INT_11", "INT_12", "INT_13", 
+                      "INT_14", "INT_15", "INT_16", "INT_17", "INT_18", 
+                      "INT_19", "INT_20", "INT_21", "INT_22", "INT_23", 
+                      "INT_24", "INT_25", "INT_26", "INT_27", "INT_28", 
+                      "INT_29", "INT_30", "INT_31", "INT_32", "INT_33", 
+                      "INT_34", "INT_35", "INT_36", "INT_37", "INT_38", 
+                      "INT_39", "INT_40", "INT_41", "INT_42", "INT_43", 
+                      "INT_44", "INT_45", "INT_46", "INT_47", "INT_48", 
+                      "INT_49", "INT_50", "INT_51", "INT_52", "INT_53", 
+                      "INT_54", "INT_55", "INT_56", "INT_57", "INT_58", 
+                      "INT_59" ]
 
     RULE_twitbot = 0
     RULE_stat = 1
@@ -255,80 +258,81 @@ class dslParser ( Parser ):
     RESPONSE=32
     AUTOMATE_REPLY_MENTIONS=33
     WS=34
-    SLASH=35
-    DOT=36
-    FOUR_DIGIT=37
-    DIGIT=38
-    INT_0=39
-    INT_1=40
-    INT_2=41
-    INT_3=42
-    INT_4=43
-    INT_5=44
-    INT_6=45
-    INT_7=46
-    INT_8=47
-    INT_9=48
-    INT_00=49
-    INT_01=50
-    INT_02=51
-    INT_03=52
-    INT_04=53
-    INT_05=54
-    INT_06=55
-    INT_07=56
-    INT_08=57
-    INT_09=58
-    INT_10=59
-    INT_11=60
-    INT_12=61
-    INT_13=62
-    INT_14=63
-    INT_15=64
-    INT_16=65
-    INT_17=66
-    INT_18=67
-    INT_19=68
-    INT_20=69
-    INT_21=70
-    INT_22=71
-    INT_23=72
-    INT_24=73
-    INT_25=74
-    INT_26=75
-    INT_27=76
-    INT_28=77
-    INT_29=78
-    INT_30=79
-    INT_31=80
-    INT_32=81
-    INT_33=82
-    INT_34=83
-    INT_35=84
-    INT_36=85
-    INT_37=86
-    INT_38=87
-    INT_39=88
-    INT_40=89
-    INT_41=90
-    INT_42=91
-    INT_43=92
-    INT_44=93
-    INT_45=94
-    INT_46=95
-    INT_47=96
-    INT_48=97
-    INT_49=98
-    INT_50=99
-    INT_51=100
-    INT_52=101
-    INT_53=102
-    INT_54=103
-    INT_55=104
-    INT_56=105
-    INT_57=106
-    INT_58=107
-    INT_59=108
+    AUTO_FAV_RETWEET=35
+    SLASH=36
+    DOT=37
+    FOUR_DIGIT=38
+    DIGIT=39
+    INT_0=40
+    INT_1=41
+    INT_2=42
+    INT_3=43
+    INT_4=44
+    INT_5=45
+    INT_6=46
+    INT_7=47
+    INT_8=48
+    INT_9=49
+    INT_00=50
+    INT_01=51
+    INT_02=52
+    INT_03=53
+    INT_04=54
+    INT_05=55
+    INT_06=56
+    INT_07=57
+    INT_08=58
+    INT_09=59
+    INT_10=60
+    INT_11=61
+    INT_12=62
+    INT_13=63
+    INT_14=64
+    INT_15=65
+    INT_16=66
+    INT_17=67
+    INT_18=68
+    INT_19=69
+    INT_20=70
+    INT_21=71
+    INT_22=72
+    INT_23=73
+    INT_24=74
+    INT_25=75
+    INT_26=76
+    INT_27=77
+    INT_28=78
+    INT_29=79
+    INT_30=80
+    INT_31=81
+    INT_32=82
+    INT_33=83
+    INT_34=84
+    INT_35=85
+    INT_36=86
+    INT_37=87
+    INT_38=88
+    INT_39=89
+    INT_40=90
+    INT_41=91
+    INT_42=92
+    INT_43=93
+    INT_44=94
+    INT_45=95
+    INT_46=96
+    INT_47=97
+    INT_48=98
+    INT_49=99
+    INT_50=100
+    INT_51=101
+    INT_52=102
+    INT_53=103
+    INT_54=104
+    INT_55=105
+    INT_56=106
+    INT_57=107
+    INT_58=108
+    INT_59=109
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -369,12 +373,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitTwitbot" ):
                 listener.exitTwitbot(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTwitbot" ):
-                return visitor.visitTwitbot(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -392,7 +390,7 @@ class dslParser ( Parser ):
             self.state = 87
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << dslParser.TWEET) | (1 << dslParser.REPLY) | (1 << dslParser.RETWEET) | (1 << dslParser.DIRECT_MESSAGE) | (1 << dslParser.FAVOURITE) | (1 << dslParser.SCHEDULE) | (1 << dslParser.KEYWORD) | (1 << dslParser.FOLLOWALL) | (1 << dslParser.AUTOMATE_REPLY_MENTIONS))) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << dslParser.TWEET) | (1 << dslParser.REPLY) | (1 << dslParser.RETWEET) | (1 << dslParser.DIRECT_MESSAGE) | (1 << dslParser.FAVOURITE) | (1 << dslParser.SCHEDULE) | (1 << dslParser.FOLLOWALL) | (1 << dslParser.AUTOMATE_REPLY_MENTIONS) | (1 << dslParser.AUTO_FAV_RETWEET))) != 0):
                 self.state = 82
                 self.stat()
                 self.state = 83
@@ -430,12 +428,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitStat" ):
                 listener.exitStat(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitStat" ):
-                return visitor.visitStat(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -510,12 +502,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitAction" ):
                 listener.exitAction(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAction" ):
-                return visitor.visitAction(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -557,7 +543,7 @@ class dslParser ( Parser ):
                 self.state = 97
                 self.directMessage()
                 pass
-            elif token in [dslParser.KEYWORD]:
+            elif token in [dslParser.AUTO_FAV_RETWEET]:
                 self.enterOuterAlt(localctx, 7)
                 self.state = 98
                 self.autoFavouriteRetweet()
@@ -621,12 +607,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitTweet" ):
                 listener.exitTweet(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTweet" ):
-                return visitor.visitTweet(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -688,12 +668,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTweet_required_parameter" ):
                 listener.exitTweet_required_parameter(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTweet_required_parameter" ):
-                return visitor.visitTweet_required_parameter(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -765,12 +739,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTweet_optional_parameters" ):
                 listener.exitTweet_optional_parameters(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTweet_optional_parameters" ):
-                return visitor.visitTweet_optional_parameters(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -877,12 +845,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitReply" ):
                 listener.exitReply(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitReply" ):
-                return visitor.visitReply(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -958,12 +920,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitReply_required_parameters" ):
                 listener.exitReply_required_parameters(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitReply_required_parameters" ):
-                return visitor.visitReply_required_parameters(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1020,12 +976,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitRetweet" ):
                 listener.exitRetweet(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRetweet" ):
-                return visitor.visitRetweet(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1075,12 +1025,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitRetweet_required_parameter" ):
                 listener.exitRetweet_required_parameter(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRetweet_required_parameter" ):
-                return visitor.visitRetweet_required_parameter(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1128,12 +1072,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFavourite" ):
                 listener.exitFavourite(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFavourite" ):
-                return visitor.visitFavourite(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1184,12 +1122,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitFavourite_required_parameter" ):
                 listener.exitFavourite_required_parameter(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFavourite_required_parameter" ):
-                return visitor.visitFavourite_required_parameter(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1237,12 +1169,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitScheduleTweet" ):
                 listener.exitScheduleTweet(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitScheduleTweet" ):
-                return visitor.visitScheduleTweet(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1293,12 +1219,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitSchedule_tweet_required_parameter" ):
                 listener.exitSchedule_tweet_required_parameter(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitSchedule_tweet_required_parameter" ):
-                return visitor.visitSchedule_tweet_required_parameter(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1364,12 +1284,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitDate_time_parameter" ):
                 listener.exitDate_time_parameter(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDate_time_parameter" ):
-                return visitor.visitDate_time_parameter(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1423,12 +1337,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitDate" ):
                 listener.exitDate(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDate" ):
-                return visitor.visitDate(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1477,12 +1385,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitDay_month_year" ):
                 listener.exitDay_month_year(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDay_month_year" ):
-                return visitor.visitDay_month_year(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1537,12 +1439,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitDay_month" ):
                 listener.exitDay_month(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDay_month" ):
-                return visitor.visitDay_month(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1587,12 +1483,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitMonth" ):
                 listener.exitMonth(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitMonth" ):
-                return visitor.visitMonth(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1693,12 +1583,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitNumeric_month" ):
                 listener.exitNumeric_month(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumeric_month" ):
-                return visitor.visitNumeric_month(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1863,12 +1747,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitNumeric_day" ):
                 listener.exitNumeric_day(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumeric_day" ):
-                return visitor.visitNumeric_day(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1881,7 +1759,7 @@ class dslParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 193
             _la = self._input.LA(1)
-            if not(((((_la - 40)) & ~0x3f) == 0 and ((1 << (_la - 40)) & ((1 << (dslParser.INT_1 - 40)) | (1 << (dslParser.INT_2 - 40)) | (1 << (dslParser.INT_3 - 40)) | (1 << (dslParser.INT_4 - 40)) | (1 << (dslParser.INT_5 - 40)) | (1 << (dslParser.INT_6 - 40)) | (1 << (dslParser.INT_7 - 40)) | (1 << (dslParser.INT_8 - 40)) | (1 << (dslParser.INT_9 - 40)) | (1 << (dslParser.INT_01 - 40)) | (1 << (dslParser.INT_02 - 40)) | (1 << (dslParser.INT_03 - 40)) | (1 << (dslParser.INT_04 - 40)) | (1 << (dslParser.INT_05 - 40)) | (1 << (dslParser.INT_06 - 40)) | (1 << (dslParser.INT_07 - 40)) | (1 << (dslParser.INT_08 - 40)) | (1 << (dslParser.INT_09 - 40)) | (1 << (dslParser.INT_10 - 40)) | (1 << (dslParser.INT_11 - 40)) | (1 << (dslParser.INT_12 - 40)) | (1 << (dslParser.INT_13 - 40)) | (1 << (dslParser.INT_14 - 40)) | (1 << (dslParser.INT_15 - 40)) | (1 << (dslParser.INT_16 - 40)) | (1 << (dslParser.INT_17 - 40)) | (1 << (dslParser.INT_18 - 40)) | (1 << (dslParser.INT_19 - 40)) | (1 << (dslParser.INT_20 - 40)) | (1 << (dslParser.INT_21 - 40)) | (1 << (dslParser.INT_22 - 40)) | (1 << (dslParser.INT_23 - 40)) | (1 << (dslParser.INT_24 - 40)) | (1 << (dslParser.INT_25 - 40)) | (1 << (dslParser.INT_26 - 40)) | (1 << (dslParser.INT_27 - 40)) | (1 << (dslParser.INT_28 - 40)) | (1 << (dslParser.INT_29 - 40)) | (1 << (dslParser.INT_30 - 40)) | (1 << (dslParser.INT_31 - 40)))) != 0)):
+            if not(((((_la - 41)) & ~0x3f) == 0 and ((1 << (_la - 41)) & ((1 << (dslParser.INT_1 - 41)) | (1 << (dslParser.INT_2 - 41)) | (1 << (dslParser.INT_3 - 41)) | (1 << (dslParser.INT_4 - 41)) | (1 << (dslParser.INT_5 - 41)) | (1 << (dslParser.INT_6 - 41)) | (1 << (dslParser.INT_7 - 41)) | (1 << (dslParser.INT_8 - 41)) | (1 << (dslParser.INT_9 - 41)) | (1 << (dslParser.INT_01 - 41)) | (1 << (dslParser.INT_02 - 41)) | (1 << (dslParser.INT_03 - 41)) | (1 << (dslParser.INT_04 - 41)) | (1 << (dslParser.INT_05 - 41)) | (1 << (dslParser.INT_06 - 41)) | (1 << (dslParser.INT_07 - 41)) | (1 << (dslParser.INT_08 - 41)) | (1 << (dslParser.INT_09 - 41)) | (1 << (dslParser.INT_10 - 41)) | (1 << (dslParser.INT_11 - 41)) | (1 << (dslParser.INT_12 - 41)) | (1 << (dslParser.INT_13 - 41)) | (1 << (dslParser.INT_14 - 41)) | (1 << (dslParser.INT_15 - 41)) | (1 << (dslParser.INT_16 - 41)) | (1 << (dslParser.INT_17 - 41)) | (1 << (dslParser.INT_18 - 41)) | (1 << (dslParser.INT_19 - 41)) | (1 << (dslParser.INT_20 - 41)) | (1 << (dslParser.INT_21 - 41)) | (1 << (dslParser.INT_22 - 41)) | (1 << (dslParser.INT_23 - 41)) | (1 << (dslParser.INT_24 - 41)) | (1 << (dslParser.INT_25 - 41)) | (1 << (dslParser.INT_26 - 41)) | (1 << (dslParser.INT_27 - 41)) | (1 << (dslParser.INT_28 - 41)) | (1 << (dslParser.INT_29 - 41)) | (1 << (dslParser.INT_30 - 41)) | (1 << (dslParser.INT_31 - 41)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -1914,12 +1792,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitYear" ):
                 listener.exitYear(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitYear" ):
-                return visitor.visitYear(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1961,12 +1833,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitDate_separator" ):
                 listener.exitDate_separator(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDate_separator" ):
-                return visitor.visitDate_separator(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2007,12 +1873,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTime" ):
                 listener.exitTime(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTime" ):
-                return visitor.visitTime(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2063,12 +1923,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitHour_minute" ):
                 listener.exitHour_minute(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitHour_minute" ):
-                return visitor.visitHour_minute(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2112,12 +1966,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTime_separator" ):
                 listener.exitTime_separator(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTime_separator" ):
-                return visitor.visitTime_separator(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2231,12 +2079,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitNumeric_hour" ):
                 listener.exitNumeric_hour(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumeric_hour" ):
-                return visitor.visitNumeric_hour(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2249,7 +2091,7 @@ class dslParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 207
             _la = self._input.LA(1)
-            if not(((((_la - 49)) & ~0x3f) == 0 and ((1 << (_la - 49)) & ((1 << (dslParser.INT_00 - 49)) | (1 << (dslParser.INT_01 - 49)) | (1 << (dslParser.INT_02 - 49)) | (1 << (dslParser.INT_03 - 49)) | (1 << (dslParser.INT_04 - 49)) | (1 << (dslParser.INT_05 - 49)) | (1 << (dslParser.INT_06 - 49)) | (1 << (dslParser.INT_07 - 49)) | (1 << (dslParser.INT_08 - 49)) | (1 << (dslParser.INT_09 - 49)) | (1 << (dslParser.INT_10 - 49)) | (1 << (dslParser.INT_11 - 49)) | (1 << (dslParser.INT_12 - 49)) | (1 << (dslParser.INT_13 - 49)) | (1 << (dslParser.INT_14 - 49)) | (1 << (dslParser.INT_15 - 49)) | (1 << (dslParser.INT_16 - 49)) | (1 << (dslParser.INT_17 - 49)) | (1 << (dslParser.INT_18 - 49)) | (1 << (dslParser.INT_19 - 49)) | (1 << (dslParser.INT_20 - 49)) | (1 << (dslParser.INT_21 - 49)) | (1 << (dslParser.INT_22 - 49)) | (1 << (dslParser.INT_23 - 49)) | (1 << (dslParser.INT_24 - 49)))) != 0)):
+            if not(((((_la - 50)) & ~0x3f) == 0 and ((1 << (_la - 50)) & ((1 << (dslParser.INT_00 - 50)) | (1 << (dslParser.INT_01 - 50)) | (1 << (dslParser.INT_02 - 50)) | (1 << (dslParser.INT_03 - 50)) | (1 << (dslParser.INT_04 - 50)) | (1 << (dslParser.INT_05 - 50)) | (1 << (dslParser.INT_06 - 50)) | (1 << (dslParser.INT_07 - 50)) | (1 << (dslParser.INT_08 - 50)) | (1 << (dslParser.INT_09 - 50)) | (1 << (dslParser.INT_10 - 50)) | (1 << (dslParser.INT_11 - 50)) | (1 << (dslParser.INT_12 - 50)) | (1 << (dslParser.INT_13 - 50)) | (1 << (dslParser.INT_14 - 50)) | (1 << (dslParser.INT_15 - 50)) | (1 << (dslParser.INT_16 - 50)) | (1 << (dslParser.INT_17 - 50)) | (1 << (dslParser.INT_18 - 50)) | (1 << (dslParser.INT_19 - 50)) | (1 << (dslParser.INT_20 - 50)) | (1 << (dslParser.INT_21 - 50)) | (1 << (dslParser.INT_22 - 50)) | (1 << (dslParser.INT_23 - 50)) | (1 << (dslParser.INT_24 - 50)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2460,12 +2302,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitNumeric_minute" ):
                 listener.exitNumeric_minute(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumeric_minute" ):
-                return visitor.visitNumeric_minute(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2478,7 +2314,7 @@ class dslParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 209
             _la = self._input.LA(1)
-            if not(((((_la - 49)) & ~0x3f) == 0 and ((1 << (_la - 49)) & ((1 << (dslParser.INT_00 - 49)) | (1 << (dslParser.INT_01 - 49)) | (1 << (dslParser.INT_02 - 49)) | (1 << (dslParser.INT_03 - 49)) | (1 << (dslParser.INT_04 - 49)) | (1 << (dslParser.INT_05 - 49)) | (1 << (dslParser.INT_06 - 49)) | (1 << (dslParser.INT_07 - 49)) | (1 << (dslParser.INT_08 - 49)) | (1 << (dslParser.INT_09 - 49)) | (1 << (dslParser.INT_10 - 49)) | (1 << (dslParser.INT_11 - 49)) | (1 << (dslParser.INT_12 - 49)) | (1 << (dslParser.INT_13 - 49)) | (1 << (dslParser.INT_14 - 49)) | (1 << (dslParser.INT_15 - 49)) | (1 << (dslParser.INT_16 - 49)) | (1 << (dslParser.INT_17 - 49)) | (1 << (dslParser.INT_18 - 49)) | (1 << (dslParser.INT_19 - 49)) | (1 << (dslParser.INT_20 - 49)) | (1 << (dslParser.INT_21 - 49)) | (1 << (dslParser.INT_22 - 49)) | (1 << (dslParser.INT_23 - 49)) | (1 << (dslParser.INT_24 - 49)) | (1 << (dslParser.INT_25 - 49)) | (1 << (dslParser.INT_26 - 49)) | (1 << (dslParser.INT_27 - 49)) | (1 << (dslParser.INT_28 - 49)) | (1 << (dslParser.INT_29 - 49)) | (1 << (dslParser.INT_30 - 49)) | (1 << (dslParser.INT_31 - 49)) | (1 << (dslParser.INT_32 - 49)) | (1 << (dslParser.INT_33 - 49)) | (1 << (dslParser.INT_34 - 49)) | (1 << (dslParser.INT_35 - 49)) | (1 << (dslParser.INT_36 - 49)) | (1 << (dslParser.INT_37 - 49)) | (1 << (dslParser.INT_38 - 49)) | (1 << (dslParser.INT_39 - 49)) | (1 << (dslParser.INT_40 - 49)) | (1 << (dslParser.INT_41 - 49)) | (1 << (dslParser.INT_42 - 49)) | (1 << (dslParser.INT_43 - 49)) | (1 << (dslParser.INT_44 - 49)) | (1 << (dslParser.INT_45 - 49)) | (1 << (dslParser.INT_46 - 49)) | (1 << (dslParser.INT_47 - 49)) | (1 << (dslParser.INT_48 - 49)) | (1 << (dslParser.INT_49 - 49)) | (1 << (dslParser.INT_50 - 49)) | (1 << (dslParser.INT_51 - 49)) | (1 << (dslParser.INT_52 - 49)) | (1 << (dslParser.INT_53 - 49)) | (1 << (dslParser.INT_54 - 49)) | (1 << (dslParser.INT_55 - 49)) | (1 << (dslParser.INT_56 - 49)) | (1 << (dslParser.INT_57 - 49)) | (1 << (dslParser.INT_58 - 49)) | (1 << (dslParser.INT_59 - 49)))) != 0)):
+            if not(((((_la - 50)) & ~0x3f) == 0 and ((1 << (_la - 50)) & ((1 << (dslParser.INT_00 - 50)) | (1 << (dslParser.INT_01 - 50)) | (1 << (dslParser.INT_02 - 50)) | (1 << (dslParser.INT_03 - 50)) | (1 << (dslParser.INT_04 - 50)) | (1 << (dslParser.INT_05 - 50)) | (1 << (dslParser.INT_06 - 50)) | (1 << (dslParser.INT_07 - 50)) | (1 << (dslParser.INT_08 - 50)) | (1 << (dslParser.INT_09 - 50)) | (1 << (dslParser.INT_10 - 50)) | (1 << (dslParser.INT_11 - 50)) | (1 << (dslParser.INT_12 - 50)) | (1 << (dslParser.INT_13 - 50)) | (1 << (dslParser.INT_14 - 50)) | (1 << (dslParser.INT_15 - 50)) | (1 << (dslParser.INT_16 - 50)) | (1 << (dslParser.INT_17 - 50)) | (1 << (dslParser.INT_18 - 50)) | (1 << (dslParser.INT_19 - 50)) | (1 << (dslParser.INT_20 - 50)) | (1 << (dslParser.INT_21 - 50)) | (1 << (dslParser.INT_22 - 50)) | (1 << (dslParser.INT_23 - 50)) | (1 << (dslParser.INT_24 - 50)) | (1 << (dslParser.INT_25 - 50)) | (1 << (dslParser.INT_26 - 50)) | (1 << (dslParser.INT_27 - 50)) | (1 << (dslParser.INT_28 - 50)) | (1 << (dslParser.INT_29 - 50)) | (1 << (dslParser.INT_30 - 50)) | (1 << (dslParser.INT_31 - 50)) | (1 << (dslParser.INT_32 - 50)) | (1 << (dslParser.INT_33 - 50)) | (1 << (dslParser.INT_34 - 50)) | (1 << (dslParser.INT_35 - 50)) | (1 << (dslParser.INT_36 - 50)) | (1 << (dslParser.INT_37 - 50)) | (1 << (dslParser.INT_38 - 50)) | (1 << (dslParser.INT_39 - 50)) | (1 << (dslParser.INT_40 - 50)) | (1 << (dslParser.INT_41 - 50)) | (1 << (dslParser.INT_42 - 50)) | (1 << (dslParser.INT_43 - 50)) | (1 << (dslParser.INT_44 - 50)) | (1 << (dslParser.INT_45 - 50)) | (1 << (dslParser.INT_46 - 50)) | (1 << (dslParser.INT_47 - 50)) | (1 << (dslParser.INT_48 - 50)) | (1 << (dslParser.INT_49 - 50)) | (1 << (dslParser.INT_50 - 50)) | (1 << (dslParser.INT_51 - 50)) | (1 << (dslParser.INT_52 - 50)) | (1 << (dslParser.INT_53 - 50)) | (1 << (dslParser.INT_54 - 50)) | (1 << (dslParser.INT_55 - 50)) | (1 << (dslParser.INT_56 - 50)) | (1 << (dslParser.INT_57 - 50)) | (1 << (dslParser.INT_58 - 50)) | (1 << (dslParser.INT_59 - 50)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2515,12 +2351,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitDirectMessage" ):
                 listener.exitDirectMessage(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDirectMessage" ):
-                return visitor.visitDirectMessage(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2584,12 +2414,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitDirect_message_required_parameters" ):
                 listener.exitDirect_message_required_parameters(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDirect_message_required_parameters" ):
-                return visitor.visitDirect_message_required_parameters(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2628,6 +2452,9 @@ class dslParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
+        def AUTO_FAV_RETWEET(self):
+            return self.getToken(dslParser.AUTO_FAV_RETWEET, 0)
+
         def keyword(self, i:int=None):
             if i is None:
                 return self.getTypedRuleContexts(dslParser.KeywordContext)
@@ -2652,12 +2479,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitAutoFavouriteRetweet" ):
                 listener.exitAutoFavouriteRetweet(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAutoFavouriteRetweet" ):
-                return visitor.visitAutoFavouriteRetweet(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2669,16 +2490,18 @@ class dslParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 222
+            self.match(dslParser.AUTO_FAV_RETWEET)
+            self.state = 223
             self.keyword()
-            self.state = 227
+            self.state = 228
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==dslParser.COMMA:
-                self.state = 223
-                self.match(dslParser.COMMA)
                 self.state = 224
+                self.match(dslParser.COMMA)
+                self.state = 225
                 self.keyword()
-                self.state = 229
+                self.state = 230
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -2711,12 +2534,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitAutoFollowFollowers" ):
                 listener.exitAutoFollowFollowers(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAutoFollowFollowers" ):
-                return visitor.visitAutoFollowFollowers(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2726,7 +2543,7 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 62, self.RULE_autoFollowFollowers)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 230
+            self.state = 231
             self.match(dslParser.FOLLOWALL)
         except RecognitionException as re:
             localctx.exception = re
@@ -2774,12 +2591,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitAutoReplyMentions" ):
                 listener.exitAutoReplyMentions(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAutoReplyMentions" ):
-                return visitor.visitAutoReplyMentions(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2790,19 +2601,19 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 232
-            self.match(dslParser.AUTOMATE_REPLY_MENTIONS)
             self.state = 233
+            self.match(dslParser.AUTOMATE_REPLY_MENTIONS)
+            self.state = 234
             self.automateReplyParameter()
-            self.state = 236 
+            self.state = 237 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 234
-                self.match(dslParser.COMMA)
                 self.state = 235
+                self.match(dslParser.COMMA)
+                self.state = 236
                 self.keyword()
-                self.state = 238 
+                self.state = 239 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if not (_la==dslParser.COMMA):
@@ -2857,12 +2668,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitAutomateReplyParameter" ):
                 listener.exitAutomateReplyParameter(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAutomateReplyParameter" ):
-                return visitor.visitAutomateReplyParameter(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2872,19 +2677,19 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 66, self.RULE_automateReplyParameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 240
-            self.match(dslParser.AUTOMATE_TIME)
             self.state = 241
-            self.match(dslParser.COLON)
+            self.match(dslParser.AUTOMATE_TIME)
             self.state = 242
-            self.number()
-            self.state = 243
-            self.match(dslParser.COMMA)
-            self.state = 244
-            self.match(dslParser.RESPONSE)
-            self.state = 245
             self.match(dslParser.COLON)
+            self.state = 243
+            self.number()
+            self.state = 244
+            self.match(dslParser.COMMA)
+            self.state = 245
+            self.match(dslParser.RESPONSE)
             self.state = 246
+            self.match(dslParser.COLON)
+            self.state = 247
             self.stringValue()
         except RecognitionException as re:
             localctx.exception = re
@@ -2922,12 +2727,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitKeyword" ):
                 listener.exitKeyword(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitKeyword" ):
-                return visitor.visitKeyword(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2937,11 +2736,11 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 68, self.RULE_keyword)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 248
-            self.match(dslParser.KEYWORD)
             self.state = 249
-            self.match(dslParser.COLON)
+            self.match(dslParser.KEYWORD)
             self.state = 250
+            self.match(dslParser.COLON)
+            self.state = 251
             self.stringValue()
         except RecognitionException as re:
             localctx.exception = re
@@ -2972,12 +2771,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitStringValue" ):
                 listener.exitStringValue(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitStringValue" ):
-                return visitor.visitStringValue(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2987,7 +2780,7 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 70, self.RULE_stringValue)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 252
+            self.state = 253
             self.match(dslParser.StringLiteral)
         except RecognitionException as re:
             localctx.exception = re
@@ -3023,12 +2816,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitNumber" ):
                 listener.exitNumber(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumber" ):
-                return visitor.visitNumber(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -3039,15 +2826,15 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 255
+            self.state = 256
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==dslParser.T__0 or _la==dslParser.T__1:
-                self.state = 254
+                self.state = 255
                 self.unary_operator()
 
 
-            self.state = 257
+            self.state = 258
             self.unsigned_number()
         except RecognitionException as re:
             localctx.exception = re
@@ -3076,12 +2863,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitUnary_operator" ):
                 listener.exitUnary_operator(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitUnary_operator" ):
-                return visitor.visitUnary_operator(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -3092,7 +2873,7 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 259
+            self.state = 260
             _la = self._input.LA(1)
             if not(_la==dslParser.T__0 or _la==dslParser.T__1):
                 self._errHandler.recoverInline(self)
@@ -3131,12 +2912,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitUnsigned_number" ):
                 listener.exitUnsigned_number(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitUnsigned_number" ):
-                return visitor.visitUnsigned_number(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -3147,7 +2922,7 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 261
+            self.state = 262
             _la = self._input.LA(1)
             if not(_la==dslParser.UNSIGNED_INT or _la==dslParser.UNSIGNED_FLOAT):
                 self._errHandler.recoverInline(self)
@@ -3186,12 +2961,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitBoolean" ):
                 listener.exitBoolean(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitBoolean" ):
-                return visitor.visitBoolean(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -3202,7 +2971,7 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 263
+            self.state = 264
             _la = self._input.LA(1)
             if not(_la==dslParser.TRUE or _la==dslParser.FALSE):
                 self._errHandler.recoverInline(self)

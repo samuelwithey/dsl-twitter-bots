@@ -130,6 +130,10 @@ WS
     : [ \t\n\r]+ -> skip
     ;
 
+AUTO_FAV_RETWEET
+    : 'automate_favourites_retweets'
+    ;
+
 SLASH
     : '/'
     ;
