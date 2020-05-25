@@ -122,6 +122,10 @@ RESPONSE
     : 'response'
     ;
 
+AUTOMATE_REPLY_MENTIONS
+    : 'automate_reply_to_mentions'
+    ;
+
 WS
     : [ \t\n\r]+ -> skip
     ;

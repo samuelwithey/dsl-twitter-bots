@@ -11,8 +11,8 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3m")
-        buf.write("\u0108\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3n")
+        buf.write("\u0109\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
@@ -31,52 +31,52 @@ def serializedATN():
         buf.write("\3\26\3\27\3\27\3\30\3\30\3\31\3\31\3\32\3\32\3\32\3\32")
         buf.write("\3\33\3\33\3\34\3\34\3\35\3\35\3\36\3\36\3\36\3\37\3\37")
         buf.write("\3\37\3\37\3\37\3\37\3\37\3\37\3 \6 \u00e2\n \r \16 \u00e3")
-        buf.write("\3!\3!\3\"\3\"\3\"\6\"\u00eb\n\"\r\"\16\"\u00ec\3#\3#")
-        buf.write("\3#\3#\3#\3#\3#\3#\3$\3$\3$\3$\3%\3%\3&\5&\u00fe\n&\3")
-        buf.write("&\3&\3\'\3\'\3(\3(\3)\3)\3)\2\2*\2\4\6\b\n\f\16\20\22")
-        buf.write("\24\26\30\32\34\36 \"$&(*,.\60\62\64\668:<>@BDFHJLNP\2")
-        buf.write("\t\4\2)\61\63>\4\2)\61\63Q\3\2\62J\3\2\62m\3\2\3\4\3\2")
-        buf.write("\7\b\3\2\n\13\2\u00f1\2R\3\2\2\2\4\\\3\2\2\2\6g\3\2\2")
-        buf.write("\2\bi\3\2\2\2\nr\3\2\2\2\f\u0085\3\2\2\2\16\u0087\3\2")
-        buf.write("\2\2\20\u0090\3\2\2\2\22\u0098\3\2\2\2\24\u009b\3\2\2")
-        buf.write("\2\26\u009f\3\2\2\2\30\u00a2\3\2\2\2\32\u00a6\3\2\2\2")
-        buf.write("\34\u00a9\3\2\2\2\36\u00ad\3\2\2\2 \u00b5\3\2\2\2\"\u00b7")
-        buf.write("\3\2\2\2$\u00bb\3\2\2\2&\u00bf\3\2\2\2(\u00c1\3\2\2\2")
-        buf.write("*\u00c3\3\2\2\2,\u00c5\3\2\2\2.\u00c7\3\2\2\2\60\u00c9")
-        buf.write("\3\2\2\2\62\u00cb\3\2\2\2\64\u00cf\3\2\2\2\66\u00d1\3")
-        buf.write("\2\2\28\u00d3\3\2\2\2:\u00d5\3\2\2\2<\u00d8\3\2\2\2>\u00e1")
-        buf.write("\3\2\2\2@\u00e5\3\2\2\2B\u00e7\3\2\2\2D\u00ee\3\2\2\2")
-        buf.write("F\u00f6\3\2\2\2H\u00fa\3\2\2\2J\u00fd\3\2\2\2L\u0101\3")
-        buf.write("\2\2\2N\u0103\3\2\2\2P\u0105\3\2\2\2RS\5\4\3\2SY\7\35")
-        buf.write("\2\2TU\5\4\3\2UV\7\35\2\2VX\3\2\2\2WT\3\2\2\2X[\3\2\2")
-        buf.write("\2YW\3\2\2\2YZ\3\2\2\2Z\3\3\2\2\2[Y\3\2\2\2\\]\5\6\4\2")
-        buf.write("]\5\3\2\2\2^h\5\b\5\2_h\5\16\b\2`h\5\22\n\2ah\5\26\f\2")
-        buf.write("bh\5\32\16\2ch\5:\36\2dh\5> \2eh\5@!\2fh\5B\"\2g^\3\2")
-        buf.write("\2\2g_\3\2\2\2g`\3\2\2\2ga\3\2\2\2gb\3\2\2\2gc\3\2\2\2")
-        buf.write("gd\3\2\2\2ge\3\2\2\2gf\3\2\2\2h\7\3\2\2\2ij\7\r\2\2jo")
-        buf.write("\5\n\6\2kl\7\34\2\2ln\5\f\7\2mk\3\2\2\2nq\3\2\2\2om\3")
-        buf.write("\2\2\2op\3\2\2\2p\t\3\2\2\2qo\3\2\2\2rs\7\17\2\2st\7\36")
-        buf.write("\2\2tu\5H%\2u\13\3\2\2\2vw\7\20\2\2wx\7\36\2\2x\u0086")
-        buf.write("\5P)\2yz\7\t\2\2z{\7\36\2\2{\u0086\5J&\2|}\7\21\2\2}~")
-        buf.write("\7\36\2\2~\u0086\5J&\2\177\u0080\7\22\2\2\u0080\u0081")
-        buf.write("\7\36\2\2\u0081\u0086\5H%\2\u0082\u0083\7\23\2\2\u0083")
-        buf.write("\u0084\7\36\2\2\u0084\u0086\5P)\2\u0085v\3\2\2\2\u0085")
-        buf.write("y\3\2\2\2\u0085|\3\2\2\2\u0085\177\3\2\2\2\u0085\u0082")
-        buf.write("\3\2\2\2\u0086\r\3\2\2\2\u0087\u0088\7\24\2\2\u0088\u008d")
-        buf.write("\5\20\t\2\u0089\u008a\7\34\2\2\u008a\u008c\5\f\7\2\u008b")
-        buf.write("\u0089\3\2\2\2\u008c\u008f\3\2\2\2\u008d\u008b\3\2\2\2")
-        buf.write("\u008d\u008e\3\2\2\2\u008e\17\3\2\2\2\u008f\u008d\3\2")
-        buf.write("\2\2\u0090\u0091\7\16\2\2\u0091\u0092\7\36\2\2\u0092\u0093")
-        buf.write("\5J&\2\u0093\u0094\7\34\2\2\u0094\u0095\7\17\2\2\u0095")
-        buf.write("\u0096\7\36\2\2\u0096\u0097\5H%\2\u0097\21\3\2\2\2\u0098")
-        buf.write("\u0099\7\25\2\2\u0099\u009a\5\24\13\2\u009a\23\3\2\2\2")
-        buf.write("\u009b\u009c\7\f\2\2\u009c\u009d\7\36\2\2\u009d\u009e")
-        buf.write("\5J&\2\u009e\25\3\2\2\2\u009f\u00a0\7\27\2\2\u00a0\u00a1")
-        buf.write("\5\30\r\2\u00a1\27\3\2\2\2\u00a2\u00a3\7\f\2\2\u00a3\u00a4")
-        buf.write("\7\36\2\2\u00a4\u00a5\5J&\2\u00a5\31\3\2\2\2\u00a6\u00a7")
-        buf.write("\7\30\2\2\u00a7\u00a8\5\34\17\2\u00a8\33\3\2\2\2\u00a9")
-        buf.write("\u00aa\5\36\20\2\u00aa\u00ab\7\34\2\2\u00ab\u00ac\5\b")
-        buf.write("\5\2\u00ac\35\3\2\2\2\u00ad\u00ae\7\31\2\2\u00ae\u00af")
+        buf.write("\3!\3!\3\"\3\"\3\"\3\"\6\"\u00ec\n\"\r\"\16\"\u00ed\3")
+        buf.write("#\3#\3#\3#\3#\3#\3#\3#\3$\3$\3$\3$\3%\3%\3&\5&\u00ff\n")
+        buf.write("&\3&\3&\3\'\3\'\3(\3(\3)\3)\3)\2\2*\2\4\6\b\n\f\16\20")
+        buf.write("\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\668:<>@BDFHJL")
+        buf.write("NP\2\t\4\2*\62\64?\4\2*\62\64R\3\2\63K\3\2\63n\3\2\3\4")
+        buf.write("\3\2\7\b\3\2\n\13\2\u00f2\2R\3\2\2\2\4\\\3\2\2\2\6g\3")
+        buf.write("\2\2\2\bi\3\2\2\2\nr\3\2\2\2\f\u0085\3\2\2\2\16\u0087")
+        buf.write("\3\2\2\2\20\u0090\3\2\2\2\22\u0098\3\2\2\2\24\u009b\3")
+        buf.write("\2\2\2\26\u009f\3\2\2\2\30\u00a2\3\2\2\2\32\u00a6\3\2")
+        buf.write("\2\2\34\u00a9\3\2\2\2\36\u00ad\3\2\2\2 \u00b5\3\2\2\2")
+        buf.write("\"\u00b7\3\2\2\2$\u00bb\3\2\2\2&\u00bf\3\2\2\2(\u00c1")
+        buf.write("\3\2\2\2*\u00c3\3\2\2\2,\u00c5\3\2\2\2.\u00c7\3\2\2\2")
+        buf.write("\60\u00c9\3\2\2\2\62\u00cb\3\2\2\2\64\u00cf\3\2\2\2\66")
+        buf.write("\u00d1\3\2\2\28\u00d3\3\2\2\2:\u00d5\3\2\2\2<\u00d8\3")
+        buf.write("\2\2\2>\u00e1\3\2\2\2@\u00e5\3\2\2\2B\u00e7\3\2\2\2D\u00ef")
+        buf.write("\3\2\2\2F\u00f7\3\2\2\2H\u00fb\3\2\2\2J\u00fe\3\2\2\2")
+        buf.write("L\u0102\3\2\2\2N\u0104\3\2\2\2P\u0106\3\2\2\2RS\5\4\3")
+        buf.write("\2SY\7\35\2\2TU\5\4\3\2UV\7\35\2\2VX\3\2\2\2WT\3\2\2\2")
+        buf.write("X[\3\2\2\2YW\3\2\2\2YZ\3\2\2\2Z\3\3\2\2\2[Y\3\2\2\2\\")
+        buf.write("]\5\6\4\2]\5\3\2\2\2^h\5\b\5\2_h\5\16\b\2`h\5\22\n\2a")
+        buf.write("h\5\26\f\2bh\5\32\16\2ch\5:\36\2dh\5> \2eh\5@!\2fh\5B")
+        buf.write("\"\2g^\3\2\2\2g_\3\2\2\2g`\3\2\2\2ga\3\2\2\2gb\3\2\2\2")
+        buf.write("gc\3\2\2\2gd\3\2\2\2ge\3\2\2\2gf\3\2\2\2h\7\3\2\2\2ij")
+        buf.write("\7\r\2\2jo\5\n\6\2kl\7\34\2\2ln\5\f\7\2mk\3\2\2\2nq\3")
+        buf.write("\2\2\2om\3\2\2\2op\3\2\2\2p\t\3\2\2\2qo\3\2\2\2rs\7\17")
+        buf.write("\2\2st\7\36\2\2tu\5H%\2u\13\3\2\2\2vw\7\20\2\2wx\7\36")
+        buf.write("\2\2x\u0086\5P)\2yz\7\t\2\2z{\7\36\2\2{\u0086\5J&\2|}")
+        buf.write("\7\21\2\2}~\7\36\2\2~\u0086\5J&\2\177\u0080\7\22\2\2\u0080")
+        buf.write("\u0081\7\36\2\2\u0081\u0086\5H%\2\u0082\u0083\7\23\2\2")
+        buf.write("\u0083\u0084\7\36\2\2\u0084\u0086\5P)\2\u0085v\3\2\2\2")
+        buf.write("\u0085y\3\2\2\2\u0085|\3\2\2\2\u0085\177\3\2\2\2\u0085")
+        buf.write("\u0082\3\2\2\2\u0086\r\3\2\2\2\u0087\u0088\7\24\2\2\u0088")
+        buf.write("\u008d\5\20\t\2\u0089\u008a\7\34\2\2\u008a\u008c\5\f\7")
+        buf.write("\2\u008b\u0089\3\2\2\2\u008c\u008f\3\2\2\2\u008d\u008b")
+        buf.write("\3\2\2\2\u008d\u008e\3\2\2\2\u008e\17\3\2\2\2\u008f\u008d")
+        buf.write("\3\2\2\2\u0090\u0091\7\16\2\2\u0091\u0092\7\36\2\2\u0092")
+        buf.write("\u0093\5J&\2\u0093\u0094\7\34\2\2\u0094\u0095\7\17\2\2")
+        buf.write("\u0095\u0096\7\36\2\2\u0096\u0097\5H%\2\u0097\21\3\2\2")
+        buf.write("\2\u0098\u0099\7\25\2\2\u0099\u009a\5\24\13\2\u009a\23")
+        buf.write("\3\2\2\2\u009b\u009c\7\f\2\2\u009c\u009d\7\36\2\2\u009d")
+        buf.write("\u009e\5J&\2\u009e\25\3\2\2\2\u009f\u00a0\7\27\2\2\u00a0")
+        buf.write("\u00a1\5\30\r\2\u00a1\27\3\2\2\2\u00a2\u00a3\7\f\2\2\u00a3")
+        buf.write("\u00a4\7\36\2\2\u00a4\u00a5\5J&\2\u00a5\31\3\2\2\2\u00a6")
+        buf.write("\u00a7\7\30\2\2\u00a7\u00a8\5\34\17\2\u00a8\33\3\2\2\2")
+        buf.write("\u00a9\u00aa\5\36\20\2\u00aa\u00ab\7\34\2\2\u00ab\u00ac")
+        buf.write("\5\b\5\2\u00ac\35\3\2\2\2\u00ad\u00ae\7\31\2\2\u00ae\u00af")
         buf.write("\7\36\2\2\u00af\u00b0\5 \21\2\u00b0\u00b1\7\34\2\2\u00b1")
         buf.write("\u00b2\7\32\2\2\u00b2\u00b3\7\36\2\2\u00b3\u00b4\5\60")
         buf.write("\31\2\u00b4\37\3\2\2\2\u00b5\u00b6\5\"\22\2\u00b6!\3\2")
@@ -85,10 +85,10 @@ def serializedATN():
         buf.write("\5.\30\2\u00bd\u00be\5&\24\2\u00be%\3\2\2\2\u00bf\u00c0")
         buf.write("\5(\25\2\u00c0\'\3\2\2\2\u00c1\u00c2\t\2\2\2\u00c2)\3")
         buf.write("\2\2\2\u00c3\u00c4\t\3\2\2\u00c4+\3\2\2\2\u00c5\u00c6")
-        buf.write("\7&\2\2\u00c6-\3\2\2\2\u00c7\u00c8\7$\2\2\u00c8/\3\2\2")
-        buf.write("\2\u00c9\u00ca\5\62\32\2\u00ca\61\3\2\2\2\u00cb\u00cc")
+        buf.write("\7\'\2\2\u00c6-\3\2\2\2\u00c7\u00c8\7%\2\2\u00c8/\3\2")
+        buf.write("\2\2\u00c9\u00ca\5\62\32\2\u00ca\61\3\2\2\2\u00cb\u00cc")
         buf.write("\5\66\34\2\u00cc\u00cd\5\64\33\2\u00cd\u00ce\58\35\2\u00ce")
-        buf.write("\63\3\2\2\2\u00cf\u00d0\7%\2\2\u00d0\65\3\2\2\2\u00d1")
+        buf.write("\63\3\2\2\2\u00cf\u00d0\7&\2\2\u00d0\65\3\2\2\2\u00d1")
         buf.write("\u00d2\t\4\2\2\u00d2\67\3\2\2\2\u00d3\u00d4\t\5\2\2\u00d4")
         buf.write("9\3\2\2\2\u00d5\u00d6\7\26\2\2\u00d6\u00d7\5<\37\2\u00d7")
         buf.write(";\3\2\2\2\u00d8\u00d9\7\f\2\2\u00d9\u00da\7\36\2\2\u00da")
@@ -96,19 +96,20 @@ def serializedATN():
         buf.write("\u00dd\u00de\7\36\2\2\u00de\u00df\5H%\2\u00df=\3\2\2\2")
         buf.write("\u00e0\u00e2\5F$\2\u00e1\u00e0\3\2\2\2\u00e2\u00e3\3\2")
         buf.write("\2\2\u00e3\u00e1\3\2\2\2\u00e3\u00e4\3\2\2\2\u00e4?\3")
-        buf.write("\2\2\2\u00e5\u00e6\7 \2\2\u00e6A\3\2\2\2\u00e7\u00e8\5")
-        buf.write("D#\2\u00e8\u00ea\7\34\2\2\u00e9\u00eb\5F$\2\u00ea\u00e9")
-        buf.write("\3\2\2\2\u00eb\u00ec\3\2\2\2\u00ec\u00ea\3\2\2\2\u00ec")
-        buf.write("\u00ed\3\2\2\2\u00edC\3\2\2\2\u00ee\u00ef\7!\2\2\u00ef")
-        buf.write("\u00f0\7\36\2\2\u00f0\u00f1\5J&\2\u00f1\u00f2\7\34\2\2")
-        buf.write("\u00f2\u00f3\7\"\2\2\u00f3\u00f4\7\36\2\2\u00f4\u00f5")
-        buf.write("\5H%\2\u00f5E\3\2\2\2\u00f6\u00f7\7\37\2\2\u00f7\u00f8")
-        buf.write("\7\36\2\2\u00f8\u00f9\5H%\2\u00f9G\3\2\2\2\u00fa\u00fb")
-        buf.write("\7\5\2\2\u00fbI\3\2\2\2\u00fc\u00fe\5L\'\2\u00fd\u00fc")
-        buf.write("\3\2\2\2\u00fd\u00fe\3\2\2\2\u00fe\u00ff\3\2\2\2\u00ff")
-        buf.write("\u0100\5N(\2\u0100K\3\2\2\2\u0101\u0102\t\6\2\2\u0102")
-        buf.write("M\3\2\2\2\u0103\u0104\t\7\2\2\u0104O\3\2\2\2\u0105\u0106")
-        buf.write("\t\b\2\2\u0106Q\3\2\2\2\nYgo\u0085\u008d\u00e3\u00ec\u00fd")
+        buf.write("\2\2\2\u00e5\u00e6\7 \2\2\u00e6A\3\2\2\2\u00e7\u00e8\7")
+        buf.write("#\2\2\u00e8\u00e9\5D#\2\u00e9\u00eb\7\34\2\2\u00ea\u00ec")
+        buf.write("\5F$\2\u00eb\u00ea\3\2\2\2\u00ec\u00ed\3\2\2\2\u00ed\u00eb")
+        buf.write("\3\2\2\2\u00ed\u00ee\3\2\2\2\u00eeC\3\2\2\2\u00ef\u00f0")
+        buf.write("\7!\2\2\u00f0\u00f1\7\36\2\2\u00f1\u00f2\5J&\2\u00f2\u00f3")
+        buf.write("\7\34\2\2\u00f3\u00f4\7\"\2\2\u00f4\u00f5\7\36\2\2\u00f5")
+        buf.write("\u00f6\5H%\2\u00f6E\3\2\2\2\u00f7\u00f8\7\37\2\2\u00f8")
+        buf.write("\u00f9\7\36\2\2\u00f9\u00fa\5H%\2\u00faG\3\2\2\2\u00fb")
+        buf.write("\u00fc\7\5\2\2\u00fcI\3\2\2\2\u00fd\u00ff\5L\'\2\u00fe")
+        buf.write("\u00fd\3\2\2\2\u00fe\u00ff\3\2\2\2\u00ff\u0100\3\2\2\2")
+        buf.write("\u0100\u0101\5N(\2\u0101K\3\2\2\2\u0102\u0103\t\6\2\2")
+        buf.write("\u0103M\3\2\2\2\u0104\u0105\t\7\2\2\u0105O\3\2\2\2\u0106")
+        buf.write("\u0107\t\b\2\2\u0107Q\3\2\2\2\nYgo\u0085\u008d\u00e3\u00ed")
+        buf.write("\u00fe")
         return buf.getvalue()
 
 
@@ -129,18 +130,18 @@ class dslParser ( Parser ):
                      "'reply'", "'retweet'", "'direct_message'", "'favourite'", 
                      "'schedule'", "'date'", "'time'", "'text'", "','", 
                      "';'", "':'", "'keyword'", "'follow_all_followers'", 
-                     "'automate_time'", "'response'", "<INVALID>", "'/'", 
-                     "'.'", "<INVALID>", "<INVALID>", "'0'", "'1'", "'2'", 
-                     "'3'", "'4'", "'5'", "'6'", "'7'", "'8'", "'9'", "'00'", 
-                     "'01'", "'02'", "'03'", "'04'", "'05'", "'06'", "'07'", 
-                     "'08'", "'09'", "'10'", "'11'", "'12'", "'13'", "'14'", 
-                     "'15'", "'16'", "'17'", "'18'", "'19'", "'20'", "'21'", 
-                     "'22'", "'23'", "'24'", "'25'", "'26'", "'27'", "'28'", 
-                     "'29'", "'30'", "'31'", "'32'", "'33'", "'34'", "'35'", 
-                     "'36'", "'37'", "'38'", "'39'", "'40'", "'41'", "'42'", 
-                     "'43'", "'44'", "'45'", "'46'", "'47'", "'48'", "'49'", 
-                     "'50'", "'51'", "'52'", "'53'", "'54'", "'55'", "'56'", 
-                     "'57'", "'58'", "'59'" ]
+                     "'automate_time'", "'response'", "'automate_reply_to_mentions'", 
+                     "<INVALID>", "'/'", "'.'", "<INVALID>", "<INVALID>", 
+                     "'0'", "'1'", "'2'", "'3'", "'4'", "'5'", "'6'", "'7'", 
+                     "'8'", "'9'", "'00'", "'01'", "'02'", "'03'", "'04'", 
+                     "'05'", "'06'", "'07'", "'08'", "'09'", "'10'", "'11'", 
+                     "'12'", "'13'", "'14'", "'15'", "'16'", "'17'", "'18'", 
+                     "'19'", "'20'", "'21'", "'22'", "'23'", "'24'", "'25'", 
+                     "'26'", "'27'", "'28'", "'29'", "'30'", "'31'", "'32'", 
+                     "'33'", "'34'", "'35'", "'36'", "'37'", "'38'", "'39'", 
+                     "'40'", "'41'", "'42'", "'43'", "'44'", "'45'", "'46'", 
+                     "'47'", "'48'", "'49'", "'50'", "'51'", "'52'", "'53'", 
+                     "'54'", "'55'", "'56'", "'57'", "'58'", "'59'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "StringLiteral", 
                       "UnterminatedStringLiteral", "UNSIGNED_INT", "UNSIGNED_FLOAT", 
@@ -149,21 +150,21 @@ class dslParser ( Parser ):
                       "DISPLAY_COORDINATES", "REPLY", "RETWEET", "DIRECT_MESSAGE", 
                       "FAVOURITE", "SCHEDULE", "DATE", "TIME", "TEXT", "COMMA", 
                       "SEMICOLON", "COLON", "KEYWORD", "FOLLOWALL", "AUTOMATE_TIME", 
-                      "RESPONSE", "WS", "SLASH", "DOT", "FOUR_DIGIT", "DIGIT", 
-                      "INT_0", "INT_1", "INT_2", "INT_3", "INT_4", "INT_5", 
-                      "INT_6", "INT_7", "INT_8", "INT_9", "INT_00", "INT_01", 
-                      "INT_02", "INT_03", "INT_04", "INT_05", "INT_06", 
-                      "INT_07", "INT_08", "INT_09", "INT_10", "INT_11", 
-                      "INT_12", "INT_13", "INT_14", "INT_15", "INT_16", 
-                      "INT_17", "INT_18", "INT_19", "INT_20", "INT_21", 
-                      "INT_22", "INT_23", "INT_24", "INT_25", "INT_26", 
-                      "INT_27", "INT_28", "INT_29", "INT_30", "INT_31", 
-                      "INT_32", "INT_33", "INT_34", "INT_35", "INT_36", 
-                      "INT_37", "INT_38", "INT_39", "INT_40", "INT_41", 
-                      "INT_42", "INT_43", "INT_44", "INT_45", "INT_46", 
-                      "INT_47", "INT_48", "INT_49", "INT_50", "INT_51", 
-                      "INT_52", "INT_53", "INT_54", "INT_55", "INT_56", 
-                      "INT_57", "INT_58", "INT_59" ]
+                      "RESPONSE", "AUTOMATE_REPLY_MENTIONS", "WS", "SLASH", 
+                      "DOT", "FOUR_DIGIT", "DIGIT", "INT_0", "INT_1", "INT_2", 
+                      "INT_3", "INT_4", "INT_5", "INT_6", "INT_7", "INT_8", 
+                      "INT_9", "INT_00", "INT_01", "INT_02", "INT_03", "INT_04", 
+                      "INT_05", "INT_06", "INT_07", "INT_08", "INT_09", 
+                      "INT_10", "INT_11", "INT_12", "INT_13", "INT_14", 
+                      "INT_15", "INT_16", "INT_17", "INT_18", "INT_19", 
+                      "INT_20", "INT_21", "INT_22", "INT_23", "INT_24", 
+                      "INT_25", "INT_26", "INT_27", "INT_28", "INT_29", 
+                      "INT_30", "INT_31", "INT_32", "INT_33", "INT_34", 
+                      "INT_35", "INT_36", "INT_37", "INT_38", "INT_39", 
+                      "INT_40", "INT_41", "INT_42", "INT_43", "INT_44", 
+                      "INT_45", "INT_46", "INT_47", "INT_48", "INT_49", 
+                      "INT_50", "INT_51", "INT_52", "INT_53", "INT_54", 
+                      "INT_55", "INT_56", "INT_57", "INT_58", "INT_59" ]
 
     RULE_twitbot = 0
     RULE_stat = 1
@@ -251,81 +252,82 @@ class dslParser ( Parser ):
     FOLLOWALL=30
     AUTOMATE_TIME=31
     RESPONSE=32
-    WS=33
-    SLASH=34
-    DOT=35
-    FOUR_DIGIT=36
-    DIGIT=37
-    INT_0=38
-    INT_1=39
-    INT_2=40
-    INT_3=41
-    INT_4=42
-    INT_5=43
-    INT_6=44
-    INT_7=45
-    INT_8=46
-    INT_9=47
-    INT_00=48
-    INT_01=49
-    INT_02=50
-    INT_03=51
-    INT_04=52
-    INT_05=53
-    INT_06=54
-    INT_07=55
-    INT_08=56
-    INT_09=57
-    INT_10=58
-    INT_11=59
-    INT_12=60
-    INT_13=61
-    INT_14=62
-    INT_15=63
-    INT_16=64
-    INT_17=65
-    INT_18=66
-    INT_19=67
-    INT_20=68
-    INT_21=69
-    INT_22=70
-    INT_23=71
-    INT_24=72
-    INT_25=73
-    INT_26=74
-    INT_27=75
-    INT_28=76
-    INT_29=77
-    INT_30=78
-    INT_31=79
-    INT_32=80
-    INT_33=81
-    INT_34=82
-    INT_35=83
-    INT_36=84
-    INT_37=85
-    INT_38=86
-    INT_39=87
-    INT_40=88
-    INT_41=89
-    INT_42=90
-    INT_43=91
-    INT_44=92
-    INT_45=93
-    INT_46=94
-    INT_47=95
-    INT_48=96
-    INT_49=97
-    INT_50=98
-    INT_51=99
-    INT_52=100
-    INT_53=101
-    INT_54=102
-    INT_55=103
-    INT_56=104
-    INT_57=105
-    INT_58=106
-    INT_59=107
+    AUTOMATE_REPLY_MENTIONS=33
+    WS=34
+    SLASH=35
+    DOT=36
+    FOUR_DIGIT=37
+    DIGIT=38
+    INT_0=39
+    INT_1=40
+    INT_2=41
+    INT_3=42
+    INT_4=43
+    INT_5=44
+    INT_6=45
+    INT_7=46
+    INT_8=47
+    INT_9=48
+    INT_00=49
+    INT_01=50
+    INT_02=51
+    INT_03=52
+    INT_04=53
+    INT_05=54
+    INT_06=55
+    INT_07=56
+    INT_08=57
+    INT_09=58
+    INT_10=59
+    INT_11=60
+    INT_12=61
+    INT_13=62
+    INT_14=63
+    INT_15=64
+    INT_16=65
+    INT_17=66
+    INT_18=67
+    INT_19=68
+    INT_20=69
+    INT_21=70
+    INT_22=71
+    INT_23=72
+    INT_24=73
+    INT_25=74
+    INT_26=75
+    INT_27=76
+    INT_28=77
+    INT_29=78
+    INT_30=79
+    INT_31=80
+    INT_32=81
+    INT_33=82
+    INT_34=83
+    INT_35=84
+    INT_36=85
+    INT_37=86
+    INT_38=87
+    INT_39=88
+    INT_40=89
+    INT_41=90
+    INT_42=91
+    INT_43=92
+    INT_44=93
+    INT_45=94
+    INT_46=95
+    INT_47=96
+    INT_48=97
+    INT_49=98
+    INT_50=99
+    INT_51=100
+    INT_52=101
+    INT_53=102
+    INT_54=103
+    INT_55=104
+    INT_56=105
+    INT_57=106
+    INT_58=107
+    INT_59=108
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -389,7 +391,7 @@ class dslParser ( Parser ):
             self.state = 87
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << dslParser.TWEET) | (1 << dslParser.REPLY) | (1 << dslParser.RETWEET) | (1 << dslParser.DIRECT_MESSAGE) | (1 << dslParser.FAVOURITE) | (1 << dslParser.SCHEDULE) | (1 << dslParser.KEYWORD) | (1 << dslParser.FOLLOWALL) | (1 << dslParser.AUTOMATE_TIME))) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << dslParser.TWEET) | (1 << dslParser.REPLY) | (1 << dslParser.RETWEET) | (1 << dslParser.DIRECT_MESSAGE) | (1 << dslParser.FAVOURITE) | (1 << dslParser.SCHEDULE) | (1 << dslParser.KEYWORD) | (1 << dslParser.FOLLOWALL) | (1 << dslParser.AUTOMATE_REPLY_MENTIONS))) != 0):
                 self.state = 82
                 self.stat()
                 self.state = 83
@@ -564,7 +566,7 @@ class dslParser ( Parser ):
                 self.state = 99
                 self.autoFollowFollowers()
                 pass
-            elif token in [dslParser.AUTOMATE_TIME]:
+            elif token in [dslParser.AUTOMATE_REPLY_MENTIONS]:
                 self.enterOuterAlt(localctx, 9)
                 self.state = 100
                 self.autoReplyMentions()
@@ -1878,7 +1880,7 @@ class dslParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 193
             _la = self._input.LA(1)
-            if not(((((_la - 39)) & ~0x3f) == 0 and ((1 << (_la - 39)) & ((1 << (dslParser.INT_1 - 39)) | (1 << (dslParser.INT_2 - 39)) | (1 << (dslParser.INT_3 - 39)) | (1 << (dslParser.INT_4 - 39)) | (1 << (dslParser.INT_5 - 39)) | (1 << (dslParser.INT_6 - 39)) | (1 << (dslParser.INT_7 - 39)) | (1 << (dslParser.INT_8 - 39)) | (1 << (dslParser.INT_9 - 39)) | (1 << (dslParser.INT_01 - 39)) | (1 << (dslParser.INT_02 - 39)) | (1 << (dslParser.INT_03 - 39)) | (1 << (dslParser.INT_04 - 39)) | (1 << (dslParser.INT_05 - 39)) | (1 << (dslParser.INT_06 - 39)) | (1 << (dslParser.INT_07 - 39)) | (1 << (dslParser.INT_08 - 39)) | (1 << (dslParser.INT_09 - 39)) | (1 << (dslParser.INT_10 - 39)) | (1 << (dslParser.INT_11 - 39)) | (1 << (dslParser.INT_12 - 39)) | (1 << (dslParser.INT_13 - 39)) | (1 << (dslParser.INT_14 - 39)) | (1 << (dslParser.INT_15 - 39)) | (1 << (dslParser.INT_16 - 39)) | (1 << (dslParser.INT_17 - 39)) | (1 << (dslParser.INT_18 - 39)) | (1 << (dslParser.INT_19 - 39)) | (1 << (dslParser.INT_20 - 39)) | (1 << (dslParser.INT_21 - 39)) | (1 << (dslParser.INT_22 - 39)) | (1 << (dslParser.INT_23 - 39)) | (1 << (dslParser.INT_24 - 39)) | (1 << (dslParser.INT_25 - 39)) | (1 << (dslParser.INT_26 - 39)) | (1 << (dslParser.INT_27 - 39)) | (1 << (dslParser.INT_28 - 39)) | (1 << (dslParser.INT_29 - 39)) | (1 << (dslParser.INT_30 - 39)) | (1 << (dslParser.INT_31 - 39)))) != 0)):
+            if not(((((_la - 40)) & ~0x3f) == 0 and ((1 << (_la - 40)) & ((1 << (dslParser.INT_1 - 40)) | (1 << (dslParser.INT_2 - 40)) | (1 << (dslParser.INT_3 - 40)) | (1 << (dslParser.INT_4 - 40)) | (1 << (dslParser.INT_5 - 40)) | (1 << (dslParser.INT_6 - 40)) | (1 << (dslParser.INT_7 - 40)) | (1 << (dslParser.INT_8 - 40)) | (1 << (dslParser.INT_9 - 40)) | (1 << (dslParser.INT_01 - 40)) | (1 << (dslParser.INT_02 - 40)) | (1 << (dslParser.INT_03 - 40)) | (1 << (dslParser.INT_04 - 40)) | (1 << (dslParser.INT_05 - 40)) | (1 << (dslParser.INT_06 - 40)) | (1 << (dslParser.INT_07 - 40)) | (1 << (dslParser.INT_08 - 40)) | (1 << (dslParser.INT_09 - 40)) | (1 << (dslParser.INT_10 - 40)) | (1 << (dslParser.INT_11 - 40)) | (1 << (dslParser.INT_12 - 40)) | (1 << (dslParser.INT_13 - 40)) | (1 << (dslParser.INT_14 - 40)) | (1 << (dslParser.INT_15 - 40)) | (1 << (dslParser.INT_16 - 40)) | (1 << (dslParser.INT_17 - 40)) | (1 << (dslParser.INT_18 - 40)) | (1 << (dslParser.INT_19 - 40)) | (1 << (dslParser.INT_20 - 40)) | (1 << (dslParser.INT_21 - 40)) | (1 << (dslParser.INT_22 - 40)) | (1 << (dslParser.INT_23 - 40)) | (1 << (dslParser.INT_24 - 40)) | (1 << (dslParser.INT_25 - 40)) | (1 << (dslParser.INT_26 - 40)) | (1 << (dslParser.INT_27 - 40)) | (1 << (dslParser.INT_28 - 40)) | (1 << (dslParser.INT_29 - 40)) | (1 << (dslParser.INT_30 - 40)) | (1 << (dslParser.INT_31 - 40)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2246,7 +2248,7 @@ class dslParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 207
             _la = self._input.LA(1)
-            if not(((((_la - 48)) & ~0x3f) == 0 and ((1 << (_la - 48)) & ((1 << (dslParser.INT_00 - 48)) | (1 << (dslParser.INT_01 - 48)) | (1 << (dslParser.INT_02 - 48)) | (1 << (dslParser.INT_03 - 48)) | (1 << (dslParser.INT_04 - 48)) | (1 << (dslParser.INT_05 - 48)) | (1 << (dslParser.INT_06 - 48)) | (1 << (dslParser.INT_07 - 48)) | (1 << (dslParser.INT_08 - 48)) | (1 << (dslParser.INT_09 - 48)) | (1 << (dslParser.INT_10 - 48)) | (1 << (dslParser.INT_11 - 48)) | (1 << (dslParser.INT_12 - 48)) | (1 << (dslParser.INT_13 - 48)) | (1 << (dslParser.INT_14 - 48)) | (1 << (dslParser.INT_15 - 48)) | (1 << (dslParser.INT_16 - 48)) | (1 << (dslParser.INT_17 - 48)) | (1 << (dslParser.INT_18 - 48)) | (1 << (dslParser.INT_19 - 48)) | (1 << (dslParser.INT_20 - 48)) | (1 << (dslParser.INT_21 - 48)) | (1 << (dslParser.INT_22 - 48)) | (1 << (dslParser.INT_23 - 48)) | (1 << (dslParser.INT_24 - 48)))) != 0)):
+            if not(((((_la - 49)) & ~0x3f) == 0 and ((1 << (_la - 49)) & ((1 << (dslParser.INT_00 - 49)) | (1 << (dslParser.INT_01 - 49)) | (1 << (dslParser.INT_02 - 49)) | (1 << (dslParser.INT_03 - 49)) | (1 << (dslParser.INT_04 - 49)) | (1 << (dslParser.INT_05 - 49)) | (1 << (dslParser.INT_06 - 49)) | (1 << (dslParser.INT_07 - 49)) | (1 << (dslParser.INT_08 - 49)) | (1 << (dslParser.INT_09 - 49)) | (1 << (dslParser.INT_10 - 49)) | (1 << (dslParser.INT_11 - 49)) | (1 << (dslParser.INT_12 - 49)) | (1 << (dslParser.INT_13 - 49)) | (1 << (dslParser.INT_14 - 49)) | (1 << (dslParser.INT_15 - 49)) | (1 << (dslParser.INT_16 - 49)) | (1 << (dslParser.INT_17 - 49)) | (1 << (dslParser.INT_18 - 49)) | (1 << (dslParser.INT_19 - 49)) | (1 << (dslParser.INT_20 - 49)) | (1 << (dslParser.INT_21 - 49)) | (1 << (dslParser.INT_22 - 49)) | (1 << (dslParser.INT_23 - 49)) | (1 << (dslParser.INT_24 - 49)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2475,7 +2477,7 @@ class dslParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 209
             _la = self._input.LA(1)
-            if not(((((_la - 48)) & ~0x3f) == 0 and ((1 << (_la - 48)) & ((1 << (dslParser.INT_00 - 48)) | (1 << (dslParser.INT_01 - 48)) | (1 << (dslParser.INT_02 - 48)) | (1 << (dslParser.INT_03 - 48)) | (1 << (dslParser.INT_04 - 48)) | (1 << (dslParser.INT_05 - 48)) | (1 << (dslParser.INT_06 - 48)) | (1 << (dslParser.INT_07 - 48)) | (1 << (dslParser.INT_08 - 48)) | (1 << (dslParser.INT_09 - 48)) | (1 << (dslParser.INT_10 - 48)) | (1 << (dslParser.INT_11 - 48)) | (1 << (dslParser.INT_12 - 48)) | (1 << (dslParser.INT_13 - 48)) | (1 << (dslParser.INT_14 - 48)) | (1 << (dslParser.INT_15 - 48)) | (1 << (dslParser.INT_16 - 48)) | (1 << (dslParser.INT_17 - 48)) | (1 << (dslParser.INT_18 - 48)) | (1 << (dslParser.INT_19 - 48)) | (1 << (dslParser.INT_20 - 48)) | (1 << (dslParser.INT_21 - 48)) | (1 << (dslParser.INT_22 - 48)) | (1 << (dslParser.INT_23 - 48)) | (1 << (dslParser.INT_24 - 48)) | (1 << (dslParser.INT_25 - 48)) | (1 << (dslParser.INT_26 - 48)) | (1 << (dslParser.INT_27 - 48)) | (1 << (dslParser.INT_28 - 48)) | (1 << (dslParser.INT_29 - 48)) | (1 << (dslParser.INT_30 - 48)) | (1 << (dslParser.INT_31 - 48)) | (1 << (dslParser.INT_32 - 48)) | (1 << (dslParser.INT_33 - 48)) | (1 << (dslParser.INT_34 - 48)) | (1 << (dslParser.INT_35 - 48)) | (1 << (dslParser.INT_36 - 48)) | (1 << (dslParser.INT_37 - 48)) | (1 << (dslParser.INT_38 - 48)) | (1 << (dslParser.INT_39 - 48)) | (1 << (dslParser.INT_40 - 48)) | (1 << (dslParser.INT_41 - 48)) | (1 << (dslParser.INT_42 - 48)) | (1 << (dslParser.INT_43 - 48)) | (1 << (dslParser.INT_44 - 48)) | (1 << (dslParser.INT_45 - 48)) | (1 << (dslParser.INT_46 - 48)) | (1 << (dslParser.INT_47 - 48)) | (1 << (dslParser.INT_48 - 48)) | (1 << (dslParser.INT_49 - 48)) | (1 << (dslParser.INT_50 - 48)) | (1 << (dslParser.INT_51 - 48)) | (1 << (dslParser.INT_52 - 48)) | (1 << (dslParser.INT_53 - 48)) | (1 << (dslParser.INT_54 - 48)) | (1 << (dslParser.INT_55 - 48)) | (1 << (dslParser.INT_56 - 48)) | (1 << (dslParser.INT_57 - 48)) | (1 << (dslParser.INT_58 - 48)) | (1 << (dslParser.INT_59 - 48)))) != 0)):
+            if not(((((_la - 49)) & ~0x3f) == 0 and ((1 << (_la - 49)) & ((1 << (dslParser.INT_00 - 49)) | (1 << (dslParser.INT_01 - 49)) | (1 << (dslParser.INT_02 - 49)) | (1 << (dslParser.INT_03 - 49)) | (1 << (dslParser.INT_04 - 49)) | (1 << (dslParser.INT_05 - 49)) | (1 << (dslParser.INT_06 - 49)) | (1 << (dslParser.INT_07 - 49)) | (1 << (dslParser.INT_08 - 49)) | (1 << (dslParser.INT_09 - 49)) | (1 << (dslParser.INT_10 - 49)) | (1 << (dslParser.INT_11 - 49)) | (1 << (dslParser.INT_12 - 49)) | (1 << (dslParser.INT_13 - 49)) | (1 << (dslParser.INT_14 - 49)) | (1 << (dslParser.INT_15 - 49)) | (1 << (dslParser.INT_16 - 49)) | (1 << (dslParser.INT_17 - 49)) | (1 << (dslParser.INT_18 - 49)) | (1 << (dslParser.INT_19 - 49)) | (1 << (dslParser.INT_20 - 49)) | (1 << (dslParser.INT_21 - 49)) | (1 << (dslParser.INT_22 - 49)) | (1 << (dslParser.INT_23 - 49)) | (1 << (dslParser.INT_24 - 49)) | (1 << (dslParser.INT_25 - 49)) | (1 << (dslParser.INT_26 - 49)) | (1 << (dslParser.INT_27 - 49)) | (1 << (dslParser.INT_28 - 49)) | (1 << (dslParser.INT_29 - 49)) | (1 << (dslParser.INT_30 - 49)) | (1 << (dslParser.INT_31 - 49)) | (1 << (dslParser.INT_32 - 49)) | (1 << (dslParser.INT_33 - 49)) | (1 << (dslParser.INT_34 - 49)) | (1 << (dslParser.INT_35 - 49)) | (1 << (dslParser.INT_36 - 49)) | (1 << (dslParser.INT_37 - 49)) | (1 << (dslParser.INT_38 - 49)) | (1 << (dslParser.INT_39 - 49)) | (1 << (dslParser.INT_40 - 49)) | (1 << (dslParser.INT_41 - 49)) | (1 << (dslParser.INT_42 - 49)) | (1 << (dslParser.INT_43 - 49)) | (1 << (dslParser.INT_44 - 49)) | (1 << (dslParser.INT_45 - 49)) | (1 << (dslParser.INT_46 - 49)) | (1 << (dslParser.INT_47 - 49)) | (1 << (dslParser.INT_48 - 49)) | (1 << (dslParser.INT_49 - 49)) | (1 << (dslParser.INT_50 - 49)) | (1 << (dslParser.INT_51 - 49)) | (1 << (dslParser.INT_52 - 49)) | (1 << (dslParser.INT_53 - 49)) | (1 << (dslParser.INT_54 - 49)) | (1 << (dslParser.INT_55 - 49)) | (1 << (dslParser.INT_56 - 49)) | (1 << (dslParser.INT_57 - 49)) | (1 << (dslParser.INT_58 - 49)) | (1 << (dslParser.INT_59 - 49)))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2732,6 +2734,9 @@ class dslParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
+        def AUTOMATE_REPLY_MENTIONS(self):
+            return self.getToken(dslParser.AUTOMATE_REPLY_MENTIONS, 0)
+
         def automateReplyParameter(self):
             return self.getTypedRuleContext(dslParser.AutomateReplyParameterContext,0)
 
@@ -2774,16 +2779,18 @@ class dslParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 229
-            self.automateReplyParameter()
+            self.match(dslParser.AUTOMATE_REPLY_MENTIONS)
             self.state = 230
+            self.automateReplyParameter()
+            self.state = 231
             self.match(dslParser.COMMA)
-            self.state = 232 
+            self.state = 233 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 231
+                self.state = 232
                 self.keywords()
-                self.state = 234 
+                self.state = 235 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if not (_la==dslParser.KEYWORD):
@@ -2853,19 +2860,19 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 66, self.RULE_automateReplyParameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 236
-            self.match(dslParser.AUTOMATE_TIME)
             self.state = 237
-            self.match(dslParser.COLON)
+            self.match(dslParser.AUTOMATE_TIME)
             self.state = 238
-            self.number()
-            self.state = 239
-            self.match(dslParser.COMMA)
-            self.state = 240
-            self.match(dslParser.RESPONSE)
-            self.state = 241
             self.match(dslParser.COLON)
+            self.state = 239
+            self.number()
+            self.state = 240
+            self.match(dslParser.COMMA)
+            self.state = 241
+            self.match(dslParser.RESPONSE)
             self.state = 242
+            self.match(dslParser.COLON)
+            self.state = 243
             self.stringValue()
         except RecognitionException as re:
             localctx.exception = re
@@ -2918,11 +2925,11 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 68, self.RULE_keywords)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 244
-            self.match(dslParser.KEYWORD)
             self.state = 245
-            self.match(dslParser.COLON)
+            self.match(dslParser.KEYWORD)
             self.state = 246
+            self.match(dslParser.COLON)
+            self.state = 247
             self.stringValue()
         except RecognitionException as re:
             localctx.exception = re
@@ -2968,7 +2975,7 @@ class dslParser ( Parser ):
         self.enterRule(localctx, 70, self.RULE_stringValue)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 248
+            self.state = 249
             self.match(dslParser.StringLiteral)
         except RecognitionException as re:
             localctx.exception = re
@@ -3020,15 +3027,15 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 251
+            self.state = 252
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==dslParser.T__0 or _la==dslParser.T__1:
-                self.state = 250
+                self.state = 251
                 self.unary_operator()
 
 
-            self.state = 253
+            self.state = 254
             self.unsigned_number()
         except RecognitionException as re:
             localctx.exception = re
@@ -3073,7 +3080,7 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 255
+            self.state = 256
             _la = self._input.LA(1)
             if not(_la==dslParser.T__0 or _la==dslParser.T__1):
                 self._errHandler.recoverInline(self)
@@ -3128,7 +3135,7 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 257
+            self.state = 258
             _la = self._input.LA(1)
             if not(_la==dslParser.UNSIGNED_INT or _la==dslParser.UNSIGNED_FLOAT):
                 self._errHandler.recoverInline(self)
@@ -3183,7 +3190,7 @@ class dslParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 259
+            self.state = 260
             _la = self._input.LA(1)
             if not(_la==dslParser.TRUE or _la==dslParser.FALSE):
                 self._errHandler.recoverInline(self)

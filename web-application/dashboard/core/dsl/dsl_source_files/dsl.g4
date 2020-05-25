@@ -157,7 +157,7 @@ autoFollowFollowers
     ;
 
 autoReplyMentions
-    :   automateReplyParameter COMMA (keywords)+
+    :   AUTOMATE_REPLY_MENTIONS automateReplyParameter COMMA (keywords)+
     ;
 
 automateReplyParameter
