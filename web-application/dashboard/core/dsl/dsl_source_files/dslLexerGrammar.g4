@@ -106,6 +106,14 @@ COLON
     : ':'
     ;
 
+KEYWORD
+    : 'keyword'
+    ;
+
+FOLLOWALL
+    : 'follow_all_followers'
+    ;
+
 WS
     : [ \t\n\r]+ -> skip
     ;

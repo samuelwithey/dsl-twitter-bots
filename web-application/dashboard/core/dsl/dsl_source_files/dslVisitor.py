@@ -159,6 +159,26 @@ class dslVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by dslParser#autoFavouriteRetweet.
+    def visitAutoFavouriteRetweet(self, ctx:dslParser.AutoFavouriteRetweetContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by dslParser#autoFollowFollowers.
+    def visitAutoFollowFollowers(self, ctx:dslParser.AutoFollowFollowersContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by dslParser#autoReplyMentions.
+    def visitAutoReplyMentions(self, ctx:dslParser.AutoReplyMentionsContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by dslParser#keywords.
+    def visitKeywords(self, ctx:dslParser.KeywordsContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by dslParser#stringValue.
     def visitStringValue(self, ctx:dslParser.StringValueContext):
         return self.visitChildren(ctx)

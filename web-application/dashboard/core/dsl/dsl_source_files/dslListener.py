@@ -278,6 +278,42 @@ class dslListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by dslParser#autoFavouriteRetweet.
+    def enterAutoFavouriteRetweet(self, ctx:dslParser.AutoFavouriteRetweetContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#autoFavouriteRetweet.
+    def exitAutoFavouriteRetweet(self, ctx:dslParser.AutoFavouriteRetweetContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#autoFollowFollowers.
+    def enterAutoFollowFollowers(self, ctx:dslParser.AutoFollowFollowersContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#autoFollowFollowers.
+    def exitAutoFollowFollowers(self, ctx:dslParser.AutoFollowFollowersContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#autoReplyMentions.
+    def enterAutoReplyMentions(self, ctx:dslParser.AutoReplyMentionsContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#autoReplyMentions.
+    def exitAutoReplyMentions(self, ctx:dslParser.AutoReplyMentionsContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#keywords.
+    def enterKeywords(self, ctx:dslParser.KeywordsContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#keywords.
+    def exitKeywords(self, ctx:dslParser.KeywordsContext):
+        pass
+
+
     # Enter a parse tree produced by dslParser#stringValue.
     def enterStringValue(self, ctx:dslParser.StringValueContext):
         pass

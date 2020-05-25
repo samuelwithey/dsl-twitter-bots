@@ -17,6 +17,9 @@ action
     | favourite
     | scheduleTweet
     | directMessage
+    | autoFavouriteRetweet
+    | autoFollowFollowers
+    | autoReplyMentions
     ;
 
 tweet
@@ -143,6 +146,22 @@ directMessage
 
 direct_message_required_parameters
     : ID COLON number COMMA TEXT COLON stringValue
+    ;
+
+autoFavouriteRetweet
+    : (keywords)+
+    ;
+
+autoFollowFollowers
+    : FOLLOWALL
+    ;
+
+autoReplyMentions
+    :   (keywords)+
+    ;
+
+keywords
+    :   KEYWORD COLON stringValue
     ;
 
 stringValue
