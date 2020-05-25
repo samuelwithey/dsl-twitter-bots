@@ -305,6 +305,15 @@ class dslListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by dslParser#automateReplyParameter.
+    def enterAutomateReplyParameter(self, ctx:dslParser.AutomateReplyParameterContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#automateReplyParameter.
+    def exitAutomateReplyParameter(self, ctx:dslParser.AutomateReplyParameterContext):
+        pass
+
+
     # Enter a parse tree produced by dslParser#keywords.
     def enterKeywords(self, ctx:dslParser.KeywordsContext):
         pass

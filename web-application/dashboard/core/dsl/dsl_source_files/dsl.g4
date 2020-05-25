@@ -157,7 +157,11 @@ autoFollowFollowers
     ;
 
 autoReplyMentions
-    :   AUTOMATE_TIME COLON number COMMA (keywords)+
+    :   automateReplyParameter COMMA (keywords)+
+    ;
+
+automateReplyParameter
+    :   AUTOMATE_TIME COLON number COMMA RESPONSE COLON stringValue
     ;
 
 keywords

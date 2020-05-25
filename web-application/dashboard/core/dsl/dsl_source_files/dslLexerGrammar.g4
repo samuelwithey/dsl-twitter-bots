@@ -118,6 +118,10 @@ AUTOMATE_TIME
     : 'automate_time'
     ;
 
+RESPONSE
+    : 'response'
+    ;
+
 WS
     : [ \t\n\r]+ -> skip
     ;
