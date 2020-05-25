@@ -44,7 +44,7 @@ class DSLVisitorWalker(dslVisitor):
     def visitAutoFavouriteRetweet(self, ctx:dslParser.AutoFavouriteRetweetContext):
         keywords_list = []
         for keyword in ctx.keyword():
-            keywords_list.append(keyword.getChild(2))
+            keywords_list.append(keyword.getChild(2).getText())
         tweets_listener = FavRetweetListener.FavRetweetListener(self.tweepy_api)
         stream = tweepy.Stream(self.tweepy_api.auth, tweets_listener)
         stream.filter(track=keywords_list, languages=["en"])
@@ -58,7 +58,7 @@ class DSLVisitorWalker(dslVisitor):
         response = ctx.automateReplyParameter().getChild(6).getText()
         keywords_list = []
         for keyword in ctx.keyword():
-            keywords_list.append(keyword.getChild(2))
+            keywords_list.append(keyword.getChild(2).getText())
         reply_to_mentions = replyMentions.ReplyMentions(tweepy_api=self.tweepy_api, keywords=keywords_list,
                                                         response=response, loop_time=automate_loop_time)
         reply_to_mentions.execute()
