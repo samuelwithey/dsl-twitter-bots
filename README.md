@@ -1,5 +1,5 @@
 # Final Year Project
-A domain specific language designed to operate and automate Twitter accounts/bots through Tweepy API.
+A domain specific language designed to operate and automate Twitter accounts/bots using Tweepy API.
 ## Domain Specific Language design and scripts
 - The domain specific language is designed to be one or more statements followed by semi-colon after each statement.
 - Each statement consists of an action (tweet, retweet, reply, favourite, schedule, direct-message) followed by 1 or more parameters.
