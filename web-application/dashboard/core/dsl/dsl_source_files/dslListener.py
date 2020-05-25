@@ -314,12 +314,12 @@ class dslListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by dslParser#keywords.
-    def enterKeywords(self, ctx:dslParser.KeywordsContext):
+    # Enter a parse tree produced by dslParser#keyword.
+    def enterKeyword(self, ctx:dslParser.KeywordContext):
         pass
 
-    # Exit a parse tree produced by dslParser#keywords.
-    def exitKeywords(self, ctx:dslParser.KeywordsContext):
+    # Exit a parse tree produced by dslParser#keyword.
+    def exitKeyword(self, ctx:dslParser.KeywordContext):
         pass
 
 

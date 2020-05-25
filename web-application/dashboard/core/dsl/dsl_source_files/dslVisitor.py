@@ -179,8 +179,8 @@ class dslVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by dslParser#keywords.
-    def visitKeywords(self, ctx:dslParser.KeywordsContext):
+    # Visit a parse tree produced by dslParser#keyword.
+    def visitKeyword(self, ctx:dslParser.KeywordContext):
         return self.visitChildren(ctx)
 
 

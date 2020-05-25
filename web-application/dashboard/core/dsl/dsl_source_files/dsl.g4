@@ -149,7 +149,7 @@ direct_message_required_parameters
     ;
 
 autoFavouriteRetweet
-    : (keywords)+
+    : keyword (COMMA keyword)*
     ;
 
 autoFollowFollowers
@@ -157,14 +157,14 @@ autoFollowFollowers
     ;
 
 autoReplyMentions
-    :   AUTOMATE_REPLY_MENTIONS automateReplyParameter COMMA (keywords)+
+    :   AUTOMATE_REPLY_MENTIONS automateReplyParameter (COMMA keyword)+
     ;
 
 automateReplyParameter
     :   AUTOMATE_TIME COLON number COMMA RESPONSE COLON stringValue
     ;
 
-keywords
+keyword
     :   KEYWORD COLON stringValue
     ;
 
