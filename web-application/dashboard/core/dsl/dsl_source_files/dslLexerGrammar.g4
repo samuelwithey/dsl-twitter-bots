@@ -115,7 +115,7 @@ FOLLOWALL
     ;
 
 AUTOMATE_TIME
-    : 'automate_time'
+    : 'automate_time_minutes'
     ;
 
 RESPONSE
