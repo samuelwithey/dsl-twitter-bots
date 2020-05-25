@@ -48,8 +48,8 @@ class Execute:
     def build_tree(self, parser):
         return parser.twitbot()
 
-    def traverse_tree(self, tree):
-        visitor = DSLVisitorWalker(self.tweepy_auth())
+    def traverse_tree(self, tree, api):
+        visitor = DSLVisitorWalker(api)
         visitor.visit(tree)
 
     def get_user_filename(self):
