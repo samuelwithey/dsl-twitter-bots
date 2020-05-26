@@ -359,12 +359,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitTwitbot" ):
                 listener.exitTwitbot(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTwitbot" ):
-                return visitor.visitTwitbot(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -420,12 +414,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitStat" ):
                 listener.exitStat(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitStat" ):
-                return visitor.visitStat(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -499,12 +487,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitAction" ):
                 listener.exitAction(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAction" ):
-                return visitor.visitAction(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -611,12 +593,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitTweet" ):
                 listener.exitTweet(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTweet" ):
-                return visitor.visitTweet(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -678,12 +654,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTweet_required_parameter" ):
                 listener.exitTweet_required_parameter(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTweet_required_parameter" ):
-                return visitor.visitTweet_required_parameter(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -755,12 +725,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitTweet_optional_parameters" ):
                 listener.exitTweet_optional_parameters(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitTweet_optional_parameters" ):
-                return visitor.visitTweet_optional_parameters(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -867,12 +831,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitReply" ):
                 listener.exitReply(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitReply" ):
-                return visitor.visitReply(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -948,12 +906,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitReply_required_parameters" ):
                 listener.exitReply_required_parameters(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitReply_required_parameters" ):
-                return visitor.visitReply_required_parameters(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1010,12 +962,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitRetweet" ):
                 listener.exitRetweet(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRetweet" ):
-                return visitor.visitRetweet(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1065,12 +1011,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitRetweet_required_parameter" ):
                 listener.exitRetweet_required_parameter(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitRetweet_required_parameter" ):
-                return visitor.visitRetweet_required_parameter(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1118,12 +1058,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitFavourite" ):
                 listener.exitFavourite(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFavourite" ):
-                return visitor.visitFavourite(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1174,12 +1108,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitFavourite_required_parameter" ):
                 listener.exitFavourite_required_parameter(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitFavourite_required_parameter" ):
-                return visitor.visitFavourite_required_parameter(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1227,12 +1155,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitScheduleTweet" ):
                 listener.exitScheduleTweet(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitScheduleTweet" ):
-                return visitor.visitScheduleTweet(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1283,12 +1205,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitSchedule_tweet_required_parameter" ):
                 listener.exitSchedule_tweet_required_parameter(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitSchedule_tweet_required_parameter" ):
-                return visitor.visitSchedule_tweet_required_parameter(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1353,12 +1269,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitDate_time_parameter" ):
                 listener.exitDate_time_parameter(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDate_time_parameter" ):
-                return visitor.visitDate_time_parameter(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1418,12 +1328,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitMinute" ):
                 listener.exitMinute(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitMinute" ):
-                return visitor.visitMinute(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1474,12 +1378,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitHour" ):
                 listener.exitHour(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitHour" ):
-                return visitor.visitHour(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1532,12 +1430,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitDay_of_month" ):
                 listener.exitDay_of_month(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDay_of_month" ):
-                return visitor.visitDay_of_month(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1588,12 +1480,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitMonth" ):
                 listener.exitMonth(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitMonth" ):
-                return visitor.visitMonth(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1698,12 +1584,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitNumeric_month" ):
                 listener.exitNumeric_month(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumeric_month" ):
-                return visitor.visitNumeric_month(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -1868,12 +1748,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitNumeric_day" ):
                 listener.exitNumeric_day(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumeric_day" ):
-                return visitor.visitNumeric_day(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -1991,12 +1865,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitNumeric_hour" ):
                 listener.exitNumeric_hour(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumeric_hour" ):
-                return visitor.visitNumeric_hour(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2221,12 +2089,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitNumeric_minute" ):
                 listener.exitNumeric_minute(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumeric_minute" ):
-                return visitor.visitNumeric_minute(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2276,12 +2138,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitDirectMessage" ):
                 listener.exitDirectMessage(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDirectMessage" ):
-                return visitor.visitDirectMessage(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2344,12 +2200,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitDirect_message_required_parameters" ):
                 listener.exitDirect_message_required_parameters(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitDirect_message_required_parameters" ):
-                return visitor.visitDirect_message_required_parameters(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2416,12 +2266,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitAutoFavouriteRetweet" ):
                 listener.exitAutoFavouriteRetweet(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAutoFavouriteRetweet" ):
-                return visitor.visitAutoFavouriteRetweet(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2476,12 +2320,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitAutoFollowFollowers" ):
                 listener.exitAutoFollowFollowers(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAutoFollowFollowers" ):
-                return visitor.visitAutoFollowFollowers(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2539,12 +2377,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitAutoReplyMentions" ):
                 listener.exitAutoReplyMentions(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAutoReplyMentions" ):
-                return visitor.visitAutoReplyMentions(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2623,12 +2455,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitAutomateReplyParameter" ):
                 listener.exitAutomateReplyParameter(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitAutomateReplyParameter" ):
-                return visitor.visitAutomateReplyParameter(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2688,12 +2514,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitKeyword" ):
                 listener.exitKeyword(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitKeyword" ):
-                return visitor.visitKeyword(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2737,12 +2557,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitStringValue" ):
                 listener.exitStringValue(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitStringValue" ):
-                return visitor.visitStringValue(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2788,12 +2602,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitNumber" ):
                 listener.exitNumber(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitNumber" ):
-                return visitor.visitNumber(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2841,12 +2649,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitUnary_operator" ):
                 listener.exitUnary_operator(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitUnary_operator" ):
-                return visitor.visitUnary_operator(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
@@ -2897,12 +2699,6 @@ class dslParser ( Parser ):
             if hasattr( listener, "exitUnsigned_number" ):
                 listener.exitUnsigned_number(self)
 
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitUnsigned_number" ):
-                return visitor.visitUnsigned_number(self)
-            else:
-                return visitor.visitChildren(self)
-
 
 
 
@@ -2951,12 +2747,6 @@ class dslParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitBoolean" ):
                 listener.exitBoolean(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitBoolean" ):
-                return visitor.visitBoolean(self)
-            else:
-                return visitor.visitChildren(self)
 
 
 
