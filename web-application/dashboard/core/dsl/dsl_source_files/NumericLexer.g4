@@ -1,13 +1,5 @@
 lexer grammar NumericLexer ;
 
-FOUR_DIGIT
-    : DIGIT DIGIT DIGIT DIGIT
-    ;
-
-DIGIT
-    : [0-9]
-    ;
-
 INT_0  : '0';
 INT_1  : '1';
 INT_2  : '2';
@@ -78,3 +70,11 @@ INT_56 : '56';
 INT_57 : '57';
 INT_58 : '58';
 INT_59 : '59';
+
+UNSIGNED_INT
+    : ('0' | '1'..'9' '0'..'9'*)
+    ;
+
+UNSIGNED_FLOAT
+    :   ('0'..'9')+ '.' ('0'..'9')*
+    ;
