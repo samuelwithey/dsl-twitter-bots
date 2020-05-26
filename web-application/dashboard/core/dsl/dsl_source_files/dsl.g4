@@ -71,23 +71,23 @@ schedule_tweet_required_parameter
     ;
 
 date_time_parameter
-    : DATE COLON date COMMA TIME COLON time
+    : minute COMMA hour COMMA day_of_month COMMA month
     ;
 
-date
-    : day_month_year
+minute
+    : MINUTE COLON numeric_minute
     ;
 
-day_month_year
-    : day_month date_separator year
+hour
+    : HOUR COLON numeric_hour
     ;
 
-day_month
-    : numeric_day date_separator month
+day_of_month
+    : DAY_OF_MONTH COLON numeric_day
     ;
 
 month
-    : numeric_month
+    : MONTH COLON numeric_month
     ;
 
 numeric_month
@@ -102,26 +102,6 @@ numeric_day
     | INT_10 | INT_11 | INT_12 | INT_13 | INT_14 | INT_15 | INT_16 | INT_17 | INT_18
     | INT_19 | INT_20 | INT_21 | INT_22 | INT_23 | INT_24 | INT_25 | INT_26 | INT_27
     | INT_28 | INT_29 | INT_30 | INT_31
-    ;
-
-year
-    : FOUR_DIGIT
-    ;
-
-date_separator
-    : SLASH
-    ;
-
-time
-    : hour_minute
-    ;
-
-hour_minute
-    : numeric_hour time_separator numeric_minute
-    ;
-
-time_separator
-    : DOT
     ;
 
 numeric_hour

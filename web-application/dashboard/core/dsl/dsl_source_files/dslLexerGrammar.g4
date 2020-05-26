@@ -10,14 +10,6 @@ UnterminatedStringLiteral
   : '"' (~["\\\r\n] | '\\' (. | EOF))*
   ;
 
-UNSIGNED_INT
-    : ('0' | '1'..'9' '0'..'9'*)
-    ;
-
-UNSIGNED_FLOAT
-    :   ('0'..'9')+ '.' ('0'..'9')*
-    ;
-
 LAT
     : 'lat'
     ;
@@ -118,6 +110,18 @@ AUTOMATE_TIME
     : 'automate_time_minutes'
     ;
 
+MINUTE
+    : 'minute'
+    ;
+
+HOUR
+    : 'hour'
+    ;
+
+MONTH
+    : 'month'
+    ;
+
 RESPONSE
     : 'response'
     ;
@@ -130,14 +134,10 @@ WS
     : [ \t\n\r]+ -> skip
     ;
 
+DAY_OF_MONTH
+    : 'day_of_month'
+    ;
+
 AUTO_FAV_RETWEET
     : 'automate_favourites_retweets'
-    ;
-
-SLASH
-    : '/'
-    ;
-
-DOT
-    : '.'
     ;

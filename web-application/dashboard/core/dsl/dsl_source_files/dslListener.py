@@ -143,30 +143,30 @@ class dslListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by dslParser#date.
-    def enterDate(self, ctx:dslParser.DateContext):
+    # Enter a parse tree produced by dslParser#minute.
+    def enterMinute(self, ctx:dslParser.MinuteContext):
         pass
 
-    # Exit a parse tree produced by dslParser#date.
-    def exitDate(self, ctx:dslParser.DateContext):
-        pass
-
-
-    # Enter a parse tree produced by dslParser#day_month_year.
-    def enterDay_month_year(self, ctx:dslParser.Day_month_yearContext):
-        pass
-
-    # Exit a parse tree produced by dslParser#day_month_year.
-    def exitDay_month_year(self, ctx:dslParser.Day_month_yearContext):
+    # Exit a parse tree produced by dslParser#minute.
+    def exitMinute(self, ctx:dslParser.MinuteContext):
         pass
 
 
-    # Enter a parse tree produced by dslParser#day_month.
-    def enterDay_month(self, ctx:dslParser.Day_monthContext):
+    # Enter a parse tree produced by dslParser#hour.
+    def enterHour(self, ctx:dslParser.HourContext):
         pass
 
-    # Exit a parse tree produced by dslParser#day_month.
-    def exitDay_month(self, ctx:dslParser.Day_monthContext):
+    # Exit a parse tree produced by dslParser#hour.
+    def exitHour(self, ctx:dslParser.HourContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#day_of_month.
+    def enterDay_of_month(self, ctx:dslParser.Day_of_monthContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#day_of_month.
+    def exitDay_of_month(self, ctx:dslParser.Day_of_monthContext):
         pass
 
 
@@ -194,51 +194,6 @@ class dslListener(ParseTreeListener):
 
     # Exit a parse tree produced by dslParser#numeric_day.
     def exitNumeric_day(self, ctx:dslParser.Numeric_dayContext):
-        pass
-
-
-    # Enter a parse tree produced by dslParser#year.
-    def enterYear(self, ctx:dslParser.YearContext):
-        pass
-
-    # Exit a parse tree produced by dslParser#year.
-    def exitYear(self, ctx:dslParser.YearContext):
-        pass
-
-
-    # Enter a parse tree produced by dslParser#date_separator.
-    def enterDate_separator(self, ctx:dslParser.Date_separatorContext):
-        pass
-
-    # Exit a parse tree produced by dslParser#date_separator.
-    def exitDate_separator(self, ctx:dslParser.Date_separatorContext):
-        pass
-
-
-    # Enter a parse tree produced by dslParser#time.
-    def enterTime(self, ctx:dslParser.TimeContext):
-        pass
-
-    # Exit a parse tree produced by dslParser#time.
-    def exitTime(self, ctx:dslParser.TimeContext):
-        pass
-
-
-    # Enter a parse tree produced by dslParser#hour_minute.
-    def enterHour_minute(self, ctx:dslParser.Hour_minuteContext):
-        pass
-
-    # Exit a parse tree produced by dslParser#hour_minute.
-    def exitHour_minute(self, ctx:dslParser.Hour_minuteContext):
-        pass
-
-
-    # Enter a parse tree produced by dslParser#time_separator.
-    def enterTime_separator(self, ctx:dslParser.Time_separatorContext):
-        pass
-
-    # Exit a parse tree produced by dslParser#time_separator.
-    def exitTime_separator(self, ctx:dslParser.Time_separatorContext):
         pass
 
 

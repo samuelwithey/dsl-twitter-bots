@@ -84,18 +84,18 @@ class dslVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by dslParser#date.
-    def visitDate(self, ctx:dslParser.DateContext):
+    # Visit a parse tree produced by dslParser#minute.
+    def visitMinute(self, ctx:dslParser.MinuteContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by dslParser#day_month_year.
-    def visitDay_month_year(self, ctx:dslParser.Day_month_yearContext):
+    # Visit a parse tree produced by dslParser#hour.
+    def visitHour(self, ctx:dslParser.HourContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by dslParser#day_month.
-    def visitDay_month(self, ctx:dslParser.Day_monthContext):
+    # Visit a parse tree produced by dslParser#day_of_month.
+    def visitDay_of_month(self, ctx:dslParser.Day_of_monthContext):
         return self.visitChildren(ctx)
 
 
@@ -111,31 +111,6 @@ class dslVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by dslParser#numeric_day.
     def visitNumeric_day(self, ctx:dslParser.Numeric_dayContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by dslParser#year.
-    def visitYear(self, ctx:dslParser.YearContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by dslParser#date_separator.
-    def visitDate_separator(self, ctx:dslParser.Date_separatorContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by dslParser#time.
-    def visitTime(self, ctx:dslParser.TimeContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by dslParser#hour_minute.
-    def visitHour_minute(self, ctx:dslParser.Hour_minuteContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by dslParser#time_separator.
-    def visitTime_separator(self, ctx:dslParser.Time_separatorContext):
         return self.visitChildren(ctx)
 
 
