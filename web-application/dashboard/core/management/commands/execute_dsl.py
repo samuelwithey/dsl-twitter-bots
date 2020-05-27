@@ -25,4 +25,4 @@ class Command(BaseCommand):
         api = execute.tweepy_auth()
         parser = execute.build_lexer_parser()
         tree = execute.build_tree(parser=parser)
-        execute.traverse_tree(tree=tree, api=api, campaign_id=campaign_id, account_id=account_id)
+        execute.traverse_tree(tree=tree, api=api)

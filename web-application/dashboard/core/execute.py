@@ -1,7 +1,6 @@
 import tweepy
 from core.dsl.dsl_source_files.dslLexer import dslLexer
 from core.dsl.dsl_source_files.dslParser import dslParser
-from core.dsl.dsl_source_files.dslListener import dslListener
 from core.dsl.dsl_source_files.dslVisitorWalker import DSLVisitorWalker
 import logging
 from antlr4 import *
@@ -12,26 +11,46 @@ from core.models import TwitterAccount, TwitterCampaign
 
 class Execute:
 
-    def __init__(self, account_id, campaign_id):
-        self.account = TwitterAccount.objects.get(id=account_id)
-        self.campaign = TwitterCampaign.objects.get(id=campaign_id)
+    def __init__(self, account_id=None, campaign_id=None, consumer_key=None, consumer_secret_key=None, access_token=None, access_token_secret=None):
+        if (account_id and campaign_id) is not None:
+            self.account = TwitterAccount.objects.get(id=account_id)
+            self.campaign = TwitterCampaign.objects.get(id=campaign_id)
+        else:
+            self.account = None
+            self.campaign = None
+        self.consumer_key = consumer_key
+        self.consumer_secret_key = consumer_secret_key
+        self.access_token = access_token
+        self.access_token_secret = access_token_secret
         self.logger = logging.getLogger()
 
-    def get_consumer_key(self, account):
-        return account.consumer_key
+    def get_consumer_key(self):
+        if self.account is None:
+            return self.consumer_key
+        else:
+            return self.account.consumer_key
 
-    def get_consumer_secret_key(self, account):
-        return account.consumer_secret_key
+    def get_consumer_secret_key(self):
+        if self.account is None:
+            return self.consumer_secret_key
+        else:
+            return self.account.consumer_secret_key
 
-    def get_access_token(self, account):
-        return account.access_token
+    def get_access_token(self):
+        if self.account is None:
+            return self.access_token
+        else:
+            return self.account.access_token
 
-    def get_access_token_secret(self, account):
-        return account.access_token_secret
+    def get_access_token_secret(self):
+        if self.account is None:
+            return self.access_token_secret
+        else:
+            return self.account.access_token_secret
 
     def tweepy_auth(self):
-        auth = tweepy.OAuthHandler(self.get_consumer_key(self.account), self.get_consumer_secret_key(self.account))
-        auth.set_access_token(self.get_access_token(account=self.account), self.get_access_token_secret(account=self.account))
+        auth = tweepy.OAuthHandler(self.get_consumer_key(), self.get_consumer_secret_key())
+        auth.set_access_token(self.get_access_token(), self.get_access_token_secret())
         api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
         try:
             api.verify_credentials()
@@ -44,7 +63,7 @@ class Execute:
         if not input_statement:
             input_stream = FileStream(self.get_user_filename())
         else:
-            input_stream = input_statement
+            input_stream = InputStream(input_statement)
         lexer = dslLexer(input_stream)
         token_stream = CommonTokenStream(lexer)
         parser = dslParser(token_stream)
@@ -53,8 +72,11 @@ class Execute:
     def build_tree(self, parser):
         return parser.twitbot()
 
-    def traverse_tree(self, tree, api, account_id, campaign_id):
-        visitor = DSLVisitorWalker(api, account_id, campaign_id)
+    def traverse_tree(self, tree, api):
+        if (self.account or self.campaign) is None:
+            visitor = DSLVisitorWalker(tweepy_api=api)
+        else:
+            visitor = DSLVisitorWalker(tweepy_api=api, account_id=self.account.id, campaign_id=self.campaign.id)
         visitor.visit(tree)
 
     def get_user_filename(self):
