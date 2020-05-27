@@ -3,7 +3,7 @@ lexer grammar dslLexerGrammar;
 import NumericLexer ;
 
 StringLiteral
-  : UnterminatedStringLiteral '"'
+  : UnterminatedStringLiteral '"' {self.text = self.text[1:-1]}
   ;
 
 UnterminatedStringLiteral
