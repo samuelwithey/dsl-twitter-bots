@@ -40,8 +40,11 @@ class Execute:
             raise e
         return api
 
-    def build_lexer_parser(self):
-        input_stream = FileStream(self.get_user_filename())
+    def build_lexer_parser(self, input_statement=""):
+        if not input_statement:
+            input_stream = FileStream(self.get_user_filename())
+        else:
+            input_stream = input
         lexer = dslLexer(input_stream)
         token_stream = CommonTokenStream(lexer)
         parser = dslParser(token_stream)
