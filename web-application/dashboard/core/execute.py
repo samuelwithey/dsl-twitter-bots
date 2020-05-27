@@ -44,7 +44,7 @@ class Execute:
         if not input_statement:
             input_stream = FileStream(self.get_user_filename())
         else:
-            input_stream = input
+            input_stream = input_statement
         lexer = dslLexer(input_stream)
         token_stream = CommonTokenStream(lexer)
         parser = dslParser(token_stream)
