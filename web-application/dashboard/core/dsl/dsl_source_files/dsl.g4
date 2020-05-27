@@ -141,7 +141,7 @@ autoReplyMentions
     ;
 
 automateReplyParameter
-    :   AUTOMATE_TIME COLON number COMMA RESPONSE COLON stringValue
+    :   AUTOMATE_TIME COLON numeric_minute COMMA RESPONSE COLON stringValue
     ;
 
 keyword

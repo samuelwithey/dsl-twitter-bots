@@ -96,15 +96,15 @@ def serializedATN():
         buf.write("\u00de\5<\37\2\u00dd\u00db\3\2\2\2\u00de\u00df\3\2\2\2")
         buf.write("\u00df\u00dd\3\2\2\2\u00df\u00e0\3\2\2\2\u00e09\3\2\2")
         buf.write("\2\u00e1\u00e2\7\37\2\2\u00e2\u00e3\7\34\2\2\u00e3\u00e4")
-        buf.write("\5@!\2\u00e4\u00e5\7\32\2\2\u00e5\u00e6\7#\2\2\u00e6\u00e7")
-        buf.write("\7\34\2\2\u00e7\u00e8\5> \2\u00e8;\3\2\2\2\u00e9\u00ea")
-        buf.write("\7\35\2\2\u00ea\u00eb\7\34\2\2\u00eb\u00ec\5> \2\u00ec")
-        buf.write("=\3\2\2\2\u00ed\u00ee\7\5\2\2\u00ee?\3\2\2\2\u00ef\u00f1")
-        buf.write("\5B\"\2\u00f0\u00ef\3\2\2\2\u00f0\u00f1\3\2\2\2\u00f1")
-        buf.write("\u00f2\3\2\2\2\u00f2\u00f3\5D#\2\u00f3A\3\2\2\2\u00f4")
-        buf.write("\u00f5\t\6\2\2\u00f5C\3\2\2\2\u00f6\u00f7\t\7\2\2\u00f7")
-        buf.write("E\3\2\2\2\u00f8\u00f9\t\b\2\2\u00f9G\3\2\2\2\nO]e{\u0083")
-        buf.write("\u00d4\u00df\u00f0")
+        buf.write("\5.\30\2\u00e4\u00e5\7\32\2\2\u00e5\u00e6\7#\2\2\u00e6")
+        buf.write("\u00e7\7\34\2\2\u00e7\u00e8\5> \2\u00e8;\3\2\2\2\u00e9")
+        buf.write("\u00ea\7\35\2\2\u00ea\u00eb\7\34\2\2\u00eb\u00ec\5> \2")
+        buf.write("\u00ec=\3\2\2\2\u00ed\u00ee\7\5\2\2\u00ee?\3\2\2\2\u00ef")
+        buf.write("\u00f1\5B\"\2\u00f0\u00ef\3\2\2\2\u00f0\u00f1\3\2\2\2")
+        buf.write("\u00f1\u00f2\3\2\2\2\u00f2\u00f3\5D#\2\u00f3A\3\2\2\2")
+        buf.write("\u00f4\u00f5\t\6\2\2\u00f5C\3\2\2\2\u00f6\u00f7\t\7\2")
+        buf.write("\2\u00f7E\3\2\2\2\u00f8\u00f9\t\b\2\2\u00f9G\3\2\2\2\n")
+        buf.write("O]e{\u0083\u00d4\u00df\u00f0")
         return buf.getvalue()
 
 
@@ -2598,8 +2598,8 @@ class dslParser ( Parser ):
             else:
                 return self.getToken(dslParser.COLON, i)
 
-        def number(self):
-            return self.getTypedRuleContext(dslParser.NumberContext,0)
+        def numeric_minute(self):
+            return self.getTypedRuleContext(dslParser.Numeric_minuteContext,0)
 
 
         def COMMA(self):
@@ -2643,7 +2643,7 @@ class dslParser ( Parser ):
             self.state = 224
             self.match(dslParser.COLON)
             self.state = 225
-            self.number()
+            self.numeric_minute()
             self.state = 226
             self.match(dslParser.COMMA)
             self.state = 227
