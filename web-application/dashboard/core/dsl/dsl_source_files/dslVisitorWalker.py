@@ -10,7 +10,7 @@ import tweepy
 
 class DSLVisitorWalker(dslVisitor):
 
-    def __init__(self, tweepy_api, account_id, campaign_id):
+    def __init__(self, tweepy_api, account_id=None, campaign_id=None):
         super().__init__()
         self.tweepy_api = tweepy_api
         self.account_id = account_id
