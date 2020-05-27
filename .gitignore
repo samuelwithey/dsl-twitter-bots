@@ -4,6 +4,7 @@ db.sqlite3
 *.pyc
 gen
 media
+api_keys.txt
 
 # Elastic Beanstalk Files
 web-application/dashboard/.ebextensions/*
