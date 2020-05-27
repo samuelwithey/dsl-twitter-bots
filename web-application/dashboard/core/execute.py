@@ -7,12 +7,14 @@ import logging
 from antlr4 import *
 from django.conf import settings
 
+from core.models import TwitterAccount, TwitterCampaign
+
 
 class Execute:
 
-    def __init__(self, account, campaign):
-        self.account = account
-        self.campaign = campaign
+    def __init__(self, account_id, campaign_id):
+        self.account = TwitterAccount.objects.get(id=account_id)
+        self.campaign = TwitterCampaign.objects.get(id=campaign_id)
         self.logger = logging.getLogger()
 
     def get_consumer_key(self, account):
@@ -48,8 +50,8 @@ class Execute:
     def build_tree(self, parser):
         return parser.twitbot()
 
-    def traverse_tree(self, tree, api):
-        visitor = DSLVisitorWalker(api)
+    def traverse_tree(self, tree, api, account_id, campaign_id):
+        visitor = DSLVisitorWalker(api, account_id, campaign_id)
         visitor.visit(tree)
 
     def get_user_filename(self):
