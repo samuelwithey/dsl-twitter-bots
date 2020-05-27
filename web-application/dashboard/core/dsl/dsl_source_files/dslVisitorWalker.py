@@ -3,14 +3,18 @@ from .dslParser import dslParser
 from core.bot_scripts import FavRetweetListener
 from core.bot_scripts import followFollowers
 from core.bot_scripts import replyMentions
+from core.schedule import Schedule
+
 import tweepy
 
 
 class DSLVisitorWalker(dslVisitor):
 
-    def __init__(self, tweepy_api):
+    def __init__(self, tweepy_api, account_id, campaign_id):
         super().__init__()
         self.tweepy_api = tweepy_api
+        self.account_id = account_id
+        self.campaign_id = campaign_id
 
     def visitTweet(self, ctx: dslParser.TweetContext):
         kwargs = {ctx.tweet_required_parameter().STATUS().getText(): ctx.tweet_required_parameter().stringValue().getText()}
@@ -33,8 +37,16 @@ class DSLVisitorWalker(dslVisitor):
         kwargs = {ctx.favourite_required_parameter().ID().getText(): ctx.favourite_required_parameter().number().getText()}
         self.tweepy_api.create_favorite(**kwargs)
 
-    def visitSchedule(self, ctx: dslParser.ScheduleTweetContext):
-        pass
+    def visitScheduleTweet(self, ctx: dslParser.ScheduleTweetContext):
+        schedule_date_time_parameters = {}
+        for parameter in ctx.schedule_tweet_required_parameter().date_time_parameter().getChildren():
+            if parameter.getChildCount() != 0:
+                schedule_date_time_parameters[parameter.getChild(0).getText()] = parameter.getChild(2).getText()
+        index_start = ctx.schedule_tweet_required_parameter().tweet().start.start
+        index_end = ctx.start.getInputStream().size
+        tweet_action_input = ctx.start.getInputStream().getText(start=index_start, stop=index_end)
+        schedule_tweet = Schedule(schedule_date_time_parameters=schedule_date_time_parameters,
+                                  action=tweet_action_input, account_id=self.account_id, campaign_id=self.campaign_id)
 
     def visitDirectMessage(self, ctx: dslParser.DirectMessageContext):
         kwargs = {ctx.direct_message_required_parameters().getChild(0).getText(): ctx.direct_message_required_parameters().getChild(2).getText(),
@@ -67,6 +79,7 @@ class DSLVisitorWalker(dslVisitor):
         for optional_parameter in ctx.tweet_optional_parameters():
             kwargs[optional_parameter.getChild(0).getText()] = optional_parameter.getChild(2).getText()
         return kwargs
+
 
 
 
