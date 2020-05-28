@@ -125,7 +125,7 @@ directMessage
     ;
 
 direct_message_required_parameters
-    : ID COLON number COMMA TEXT COLON stringValue
+    : RECIPIENT_ID COLON number COMMA TEXT COLON stringValue
     ;
 
 autoFavouriteRetweet

@@ -141,3 +141,7 @@ DAY_OF_MONTH
 AUTO_FAV_RETWEET
     : 'automate_favourites_retweets'
     ;
+
+RECIPIENT_ID
+    : 'recipient_id'
+    ;
