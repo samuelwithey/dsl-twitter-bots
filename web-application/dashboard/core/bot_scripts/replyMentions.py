@@ -16,14 +16,15 @@ class ReplyMentions:
         self.response = response
         self.loop_time = loop_time
         self.logger = logging.getLogger()
-        self.date_time_now = datetime.now()
+        self.date_time_start = datetime.now()
 
     def execute(self):
-        since_id = 1
-        while self.date_time_now < (self.date_time_now + timedelta(minutes=self.loop_time)):
+        latest_mention = self.tweepy_api.mentions_timeline(count=1)
+        since_id = latest_mention[0].id
+        while datetime.now() < (self.date_time_start + timedelta(minutes=self.loop_time)):
             since_id = self.check_mentions(keywords=self.keywords, since_id=since_id)
             self.logger.info("Waiting...")
-            time.sleep(60)
+            time.sleep(30)
 
     def check_mentions(self, keywords, since_id):
         self.logger.info("Retrieving mentions")
@@ -39,8 +40,11 @@ class ReplyMentions:
                 if not tweet.user.following:
                     tweet.user.follow()
 
+                default_response = "Hello @%s, " % tweet.user.screen_name
+                response = default_response + self.response
+
                 self.tweepy_api.update_status(
-                    status=self.response,
+                    status=response,
                     in_reply_to_status_id=tweet.id,
                 )
         return new_since_id
