@@ -12,12 +12,6 @@ class Command(BaseCommand):
         parser.add_argument('--account-id', type=int)
         parser.add_argument('--campaign-id', type=int)
 
-    def get_account(self, account_id):
-        return TwitterAccount.objects.get(id=account_id)
-
-    def get_campaign(self, campaign_id):
-        return TwitterCampaign.objects.get(id=campaign_id)
-
     def execute(self, **options):
         account_id = options['account_id']
         campaign_id = options['campaign_id']
