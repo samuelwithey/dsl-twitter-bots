@@ -1,0 +1,53 @@
+\documentclass[chapterprefix=false,a4paper,12pt]{report}
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{latexsym}
+\usepackage[toc]{appendix}
+\usepackage{titlesec}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{float}
+
+\titleformat{\chapter}[block]
+   {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+\input{thesis.sty}
+
+\include{thesis.preamble}
+
+\begin{document}
+
+\title{A Domain Specific Language for Twitter Bots}
+
+\author{Samuel Withey}
+\submitdate{May 2020}
+\degree{BSc Computer Science}
+\studentid{164574}
+\supervisor{Ian Wakeman}
+
+% \normallinespacing
+\maketitle
+
+\preface
+\input{abstract/abstract}
+\input{acknowledgements/acknowledgements}
+
+\body
+\input{introduction/introduction}
+\input{background/background}
+\input{professional_requirements/professional_requirements}
+
+\input{body/body}
+
+\input{summary/summary}
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{acm}
+\bibliography{bibliography/bibliography}
+
+
+\input{appendices/appendix}
+
+
+\end{document}

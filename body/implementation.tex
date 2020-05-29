@@ -1,0 +1,46 @@
+\chapter{Implementation}
+
+The implementation of the project can be broken down into three distinct underlying components which all interact with each other. The first component is the implementation and execution of the domain specific language and the interpreter. The second component is the implementation of the interaction of the Twitter API and the third component is the web-framework which acts as a container for the interaction with the domain specific language and the front-end capabilities.
+
+\section{ANTLR}
+
+The first stage of implementation was to implement the domain specific language using ANTLR4. ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files \cite{antlr}. ANTLR is widely used to build languages so it became an obvious choice when deciding which tool to use to implement the domain specific language. ANTLR automatically builds a parser which can build and walk parse trees based on a grammar and lexical rules. The grammar in the project is dsl.g4 and the lexical rules are dslLexerGrammar.g4 and NumericLexer.g4. \newline \par
+
+The translation of the grammar designs to ANTLR implementation is a simple process. ANTLR has a syntax closely aligned with the standard notation for grammars. ANTLR automatically generates lexer and parser files based on the grammar and lexical rules and the underlying data structure for this is a parse tree. ANTLR provides tree walkers to visit the nodes of the parse trees, which can then execute application specific code. In the context of the project, when the action nodes are visited, other nodes are then visited to extract details regarding the parsed input text. This process can be done automatically through the use of listeners or manually through the use of visitors.
+
+\subsection{Listeners and Visitors}
+
+ANTLR provides support for two tree-walking mechanisms in its runtime library. The parse tree listener interface is the default which is triggered by the built in tree-walker. ANTLR generates a ParseTreeListener subclass specific to each grammar rule with enter and exit functions. The walker automatically performs a depth-first walk and when the walker encounters the node for each rule, it triggers the enter and exit functions for the given rule. This mechanism is all automatic and does not require a written parse-tree walker and the listener methods do not have to explicitly visit their children. \newline \par
+
+The other mechanism is for ANTLR to generate a visitor interface from the grammar. This interface generates a visit method for each rule. The walker performs a depth-first walk of the tree and to initiate a walk of the tree, the application specific code would create a visitor implementation and call visit. The generate visitor interface contains default implementations for the visitor methods. This avoids having to override every method and focus on the methods of interest. \newline \par
+
+The decided implementation of the tree-walking mechanism is the visitor interface. This implementation can be seen in dslWalkerVisitor. This mechanism was decided as it provides more control over the traversal of the tree. It allows the explicit call of the child nodes and retrieves the input values of the language based on the action node. This flexibility allows the walker to only have to visit the nodes which are needed. Visitor mechanisms also allow the function to return values. \newline \par
+
+The Visitor mechanism allows for simple traversal of the tree, and acts as the interpreter for the system by executing application specific code based on each action and providing full control of the traversal. This differs from the Listener mechanism, which automatically visits every node and reacts to each node individually.
+
+\section{Tweepy API}
+
+The second stage of implementation was to implement a way to interact with the Twitter API. The original design of the program to interact with the Twitter API was to build and create a RESTful web service. This original design idea was incredibly intricate and would have had to deal with low-level functionality including HTTP requests, authentication and rate limits and this implementation would be very time consuming, prone to error and outside the scope of the project. The Tweepy API is a convenient way to access the Twitter API with Python, as it includes a set of classes and methods that represent Twitter's models and API endpoints. Tweepy handles implementation details such as:
+\begin{itemize}
+    \item Data encoding and decoding
+    \item HTTP requests
+    \item Results pagination
+    \item OAuth authentication
+    \item Rate limits
+    \item Streams
+\end{itemize}
+Tweepy provides a simple way to deal and interact with the Twitter API and provided all of the functionality of the Twitter API. This allowed more resources to be focused on the main scope of the project, to design, implement and focus on the functionality of the domain specific language without much concern as to how to interact with the Twitter API. \newline \par
+
+The initial implementation of the Tweepy API is in execute file. Tweepy supports OAuth 1a (application-user), which is required to interact with the Twitter API. 'execute' provides a function 'tweepy\_auth()' which uses the consumer keys to generate a OAuthHandler, which is used to authenticate and access a Tweepy API object. \newline \par
+
+The Tweepy API object is then passed to the DSLVisitorWalker, which is used to execute application specific code. Based on each action, the relevant input information is retrieved and stored in kwargs. Since the grammar of the domain specific language is closely aligned with the Twitter API, the key value pairs in kwargs are the parameter name and the parameter value. This allows for the Visitor method to dynamically get all the required and optional parameters and pass kwargs to the correct Tweepy API call based on the action.
+
+\section{Django}
+
+Django is a Python-based free and open-source web framework that follows the model-template-view architectural pattern. The execution of the domain specific language and interacting with the Tweepy API does not require Django. Django acts as a container for the domain specific language, providing a simple and intuitive way to interact with the domain specific language. The first point of interaction is through the models. A model is the single, definitive source of information about the data. It contains the essential fields and behaviors of the stored data and generally, each model maps to a single database table. The models are used to represent Twitter Accounts and Twitter Campaigns. The TwitterAcount model stores information about the Twitter Account with API access, This includes the username and the consumer keys and access tokens. The TwitterCampaign model includes a name, description and the file to be executed. The interaction between Django and the domain specific language is through Djangos custom management commands. Django comes with a variety of command line utilities that can be invoked and provides the functionality for custom commands. Custom management commands provides an simple way to interact with the application via command line. \newline \par
+
+The custom management command used to interact with the domain specific language is execute\_dsl, which takes two arguments, account\_id and campaign\_id. It then interacts with execute, which provides the core functionality of interacting directly with the domain specific language as it builds the parser, parses the input and initiates the tree traversal. \newline \par
+
+Using Django provides a simple solution for storing information about the Twitter Account and Twitter Campaigns and executing the domain specific language. Django also provides a testing-suite which uses the standard Python unittest module. The testing suite in Django provides a simple solution for writing and executing unit tests to test the complex and intricate aspects on the domain specific language. \newline \par
+
+Further extensions of implementation of features would utilise Django's functionality. Django would provide a web application, providing a front-end service for users to interact with the domain specific language and visualise interactions of the domain specific language and the Twitter API. 
