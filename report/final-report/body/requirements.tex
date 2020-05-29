@@ -1,0 +1,38 @@
+\chapter{Requirements Analysis}
+
+The system is designed to be used by any user, brand or agency who are competent social media users. To understand the needs of users and to what extent their current solutions meet their needs, interviews were conducted with InCrowd. \\
+
+InCrowd is a company based in London and Brighton who provide intuitive sports technology to help brands engage with their audiences. The interviewees who work for InCrowd are Matt and Helen, who work in the Marketing team for InCrowd. Matt works with SkyBet and solely uses Twitter and native Twitter tools in his day to day job role. Helen works in the Business to Business (B2B) marketing team and focuses on using Twitter and Linkedin to achieve this role. Both interviewees use the native platforms tools and applications but have used other industry standard social media management tools to automate and schedule content in previous job roles. \\
+
+Functional and Non-Functional requirements have been devised from the interviews conducted with InCrowd combined with the knowledge of the functionality and limitations of the Twitter API and the overall goals of the project. 
+
+\section{Functional Requirements}
+
+\begin{longtable}{|>{\centering}C{1.7cm}|P{7cm}|C{3.7cm}|} \hline
+    {Reference} & {Description} & {Mandatory/Desirable} \\ \hline
+    F1 & The system shall provide the basic functionality of what actions can be completed by a human on Twitter which can be configured and executed by the domain specific language. This functionality includes login, post tweets, reply to tweets, retweet tweets, like tweets and follow users. & Mandatory \\ \hline 
+    F2 & The system shall allow scheduling for content on Twitter through the domain specific language. & Mandatory \\ \hline 
+    F3 & The system shall provide the functionality to automate favouriting and retweeting tweets based on keywords through the domain specific language. & Mandatory \\ \hline
+    F4 & The system shall provide the functionality to automate responding to tweets based on keywords through the domain specific language. & Mandatory \\ \hline
+    F5 & The system shall provide the functionality to automate direct messaging to users based on keywords through the domain specific language. & Mandatory \\ \hline
+    F6 & The system should retrieve a list of relevant content from other users on the platform based on a customisable input such as keywords and hashtags. & Desirable \\ \hline
+    F7 & The system should provide a list of suggested accounts to follow based on inputs such as keywords and hashtags. & Desirable \\ \hline
+    F8 & The system should provide the ability to customise reports within a given time frame. & Desirable \\ \hline
+    F9 & The system should provide a web interface to display customisable Twitter feeds. & Desirable \\ \hline
+    F10 & The system should provide a web interface to display scheduled Twitter posts and content. & Desirable \\ \hline
+    F10 & The system should be deployed online. & Desirable \\ \hline
+\end{longtable}
+    
+\section{Non-Functional Requirements}
+
+\begin{longtable}{|>{\centering}C{1.7cm}|P{7cm}|C{3.7cm}|}  \hline
+    {Reference} & {Description} & {Mandatory/Desirable} \\ \hline
+    NF1 & The domain specific language shall run on Windows, Mac and Linux Operating Systems. & Mandatory \\ \hline
+    NF2 & The domain specific language shall be programmed using Python3 and use ANTLR4 toolkit. & Mandatory \\ \hline
+    NF3 & The interpreter shall run on Windows, Mac and Linux Operating Systems. & Mandatory \\ \hline
+    NF4 & The interpreter shall be programmed using Python3 and use ANTL4 toolkit. & Mandatory \\ \hline
+    NF5 & The web application shall run on all latest browsers. & Desirable \\ \hline
+    NF6 & The web application shall be programmed using Python 3 and Django Web Framework. & Desirable \\ \hline
+    NF7 & The web application shall use Django's user login system to provide security for the web application through user authentication. & Desirable \\ \hline
+    NF8 & The web application shall be deployed using AWS. & Desirable \\ \hline
+\end{longtable}

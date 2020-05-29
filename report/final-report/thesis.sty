@@ -1,0 +1,107 @@
+\pagestyle{empty}
+
+\setlength{\parskip}{0em}
+\setlength{\parindent}{0em}
+
+\makeatletter
+\def\submitdate#1{\gdef\@submitdate{#1}}
+\def\degree#1{\gdef\@degree{#1}}
+\def\studentid#1{\gdef\@studentid{#1}}
+\def\supervisor#1{\gdef\@supervisor{#1}}
+
+\def\maketitle{
+    
+  \begin{titlepage}{
+    
+    \centering{
+    \includegraphics[width=0.25\columnwidth]{images/sussex-logo.png}} \par
+    
+    \vskip 0.5in \par 
+    \LARGE {\textbf{\@title}}
+    
+    \vskip 0.5in \par
+    \normalsize {Submitted \@submitdate, in partial fulfillment of \\ the conditions for the award of the degree \bf{\@degree}.}
+
+  }
+  \vskip 0.3in \par
+  \large {\bf \@author} \par
+  \large {\bf \@studentid}
+  
+  \vskip 0.3in \par
+  \large {\bf Supervised by \@supervisor}
+  \vskip 0.3in \par
+  \normalsize { School of Computer Science \par
+  University of Sussex}
+
+  \vskip 0.5in \par
+  \normalsize {I hereby declare that this dissertation is all my own work, except as indicated in the text: }
+
+  \vskip 0.2in 
+  \normalsize {Signature: Samuel Withey}
+  
+  \vskip 0.1in
+  \normalsize {Date: 26/05/2020}
+  
+  \vskip 0.4in \par
+  \normalsize {The report may be freely copied and distributed provided the source is acknowledged. I hereby give permission for a copy of this report to be loaned out to students in future years.}
+  
+  \end{titlepage}
+}
+
+\def\titlepage{
+  \newpage
+  \centering
+  \linespread{1}
+  \normalsize
+  \vbox to \vsize\bgroup\vbox to 9in\bgroup
+}
+\def\endtitlepage{
+  \par
+  \kern 0pt
+  \egroup
+  \vss
+  \egroup
+  \clearpage
+}
+
+\def\abstract{
+  \begin{center}{
+    \large \bf Abstract}
+  \end{center}
+  \small
+  \normalsize
+}
+\def\endabstract{
+  \par
+  \clearpage
+}
+
+\newenvironment{acknowledgements}{
+  \cleardoublepage
+  \begin{center}{
+    \large \bf Acknowledgements}
+  \end{center}
+  \small
+  \normalsize
+}{\cleardoublepage}
+\def\endacknowledgements{
+  \par
+}
+
+\def\preface{
+    \pagenumbering{roman}
+    \pagestyle{plain}
+}
+
+\def\body{
+	
+    \cleardoublepage    
+    \clearpage
+    \pagestyle{plain}
+    \tableofcontents
+    \pagestyle{plain}
+    \pagenumbering{arabic}
+
+}
+
+\makeatother
