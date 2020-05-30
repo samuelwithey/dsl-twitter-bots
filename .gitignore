@@ -8,8 +8,8 @@ media
 api_keys.txt
 
 # Elastic Beanstalk Files
-web-application/dashboard/.ebextensions/*
-web-application/dashboard/.elasticbeanstalk/*
+web-application/dsl-bots/.ebextensions/*
+web-application/dsl-bots/.elasticbeanstalk/*
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
