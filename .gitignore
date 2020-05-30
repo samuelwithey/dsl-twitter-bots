@@ -4,6 +4,7 @@ db.sqlite3
 *.pyc
 gen
 media
+.venv
 api_keys.txt
 
 # Elastic Beanstalk Files
