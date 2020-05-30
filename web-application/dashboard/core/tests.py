@@ -1,6 +1,7 @@
 import random
 import string
 import tweepy
+import time
 
 from django.test import TestCase
 import logging
@@ -64,15 +65,19 @@ class DSLVisitorWalkerTest(ConfigureTests):
         self.execute(input_statement=input_statement)
 
     def test_retweet(self):
+        time.sleep(5)
         api = self.get_tweepy_api()
-        timeline_tweet = api.home_timeline(count=1)
+        timeline_tweet = api.user_timeline(count=1)
+        print(timeline_tweet)
         tweet_id = timeline_tweet[0].id
         input_statement = 'retweet id : %s ;' % tweet_id
         self.execute(input_statement=input_statement)
 
     def test_favourite(self):
+        time.sleep(5)
         api = self.get_tweepy_api()
-        timeline_tweet = api.home_timeline(count=1)
+        timeline_tweet = api.user_timeline(count=1)
+        print(timeline_tweet)
         tweet_id = timeline_tweet[0].id
         input_statement = 'favourite id : %s ;' % tweet_id
         self.execute(input_statement=input_statement)
