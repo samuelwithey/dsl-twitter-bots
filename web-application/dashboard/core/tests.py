@@ -8,7 +8,7 @@ import logging
 from core.execute import Execute
 
 
-class DSLVisitorWalkerTest(TestCase):
+class ConfigureTests(TestCase):
 
     def setUp(self):
         with open('core/api_keys.txt', 'r') as file:
@@ -37,6 +37,9 @@ class DSLVisitorWalkerTest(TestCase):
 
     def generate_random_string(self):
         return ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
+
+
+class DSLVisitorWalkerTest(ConfigureTests):
 
     def test_tweet(self):
         input_statement = 'tweet status : "This is a Unit Test with random string: %s" ;' % self.generate_random_string()
@@ -81,6 +84,8 @@ class DSLVisitorWalkerTest(TestCase):
         input_statement = 'direct_message recipient_id : %s, text : "Hello Friend!" ;' % '1050149543029948416'
         self.execute(input_statement=input_statement)
 
+
+class BotScriptTest(ConfigureTests):
     def test_reply_mentions_bot(self):
         input_statement = 'automate_reply_to_mentions automate_time_minutes : 01, response : "Please Reach us via DM", keyword : "support";'
         self.execute(input_statement=input_statement)
