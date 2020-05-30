@@ -43,3 +43,4 @@ websocket-client==0.57.0
 zipp==3.0.0
 Django==3.0.3
 tweepy==3.8.0
+antlr4-python3-runtime==4.8
