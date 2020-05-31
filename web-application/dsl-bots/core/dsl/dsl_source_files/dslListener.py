@@ -62,6 +62,24 @@ class dslListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by dslParser#tweetImage.
+    def enterTweetImage(self, ctx:dslParser.TweetImageContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#tweetImage.
+    def exitTweetImage(self, ctx:dslParser.TweetImageContext):
+        pass
+
+
+    # Enter a parse tree produced by dslParser#tweet_image_required_parameter.
+    def enterTweet_image_required_parameter(self, ctx:dslParser.Tweet_image_required_parameterContext):
+        pass
+
+    # Exit a parse tree produced by dslParser#tweet_image_required_parameter.
+    def exitTweet_image_required_parameter(self, ctx:dslParser.Tweet_image_required_parameterContext):
+        pass
+
+
     # Enter a parse tree produced by dslParser#reply.
     def enterReply(self, ctx:dslParser.ReplyContext):
         pass

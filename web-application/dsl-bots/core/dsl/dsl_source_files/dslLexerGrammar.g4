@@ -46,6 +46,14 @@ LONG
     : 'long'
     ;
 
+TWEET_IMAGE
+    : 'tweet_with_image'
+    ;
+
+IMAGE_NAME
+    : 'image_name'
+    ;
+
 PLACE_ID
     : 'place_id'
     ;
@@ -55,7 +63,7 @@ DISPLAY_COORDINATES
     ;
 
 REPLY
-    : 'reply'
+    : 'reply_to_tweet'
     ;
 
 RETWEET

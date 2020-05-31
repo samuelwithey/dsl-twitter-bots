@@ -12,6 +12,7 @@ stat
 
 action
     : tweet
+    | tweetImage
     | reply
     | retweet
     | favourite
@@ -38,8 +39,16 @@ tweet_optional_parameters
     |  DISPLAY_COORDINATES COLON boolean
     ;
 
+tweetImage
+    : TWEET_IMAGE tweet_required_parameter (COMMA tweet_image_required_parameter)+ (COMMA tweet_optional_parameters)*
+    ;
+
+tweet_image_required_parameter
+    : IMAGE_NAME COLON stringValue
+    ;
+
 reply
-    : REPLY reply_required_parameters (COMMA tweet_optional_parameters)*
+    : REPLY reply_required_parameters (COMMA tweet_image_required_parameter)* (COMMA tweet_optional_parameters)*
     ;
 
 reply_required_parameters
