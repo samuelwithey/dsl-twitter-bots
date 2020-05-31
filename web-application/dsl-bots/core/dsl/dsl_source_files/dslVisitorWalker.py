@@ -1,3 +1,5 @@
+from django.conf import settings
+
 from .dslVisitor import dslVisitor
 from .dslParser import dslParser
 from core.bot_scripts import FavRetweetListener
@@ -10,14 +12,24 @@ import tweepy
 
 class DSLVisitorWalker(dslVisitor):
 
-    def __init__(self, tweepy_api, account_id=None, campaign_id=None):
+    def __init__(self, tweepy_api, account=None, campaign=None):
         super().__init__()
         self.tweepy_api = tweepy_api
-        self.account_id = account_id
-        self.campaign_id = campaign_id
+        self.account = account
+        self.campaign = campaign
 
     def visitTweet(self, ctx: dslParser.TweetContext):
         kwargs = {ctx.tweet_required_parameter().STATUS().getText(): ctx.tweet_required_parameter().stringValue().getText()}
+        if ctx.tweet_optional_parameters():
+            kwargs.update(self.getTweetOptionalParameters(ctx=ctx, kwargs=kwargs))
+        self.tweepy_api.update_status(**kwargs)
+
+    def visitTweetImage(self, ctx:dslParser.TweetImageContext):
+        kwargs = {ctx.tweet_required_parameter().STATUS().getText(): ctx.tweet_required_parameter().stringValue().getText()}
+        file_name_path = self.get_filename()
+        file = open(file_name_path, 'rb')
+        image_upload = self.tweepy_api.media_upload(filename=file_name_path, file=file)
+        kwargs['media_ids'] = [image_upload.media_id_string]
         if ctx.tweet_optional_parameters():
             kwargs.update(self.getTweetOptionalParameters(ctx=ctx, kwargs=kwargs))
         self.tweepy_api.update_status(**kwargs)
@@ -46,7 +58,7 @@ class DSLVisitorWalker(dslVisitor):
         index_end = ctx.start.getInputStream().size
         tweet_action_input = ctx.start.getInputStream().getText(start=index_start, stop=index_end)
         schedule_tweet = Schedule(schedule_date_time_parameters=schedule_date_time_parameters,
-                                  action=tweet_action_input, account_id=self.account_id, campaign_id=self.campaign_id)
+                                  action=tweet_action_input, account_id=self.account.id, campaign_id=self.campaign.sid)
 
     def visitDirectMessage(self, ctx: dslParser.DirectMessageContext):
         kwargs = {ctx.direct_message_required_parameters().getChild(0).getText(): ctx.direct_message_required_parameters().getChild(2).getText(),
@@ -80,7 +92,11 @@ class DSLVisitorWalker(dslVisitor):
             kwargs[optional_parameter.getChild(0).getText()] = optional_parameter.getChild(2).getText()
         return kwargs
 
+    def getTweetImageOptionalParameters(self, ctx):
+        filename_list = []
+        for image_parameter in ctx.tweet_image_required_parameter():
+            filename_list.append(image_parameter.stringValue().getText())
+        return filename_list
 
-
-
-
+    def get_filename(self):
+        return settings.MEDIA_ROOT + "/" + self.campaign.image_upload.name
