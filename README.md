@@ -7,7 +7,7 @@ A domain specific language designed to operate and automate Twitter accounts/bot
 ## Setting up the virtual-env
 ```bash
 git clone https://github.com/samuelwithey/final-year-project.git
-cd web-application/dashboard/
+cd web-application/dsl-bots/
 . ./activate
 ```
 ## Running management commands to execute the domain specific language
@@ -19,7 +19,7 @@ python manage.py execute_dsl --account-id {id-number} --campaign-id {id-number}
 ```
 ## Generating ANTLR files and running dsl using Ubuntu Terminal (optional)
 ```bash
-cd web-application/dashboard/core/dsl/antlr4/
+cd web-application/dsl-bots/core/dsl/antlr4/
 module load ./antlr4module
 antlr4py3 dsl.g4
 pygrun dsl twitbot --tokens input.txt
