@@ -13,9 +13,9 @@ class Command(BaseCommand):
         parser.add_argument('--campaign-id', type=int)
 
     def execute(self, **options):
-        account_id = options['account_id']
-        campaign_id = options['campaign_id']
-        execute = Execute(account_id=account_id, campaign_id=campaign_id)
+        account = TwitterAccount.objects.get(id=options['account_id'])
+        campaign = TwitterCampaign.objects.get(id=options['campaign_id'])
+        execute = Execute(account=account, campaign=campaign)
         api = execute.tweepy_auth()
         parser = execute.build_lexer_parser()
         tree = execute.build_tree(parser=parser)

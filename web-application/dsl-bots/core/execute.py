@@ -11,10 +11,11 @@ from core.models import TwitterAccount, TwitterCampaign
 
 class Execute:
 
-    def __init__(self, account_id=None, campaign_id=None, consumer_key=None, consumer_secret_key=None, access_token=None, access_token_secret=None):
-        if (account_id and campaign_id) is not None:
-            self.account = TwitterAccount.objects.get(id=account_id)
-            self.campaign = TwitterCampaign.objects.get(id=campaign_id)
+    def __init__(self, account=None, campaign=None, consumer_key=None, consumer_secret_key=None, access_token=None,
+                 access_token_secret=None):
+        if (account and campaign) is not None:
+            self.account = account
+            self.campaign = campaign
         else:
             self.account = None
             self.campaign = None
@@ -76,8 +77,8 @@ class Execute:
         if (self.account or self.campaign) is None:
             visitor = DSLVisitorWalker(tweepy_api=api)
         else:
-            visitor = DSLVisitorWalker(tweepy_api=api, account_id=self.account.id, campaign_id=self.campaign.id)
+            visitor = DSLVisitorWalker(tweepy_api=api, account=self.account, campaign=self.campaign)
         visitor.visit(tree)
 
     def get_user_filename(self):
-        return settings.MEDIA_ROOT + "/" + self.campaign.upload.name
+        return settings.MEDIA_ROOT + "/" + self.campaign.dsl_program_upload.name
