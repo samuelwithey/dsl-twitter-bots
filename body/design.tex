@@ -1,14 +1,75 @@
+\setlength{\grammarparsep}{2pt plus 1pt minus 1pt} % increase separation between rules
+\setlength{\grammarindent}{12em} % increase separation between LHS/RHS
 \chapter{Design}
-UML designs assist with the visualisation of the requirements analysis and it demonstrates the functionality and user interaction of the system. This was the first design decision to understand how the different components of the system will interact with eachother and how the user of the system will interact with the system. The UML designs include the full scope and wider scope of the projects aims and objectives. \\
+\section{UML}
+UML designs assist with the visualisation of the requirements analysis and it demonstrates the functionality and user interactions with the system. The UML designs include the full scope of the project, including both functional and non-functional requirements and the wider scope of the projects aims and objectives.
 
-The initial stage of design for the domain specific language was to write out all of the actions that the domain specific language should achieve based on the requirements analysis. This then developed by looking at the Twitter API actions and understating how the desired actions split into API method calls. The original design of the system was to include a RESTful web service to handle HTTP requests and interact with the Twitter API using JSON objects. The intuitive design approach for the domain specific language was to create a language with actions and a similar grammar structure to JSON objects. This then lead to the first grammar design of: (statement, action (comma parameter)*, action: identifier COLON value). \\
+\subsection{Use Case Diagram}
 
-The outcome of the first grammar design lead to the first ideas around the design and implementation of how the interpreter would work. The initial idea was to have the interpreter generate JSON objects based on the different actions and take the JSON inspired parameter values to populate the JSON object key value pairs. \\
+A use case diagram is a representation of a user's interaction with the system that shows the relationship between the user and the different use cases in which the user is involved. The use-case diagrams are split to demonstrate the users interactions with the domain specific language and the interaction of the web-application.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.9\textwidth]{images/usecasedsl.png}
+  \caption{UML Use Case Diagram for DSL and Interpreter}
+\end{figure}
 
-After the initial outcome of the first grammar design, decisions had to be made around the power and the limits of the domain specific language. The initial design of the grammar had very restricted functionality and power, it did not include any conditional statements, any types, and looping functionality or recursion. The initial grammar design was a lightweight language designed to populate JSON objects. \\
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{images/usecasewebapp-2.png}
+  \caption{UML Use Case Diagram for Web Application}
+\end{figure}
 
-The next design decisions evaluated the trade-offs between utilising the machinery and back-end software against building a feature in the language. This decision was prevalent when having to deal with user authentication of tokens and keys to access the Twitter API as for each API call, a user had to be authenticated. An option to overcome this issue was to include a separate login statement, which included login parameters to take the different authentication keys and tokens. This option was not an ideal option as it makes the language clunky and repetitive. Another option to solve this problem would have been to define macros to retrieve user login details in a separate to abstract the authentication from the user in a simplified way. Due to the nature of the domain specific language, its aims and objectives and requirements, a design decision was made to keep the language simple and remove any complexity from the language. This design decision was made as the domain specific language aims and objectives is to be utilised by programmers and non programmers. As the domain specific language is designed to be operated and executed by a Django web application, the design decision was to implement the functionality of authentication and management of authentication keys and tokens to the web application. \\
+\subsection{High-Level Domain Model}
 
-After the design decisions to utilise Django and the Tweepy API, the final design of the domain specific language could be completed. The final grammar for the domain specific language is: . \\
+The high-level domain model is a conceptual model of the domain that incorporates both behaviour and data. The domain model is a system of abstractions that describes selected aspects of a sphere of knowledge, influence or activity. The high-level domain model in figure 5.3 represents how the user interacts with the system, and how the different components of the system are separated and interact with each other.
 
-After the designs of the language and interpreter were completed, the designs for the web application could be completed. The design for the web application was simple as it aligns with Djangos conventions. 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{images/high-level-domain.png}
+  \caption{High-Level Domain Model}
+\end{figure}
+
+\subsubsection{Software Patterns}
+
+The outcome of the high-level domain model loosely represents a conventional model-view-controller architecture. The model-view-architecture is based on three components, the model, the view and the controller. The model is the central component which usually reflects real-world objects and is used to store raw data. The view is a representation of the model to the user and the controller acts as a liaison between the model and the view, accepting input, updating the model and producing output for the view \cite{deacon2009model}. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.3\textwidth]{images/mvc.png}
+  \caption{MVC Design Pattern \cite{mvc}}
+\end{figure}
+
+
+A model is the single, definitive source of information about the data. It contains the essential fields and behaviors of the stored data and generally, each model maps to a single database table. The model component in the high-level domain diagram represents the Twitter Account API credentials and Twitter Campaigns. The Twitter Account API credentials model stores information about the Twitter Account with API access including the username and the consumer keys and access tokens. The Twitter Campaign model includes a name, description and the file to be executed. The view component in the high-level domain model represents the dashboard and the column in dashboard to display information about the models. The domain specific language acts as the controller, which the user interacts with to manipulate the model to update the view. A potential feature of the project utilising the model-view-controller architecture is scheduling, where the user creates a scheduled post through the domain specific language, which creates a scheduled post in the model which is displayed in the view.
+
+\section{Grammar}
+
+The grammar designs define the syntactical structure of the domain specific language. This is the initial step for understanding the structure of a program for the domain specific language and how it will interact with the Twitter API. The first step to achieve this is to write out all the actions that the domain specific language should achieve based on the requirements analysis. The domain specific language should provide the functionality to tweet, retweet, favourite, schedule and direct message and this can be translated directly into a grammar rule 'action'. \newline \par
+
+The interaction of the Twitter API requires a RESTful service using JSON objects. An intuitive design approach for the domain specific language is to create a language with actions that generate JSON templates and values which populate the JSON object. An initial grammar design is inspired by and replicates a similar grammatical structure to JSON objects, where each action has a parameter with a key value pair. This leads to the first grammar design, presented in extended Backus–Naur form (EBNF):
+
+\begin{grammar}
+<twitbot> ::= <statement `;'>+
+
+<statement> ::= <action> <parameter> `,' <parameter>*
+
+<action> ::= `tweet' 
+\alt `retweet'
+\alt `favourite'
+\alt `schedule'
+\alt `direct-message'
+
+<parameter> ::= <identifier> `:' <value>
+
+<identifier> ::= <string>
+
+<value> ::= <string>
+
+<string> ::= [a-zA-Z0-9]+
+\end{grammar}
+
+The initial grammar design is a extremely lightweight grammar, with vasts amount of flexibility and is prone to errors. This initial design of the grammar has limited and restricted functionality and power, it does not include any conditional statements, types, looping or recursion. \newline \par
+
+The initial grammar does not directly represent an interaction with the Twitter API and is designed to populate JSON objects and not provide any functionality for automation. The next design decisions evaluates the trade-offs of implementing this functionality through back-end software or extending the language further to include new features. This decision is prevalent while dealing with user authentication. For each Twitter API call a user must be authenticated. This requires the user access tokens and consumer keys to be included in each Twitter API call. As the current grammar design is based on actions which represent an interaction on Twitter which translates to a Twitter API call, these access tokens and consumer keys have to be included in each grammar action rule. A solution to this problem is to define macros in the language to retrieve user login credentials from a separate file to abstract the authentication from the user. Another solution to this is to utilise back-end software to manage the user authentication and abstract this from the user. As the requirements specify that it is mandatory for the domain specific language to be used by both programmers and non-programmers, utilising the power of back-end software keeps the language concise without adding any complexity. As the requirements analysis and the overall aims and objectives of the project are to include a web-application, the web-application handles the functionality and management of authentication keys and tokens. \newline \par
+
+The initial grammar lacks the majority of functionality specified in the requirements analysis and its syntactical structure does not closely align with the problem domain. The next stage for grammar designs is to extend the actions further, splitting each action to have required and optional parameters, with the key value pairs of these parameters encapsulating the logic of a Twitter API call. A program for the language should reflect a Twitter campaign, which allows for a list of actions to be performed and automated bot actions. An example of a Twitter Campaign for a brand is to market a new product. The program must reflect the logic of the different elements that go into a marketing campaign. This includes the scheduling of tweets, tweeting with images, retweeting and responding to mentions based on keywords and following users. This leads to the final grammar design, presented in extended Backus–Naur form (EBNF) in appendix A.
