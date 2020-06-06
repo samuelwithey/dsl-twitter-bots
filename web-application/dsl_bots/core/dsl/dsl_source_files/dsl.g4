@@ -35,7 +35,6 @@ tweet_optional_parameters
     :  POSSIBLY_SENSITIVE COLON boolean
     |  LAT COLON number
     |  LONG COLON number
-    |  PLACE_ID COLON stringValue
     |  DISPLAY_COORDINATES COLON boolean
     ;
 
