@@ -1,13 +1,12 @@
+import tweepy
+import datetime
 from django.conf import settings
-
-from .dslVisitor import dslVisitor
-from .dslParser import dslParser
 from core.bot_scripts import FavRetweetListener
 from core.bot_scripts import followFollowers
 from core.bot_scripts import replyMentions
 from core.schedule import Schedule
-
-import tweepy
+from .dslParser import dslParser
+from .dslVisitor import dslVisitor
 
 
 class DSLVisitorWalker(dslVisitor):
@@ -57,8 +56,9 @@ class DSLVisitorWalker(dslVisitor):
         index_start = ctx.schedule_tweet_required_parameter().tweet().start.start
         index_end = ctx.start.getInputStream().size
         tweet_action_input = ctx.start.getInputStream().getText(start=index_start, stop=index_end)
-        schedule_tweet = Schedule(schedule_date_time_parameters=schedule_date_time_parameters,
-                                  action=tweet_action_input, account_id=self.account.id, campaign_id=self.campaign.sid)
+        scheduler = Schedule(schedule_date_time_parameters=schedule_date_time_parameters, action=tweet_action_input,
+                             api=self.tweepy_api, account=self.account, campaign=self.campaign)
+        scheduler.schedule()
 
     def visitDirectMessage(self, ctx: dslParser.DirectMessageContext):
         kwargs = {ctx.direct_message_required_parameters().getChild(0).getText(): ctx.direct_message_required_parameters().getChild(2).getText(),
@@ -100,3 +100,6 @@ class DSLVisitorWalker(dslVisitor):
 
     def get_filename(self):
         return settings.MEDIA_ROOT + "/" + self.campaign.image_upload.name
+
+    def print_date_time(self):
+        print(datetime.datetime.now())
