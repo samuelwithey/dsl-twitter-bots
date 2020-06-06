@@ -3,7 +3,7 @@ grammar dsl;
 import dslLexerGrammar;
 
 twitbot
-    : stat SEMICOLON ( stat SEMICOLON )*
+    : (stat SEMICOLON)+
     ;
 
 stat
@@ -115,12 +115,14 @@ numeric_day
 
 numeric_hour
     : INT_01 | INT_02 | INT_03 | INT_04 | INT_05 | INT_06 | INT_07 | INT_08 | INT_09
+    | INT_1  | INT_2  | INT_3  | INT_4  | INT_5  | INT_6  | INT_7  | INT_8  | INT_9
     | INT_10 | INT_11 | INT_12 | INT_13 | INT_14 | INT_15 | INT_16 | INT_17 | INT_18
     | INT_19 | INT_20 | INT_21 | INT_22 | INT_23 | INT_24 | INT_00
     ;
 
 numeric_minute
     : INT_01 | INT_02 | INT_03 | INT_04 | INT_05 | INT_06 | INT_07 | INT_08 | INT_09
+    | INT_1  | INT_2  | INT_3  | INT_4  | INT_5  | INT_6  | INT_7  | INT_8  | INT_9
     | INT_10 | INT_11 | INT_12 | INT_13 | INT_14 | INT_15 | INT_16 | INT_17 | INT_18
     | INT_19 | INT_20 | INT_21 | INT_22 | INT_23 | INT_24 | INT_25 | INT_26 | INT_27
     | INT_28 | INT_29 | INT_30 | INT_31 | INT_32 | INT_33 | INT_34 | INT_35 | INT_36
