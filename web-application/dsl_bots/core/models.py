@@ -3,7 +3,7 @@ from django.db import models
 
 def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT / user_<id>/campaign_<name>/filename
-    return 'user_{0}/{1}/file/{2}'.format(instance.twitter_account.id, instance, filename)
+    return 'user_{0}/{1}/file/{2}'.format(instance.twitter_account.id, instance.name, filename)
 
 
 class TwitterAccount(models.Model):
