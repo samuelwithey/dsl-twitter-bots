@@ -9,7 +9,9 @@ from core.dsl.dsl_source_files.dslLexer import dslLexer
 from core.dsl.dsl_source_files.dslParser import dslParser
 from core.dsl.dsl_source_files.dslVisitorWalkerTest import DSLVisitorWalkerTest
 from core.execute import Execute
-from dsl_bots.test_utils import generate_random_string
+from dsl_bots import settings
+from dsl_bots.test_utils import generate_random_string, create_twitter_account, create_twitter_campaign
+from django.core.files.uploadedfile import SimpleUploadedFile
 
 
 class ConfigureTests(TestCase):
@@ -53,7 +55,7 @@ class DSLExecuteTests(ConfigureTests):
         return self.api.list_direct_messages(count=1)
 
 
-class DSLTest(TestCase):
+class DSLParsingTest(TestCase):
 
     def execute(self, input_statement):
         input_stream = InputStream(input_statement)
@@ -195,3 +197,142 @@ class BotScriptTest(DSLExecuteTests):
     def test_fav_retweet_listener(self):
         input_statement = 'automate_favourites_retweets keyword : "Python", keyword : "Computer Science", keyword : "Twitter API" ;'
         self.execute(input_statement=input_statement)
+
+
+class TwitterAccountCampaignUploadTest(TestCase):
+
+    def setUp(self):
+        self.account = create_twitter_account()
+        self.tweet_api = self.get_tweepy_api()
+        self.logger = logging.getLogger()
+
+    def get_most_recent_user_timeline_tweet(self):
+        return self.tweet_api.user_timeline(count=1)
+
+    def get_most_recent_user_mention(self):
+        return self.tweet_api.mentions_timeline(count=1)
+
+    def get_most_recent_direct_message(self):
+        return self.tweet_api.list_direct_messages(count=1)
+
+    def execute(self, campaign):
+        execute = Execute(account=self.account, campaign=campaign)
+        api = execute.tweepy_auth()
+        parser = execute.build_lexer_parser()
+        tree = execute.build_tree(parser=parser)
+        execute.traverse_tree(tree=tree, api=api)
+
+    def get_tweepy_api(self):
+        auth = tweepy.OAuthHandler(self.account.consumer_key, self.account.consumer_secret_key)
+        auth.set_access_token(self.account.access_token, self.account.access_token_secret)
+        api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
+        try:
+            api.verify_credentials()
+        except Exception as e:
+            self.logger.error("Error creating API", exc_info=True)
+            raise e
+        return api
+
+    def create_campaign(self, name):
+        kwargs = {'name': name, 'twitter_account': self.account}
+        return create_twitter_campaign(**kwargs)
+
+    def generate_file(self, input_statement, file_name, campaign):
+        file_path = settings.MEDIA_ROOT + "/" + "user_%s/%s/file" % (self.account.id, campaign.name)
+        file = file_path + "/%s" % file_name
+        byte_input_statement = input_statement.encode()
+        return SimpleUploadedFile(file, byte_input_statement)
+
+    def test_tweet(self):
+        status = 'This is a Unit Test with random string: %s' % generate_random_string()
+        input_statement = 'tweet status : "%s" ;' % status
+        campaign = self.create_campaign(name="test_tweet_campaign")
+        file_name = "test_tweet.txt"
+        file = self.generate_file(input_statement=input_statement, file_name=file_name, campaign=campaign)
+        campaign.dsl_program_upload.save(file_name, file)
+        self.execute(campaign=campaign)
+        tweet = self.get_most_recent_user_timeline_tweet()[0]
+        self.assertEqual(tweet.text, status)
+
+    def test_retweet(self):
+        timeline_tweet = self.get_most_recent_user_timeline_tweet()
+        self.assertFalse(timeline_tweet[0].retweeted)
+        input_statement = 'retweet id : %s ;' % timeline_tweet[0].id
+        campaign = self.create_campaign(name="test_retweet_campaign")
+        file_name = "test_retweet.txt"
+        file = self.generate_file(input_statement=input_statement, file_name=file_name, campaign=campaign)
+        campaign.dsl_program_upload.save(file_name, file)
+        self.execute(campaign=campaign)
+        updated_timeline_tweet = self.get_most_recent_user_timeline_tweet()
+        self.assertTrue(updated_timeline_tweet[0].retweeted)
+
+    def test_favourite(self):
+        timeline_tweet = self.get_most_recent_user_timeline_tweet()
+        self.assertFalse(timeline_tweet[0].favorited)
+        input_statement = 'favourite id : %s ;' % timeline_tweet[0].id
+        campaign = self.create_campaign(name="test_favourite_campaign")
+        file_name = "test_favourite.txt"
+        file = self.generate_file(input_statement=input_statement, file_name=file_name, campaign=campaign)
+        campaign.dsl_program_upload.save(file_name, file)
+        self.execute(campaign=campaign)
+        updated_timeline_tweet = self.get_most_recent_user_timeline_tweet()
+        self.assertTrue(updated_timeline_tweet[0].favorited)
+
+    def test_reply_to_tweet(self):
+        api = self.get_tweepy_api()
+        latest_mention = api.mentions_timeline(count=1)
+        reply_id = latest_mention[0].id
+        username = latest_mention[0].user.screen_name
+        input_statement = 'reply_to_tweet in_reply_to_status_id : %s, status : "Hello @%s, Random Reply %s";' % (reply_id, username,
+                                                                                                                 generate_random_string())
+        campaign = self.create_campaign(name="test_reply_to_tweet_campaign")
+        file_name = "test_reply_to_tweet.txt"
+        file = self.generate_file(input_statement=input_statement, file_name=file_name, campaign=campaign)
+        campaign.dsl_program_upload.save(file_name, file)
+        self.execute(campaign=campaign)
+        timeline_tweet = self.get_most_recent_user_timeline_tweet()
+        self.assertEqual(reply_id, timeline_tweet[0].in_reply_to_status_id)
+
+    def test_tweet_optional_parameters(self):
+        input_statement = """
+        tweet
+            status : "This is a Unit Test with random string: %s",
+            possibly_sensitive : True,
+            lat: 50.834400,
+            long: -0.130240;""" % generate_random_string()
+        campaign = self.create_campaign(name=" test_tweet_optional_parameters")
+        file_name = " test_tweet_optional_parameters.txt"
+        file = self.generate_file(input_statement=input_statement, file_name=file_name, campaign=campaign)
+        campaign.dsl_program_upload.save(file_name, file)
+        self.execute(campaign=campaign)
+        timeline_tweet = self.get_most_recent_user_timeline_tweet()
+        self.assertTrue(timeline_tweet[0].place.name, "Brighton")
+
+    def test_direct_message(self):
+        recipient_id = '1050149543029948416'
+        text = 'Hello Friend! % s' % generate_random_string()
+        input_statement = 'direct_message recipient_id : %s, text : "%s" ;' % (recipient_id, text)
+        campaign = self.create_campaign(name=" test_direct_message")
+        file_name = "test_direct_message.txt"
+        file = self.generate_file(input_statement=input_statement, file_name=file_name, campaign=campaign)
+        campaign.dsl_program_upload.save(file_name, file)
+        self.execute(campaign=campaign)
+        direct_message = self.get_most_recent_direct_message()
+        self.assertTrue(recipient_id, direct_message[0].message_create.get('target').get('recipient_id'))
+        self.assertTrue(text, direct_message[0].message_create.get("message_data").get("text"))
+
+    def test_schedule_tweet(self):
+        timeline_tweet = self.get_most_recent_user_timeline_tweet()
+        schedule_time = datetime.datetime.now() + timedelta(minutes=1)
+        tweet_status = 'hello world %s' % generate_random_string()
+        input_statement = 'schedule minute : %s, hour : %s, day_of_month : %s, month : %s, tweet status : "%s" ;' \
+                          % (schedule_time.minute, schedule_time.hour, schedule_time.day, schedule_time.month, tweet_status)
+        campaign = self.create_campaign(name="test_schedule_tweet")
+        file_name = "test_schedule_tweet.txt"
+        file = self.generate_file(input_statement=input_statement, file_name=file_name, campaign=campaign)
+        campaign.dsl_program_upload.save(file_name, file)
+        self.execute(campaign=campaign)
+        self.assertNotEqual(tweet_status, timeline_tweet[0].text)
+        time.sleep(60)
+        updated_timeline_tweet = self.get_most_recent_user_timeline_tweet()
+        self.assertEqual(tweet_status, updated_timeline_tweet[0].text)
