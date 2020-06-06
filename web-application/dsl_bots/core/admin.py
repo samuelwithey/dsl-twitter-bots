@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from core.models import TwitterAccount, TwitterCampaign, ScheduledPost
+from core.models import TwitterAccount, TwitterCampaign
 
 
 class TwitterAccountAdmin(admin.ModelAdmin):
@@ -12,12 +12,5 @@ class TwitterCampaignAdmin(admin.ModelAdmin):
     fields = ['name', 'description', 'twitter_account', 'dsl_program_upload', 'image_upload']
     list_display = ['name', 'description', 'twitter_account', 'dsl_program_upload', 'image_upload']
 
-
-class ScheduledPostAdmin(admin.ModelAdmin):
-    fields = ['campaign_name', 'status', 'scheduled_time']
-    list_display = ['campaign_name', 'status', 'scheduled_time']
-
-
 admin.site.register(TwitterAccount, TwitterAccountAdmin)
 admin.site.register(TwitterCampaign, TwitterCampaignAdmin)
-admin.site.register(ScheduledPost, ScheduledPostAdmin)

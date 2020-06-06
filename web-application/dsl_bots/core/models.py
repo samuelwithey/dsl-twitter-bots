@@ -24,14 +24,3 @@ class TwitterCampaign(models.Model):
     image_upload = models.ImageField(upload_to=user_directory_path, blank=True)
     twitter_account = models.ForeignKey(TwitterAccount, on_delete=models.CASCADE, related_name='twitter_account')
 
-    def __str__(self):
-        return self.name
-
-
-class ScheduledPost(models.Model):
-    campaign_name = models.ForeignKey(TwitterCampaign, on_delete=models.CASCADE, related_name='campaign_name')
-    status = models.CharField(max_length=240)
-    scheduled_time = models.DateTimeField()
-
-    def __str__(self):
-        return self.campaign_name
