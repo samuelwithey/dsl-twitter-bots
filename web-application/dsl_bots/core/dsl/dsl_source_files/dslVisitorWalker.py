@@ -100,6 +100,3 @@ class DSLVisitorWalker(dslVisitor):
 
     def get_filename(self):
         return settings.MEDIA_ROOT + "/" + self.campaign.image_upload.name
-
-    def print_date_time(self):
-        print(datetime.datetime.now())
