@@ -39,7 +39,7 @@ tweet_optional_parameters
     ;
 
 tweetImage
-    : TWEET_IMAGE tweet_required_parameter (COMMA tweet_image_required_parameter)+ (COMMA tweet_optional_parameters)*
+    : TWEET_IMAGE tweet_required_parameter COMMA tweet_image_required_parameter (COMMA tweet_optional_parameters)*
     ;
 
 tweet_image_required_parameter
@@ -47,7 +47,7 @@ tweet_image_required_parameter
     ;
 
 reply
-    : REPLY reply_required_parameters (COMMA tweet_image_required_parameter)* (COMMA tweet_optional_parameters)*
+    : REPLY reply_required_parameters (COMMA tweet_image_required_parameter)? (COMMA tweet_optional_parameters)*
     ;
 
 reply_required_parameters
@@ -75,7 +75,7 @@ scheduleTweet
     ;
 
 schedule_tweet_required_parameter
-    : date_time_parameter COMMA tweet
+    : date_time_parameter COMMA (tweet | tweetImage)
     ;
 
 date_time_parameter
