@@ -2,6 +2,7 @@
 A domain specific language designed to operate and automate Twitter accounts/bots using Tweepy API.
 ## Domain Specific Language Grammar
 ## Setting up the virtual-env
+- Install Python 3
 ```bash
 cd web-application/dsl_bots/
 . ./activate
