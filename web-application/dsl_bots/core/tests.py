@@ -175,7 +175,7 @@ class DSLVisitorWalkerAPITests(DSLExecuteTests):
     def test_schedule_tweet(self):
         timeline_tweet = self.get_most_recent_user_timeline_tweet()
         schedule_time = datetime.datetime.now() + timedelta(minutes=1)
-        tweet_status = 'hello world %s' % generate_random_string()
+        tweet_status = 'schedule tweet test, random string: %s' % generate_random_string()
         input_statement = 'schedule minute : %s, hour : %s, day_of_month : %s, month : %s, tweet status : "%s" ;' \
                           % (schedule_time.minute, schedule_time.hour, schedule_time.day, schedule_time.month, tweet_status)
         self.execute(input_statement=input_statement)
@@ -324,7 +324,7 @@ class TwitterAccountCampaignUploadTest(TestCase):
     def test_schedule_tweet(self):
         timeline_tweet = self.get_most_recent_user_timeline_tweet()
         schedule_time = datetime.datetime.now() + timedelta(minutes=1)
-        tweet_status = 'hello world %s' % generate_random_string()
+        tweet_status = 'schedule tweet test, random string: %s' % generate_random_string()
         input_statement = 'schedule minute : %s, hour : %s, day_of_month : %s, month : %s, tweet status : "%s" ;' \
                           % (schedule_time.minute, schedule_time.hour, schedule_time.day, schedule_time.month, tweet_status)
         campaign = self.create_campaign(name="test_schedule_tweet")
