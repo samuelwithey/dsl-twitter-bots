@@ -11,7 +11,7 @@ cffi==1.14.0
 chardet==3.0.4
 colorama==0.3.9
 cryptography==2.8
-Django==3.0.3
+Django==3.0.7
 docker==4.2.0
 docker-compose==1.25.4
 dockerpty==0.4.1
@@ -41,7 +41,7 @@ urllib3==1.24.3
 wcwidth==0.1.8
 websocket-client==0.57.0
 zipp==3.0.0
-Django==3.0.3
+Django==3.0.7
 tweepy==3.8.0
 antlr4-python3-runtime==4.8
 Pillow==7.1.2
