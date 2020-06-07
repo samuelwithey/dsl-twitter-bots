@@ -1,12 +1,10 @@
 import tweepy
+import logging
 from core.dsl.dsl_source_files.dslLexer import dslLexer
 from core.dsl.dsl_source_files.dslParser import dslParser
 from core.dsl.dsl_source_files.dslVisitorWalker import DSLVisitorWalker
-import logging
 from antlr4 import *
 from django.conf import settings
-
-from core.models import TwitterAccount, TwitterCampaign
 
 
 class Execute:

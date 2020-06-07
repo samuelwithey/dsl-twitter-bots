@@ -1,6 +1,5 @@
 import tweepy
 import logging
-import json
 
 logging.basicConfig(level=logging.INFO)
 
