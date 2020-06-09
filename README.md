@@ -9,7 +9,7 @@ cd web-application/dsl_bots/
 ```
 ## Running management commands to execute the domain specific language
 - Create a Twitter Account in Django admin
-- Create a Twitter Campagin in Django admin and upload dsl script as `.txt` file
+- Create a Twitter Campaign in Django admin and upload dsl script as `.txt` file
 - Use Ubuntu terminal to execute the Django management command
 ```bash
 python manage.py execute_dsl --account-id {id-number} --campaign-id {id-number}
