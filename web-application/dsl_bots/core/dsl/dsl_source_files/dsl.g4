@@ -127,7 +127,7 @@ numeric_minute
     | INT_28 | INT_29 | INT_30 | INT_31 | INT_32 | INT_33 | INT_34 | INT_35 | INT_36
     | INT_37 | INT_38 | INT_39 | INT_40 | INT_41 | INT_42 | INT_43 | INT_44 | INT_45
     | INT_46 | INT_47 | INT_48 | INT_49 | INT_50 | INT_51 | INT_52 | INT_53 | INT_54
-    | INT_55 | INT_56 | INT_57 | INT_58 | INT_59 | INT_00
+    | INT_55 | INT_56 | INT_57 | INT_58 | INT_59 | INT_0  | INT_00
     ;
 
 directMessage
