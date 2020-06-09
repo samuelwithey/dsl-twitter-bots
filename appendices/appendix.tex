@@ -1,9 +1,12 @@
+\setlength{\grammarparsep}{2pt plus 1pt minus 1pt} % increase separation between rules
+\setlength{\grammarindent}{15em} % increase separation between LHS/RHS
+
 \begin{appendices}
 
 \chapter{Final Grammar Design in EBNF}
 
 \begin{grammar}
-<twitbot> ::= <statement `;'>+ 
+<twitbot> ::= (<statement> `;')+ 
 
 <statement> ::= <action> 
 
@@ -18,48 +21,63 @@
 \alt <autoFollowFollowers>
 \alt <autoReplyMentions>
 
-<tweet> ::= `tweet' <tweet_required_parameter> (`,' <tweet_optional_parameters>)*
+<tweet> ::= `tweet' <tweet_req_param> \newline (`,' <tweet_optional_params>)*
 
-<tweet_required_parameter> ::= `status' `:' <string>
+<tweet_req_param> ::= `status' `:' <string>
 
-<tweet_optional_parameters> ::= `possibly_sensitive' `:' <boolean>
+<tweet_optional_params> ::= `possibly_sensitive' `:' <boolean>
 \alt `lat' `:' <number>
 \alt `long' `:' <number>
 \alt `display_coordinates' `:' <boolean>
 
-<tweetImage> ::= `tweet_image' <tweet_required_parameter> `,' <tweet_image_required_parameter> (`,' tweet_optional_parameters)*
+<tweetImage> ::= `tweet_image' <tweet_req_param> \newline `,' <tweetImage_req_param> \newline (`,' <tweet_optional_params>)*
 
-<tweet_image_required_parameter> ::= `image_name' `:' <string>
+<tweetImage_req_param> ::= `image_name' `:' <string>
 
-<reply> ::= `reply_to_tweet' <reply_required_parameters> (`,' <tweet_image_required_parameter>)* (`,' <tweet_optional_parameters>)*
+<reply> ::= `reply_to_tweet' <reply_req_params> \newline (`,' <tweetImage_req_param>)? \newline (`,' <tweet_optional_params>)*
 
-<reply_required_parameters> ::= `in_reply_to_status_id' `:' <number> `,' `status' `:' <string>
+<reply_req_params> ::= `in_reply_to_status_id' `:' <number> `,' \newline `status' `:' <string>
 
 <retweet> ::= `retweet' `id' `:' <number>
 
 <favourite> ::= `favourite' `id' `:' <number>
 
-<directMessage> ::= `direct_message' <direct_message_required_parameters>
+<scheduleTweet> ::= `schedule' <scheduleTweet_req_param>
 
-<direct_message_required_parameters> ::= `recipient_id' `:' <number> `,' `text' `:' <string>
+<scheduleTweet_req_param> ::= <date_time_param> `,' (<tweet> \alt <tweetImage>)
+
+<date_time_param> ::= <minute> `,' <hour> `,' <day_of_month> `,' <month>
+
+<minute> ::= `minute' `:' <numeric_minute>
+
+<hour> ::= `hour' `:' <numeric_hour>
+
+<day_of_month> ::= `day_of_month' `:' <numeric_day>
+
+<month> ::= `month' `:' <numeric_month>
+
+<directMessage> ::= `direct_message' <directMessage_req_params>
+
+<directMessage_req_params> ::= `recipient_id' `:' <number> `,' `text' `:' <string>
 
 <autoFavouriteRetweet> ::= `auto_fav_retweet' <keyword> (`,' <keyword>)* 
 
-<keyword> ::= `keyword' : <string>
-
 <autoFollowFollowers> ::= `follow_all_followers'
 
-<autoReplyMentions> ::= `automate_reply_to_mentions' <automateReplyParameter> (`,' <keyword>)+
+<autoReplyMentions> ::= `automate_reply_to_mentions' \newline <automateReply_req_param> (`,' <keyword>)+
 
-<automateReplyParameter> ::= `automate_time_minutes' `:' <numeric_minute> `,' `response' `:' <string>
+<automateReply_req_param> ::= `automate_time_minutes' `:' <numeric_minute> `,' \newline `response' `:' <string>
 
 <string> ::= [a-zA-Z0-9]+
 
-<number> ::= <unsigned_int>
-\alt <unsigned_float>
+<keyword> ::= `keyword' `:' <string>
 
-<boolean> ::= `True'
-\alt `False'
+<number> ::= <unary_operator>? <unsigned_number>
+
+<unary_operator> ::= `+' \alt `-'
+
+<unsigned_number> ::= <unsigned_int>
+\alt <unsigned_float>
 
 <unsigned_int> ::= (<digit>)+
 
@@ -67,156 +85,17 @@
 
 <digit> ::= [0-9]
 
-<numeric_minute> ::= [0 .. 59]
+<boolean> ::= `True'
+\alt `False'
+
+<numeric_month> ::= 0[1-9]\alt1[0-2]
+
+<numeric_day> ::= 0[1-9]\alt1[0-9]\alt2[0-9]\alt3[0-1]
+
+<numeric_hour> ::= 0[0-9]\alt1[0-9]\alt2[0-3]
+
+<numeric_minute> ::= 0[0-9]\alt1[0-9]\alt2[0-9]\alt3[0-9]\alt4[0-9]\alt5[0-9]
+
 \end{grammar}
-
-\chapter{Meeting Log}
-
-\section{Log}
-
-\subsection{Meeting 1: 03/10/2019}
-
-\subsubsection{Agenda}
-
-\begin{itemize}
- \item Discuss next steps and what to do as first meeting.
-\end{itemize}
-
-\subsubsection{Discussed Topics}
-
-\begin{itemize}
-
- \item Proposal: Look at the guide of what to include in the proposal and start working on the proposal
- \item Research: Understand the current market of bots and their functionality and capabilities. Start to research on tools on which you would use.
- \item Meetings: Arrange a meeting with InCrowd sports.
-\end{itemize}
-
-\subsubsection{Next Steps}
-
-\begin{itemize}
-
- \item Work on proposal, arrange meetings and do some general research.
-\end{itemize}
-
-\subsection{Meeting 2: 16/10/2019}
-
-\subsubsection{Agenda}
-
-\begin{itemize}
-
- \item Discuss the research I have completed to gain more scope of the project.
-\end{itemize}
-
-\subsubsection{Discussed Topics}
-
-\begin{itemize}
-
- \item The current stage of research and proposal and what needs to be improved.
- \item What programming languages/frameworks and packages/tool kits which might be helpful for the project.
- \item Recommended books - ANTLR booking for DSL's
-\end{itemize}
-
-\subsubsection{Next Steps}
-
-\begin{itemize}
-
- \item Finalise a date and time to meet with InCrowd.
- \item Email proposal to get feedback.
-\end{itemize}
-
-
-\subsection{Meeting 3: 24/10/2019}
-
-\subsubsection{Agenda}
-
-\begin{itemize}
-
- \item Discuss the proposal and what can be improved, improve and finalise the questions for InCrowd meeting and discuss the ethics around the interview.
-\end{itemize}
-
-
-\subsubsection{Discussed Topics}
-
-\begin{itemize}
-
- \item Proposal: Feedback on the proposal and where to improve
- \item Meeting: Finalise meeting questions for InCrowd
- \item Ethics: Ethical guidelines and review for the meeting. Will need consent forms and will need ethical approval if the system is used.
-\end{itemize}
-
-\subsubsection{Next Steps}
-
-\begin{itemize}
-
- \item Start working on the interim report
- \item Arrange meeting after Ian's China trip to get feedback and answer questions about the interim report.
-\end{itemize}
-
-\subsection{Meeting 4: 11/11/2019}
-
-\subsubsection{Agenda}
-
-\begin{itemize} 
- 
-  \item Introduction
-  \begin{itemize}
-    
-     \item  How much detail should I go into? Should I aim for it to be easily understandable and then go into enough detail for the reader to understand if they were a final year undergraduate student? 
-     \item Do I include aims and objectives in the introduction and Smart objectives?
-  \end{itemize}
-  \item Professional Considerations
-    \begin{itemize}
-    
-     \item How much detail should be discussed in regards to the ethics of bots?
-     Should examples such as the 2016 US election be discussed?
-     \item What do I write about the ethics approval and do I need ethical approval from InCrowd?
-    \end{itemize}
-  \item Related Work
-    \begin{itemize}
-    
-     \item How many examples should I include and should I include academic papers?
-    \end{itemize}
-  \item Requirements Analysis?
-    \begin{itemize}
-    
-     \item Should high-level diagrams be included?
-     \item Should the transcript be included in the appendix?
-    \end{itemize}
-  \item Log
-    \begin{itemize}
-    
-     \item Should the log in a minutes format?
-    \end{itemize}
-  \item Proposal
-    \begin{itemize}
-    
-     \item Should this be updated to reflect the current scope of the project?
-    \end{itemize}
-\end{itemize}
-
-\subsubsection{Discussed Topics}
-
-\begin{itemize}
-
- \item The topics discussed were the different sections to be completed for the
- interim report
-    \begin{itemize}
-    
-     \item Introduction: The introduction should look at the problem area and introduce your solution to the problem area. Discuss if it is possible to implement a domain specific language for the project and why a programming driven solution might work.
-     \item Professional and ethical considerations: Discuss Cambridge Analytica, the risks of automation, how your project could be weaponised and acknowledge the dangers of the project and your solutions to this. You will need consent from Matt and Helen to put in the appendix and may only use selected quotes.
-     \item Related Work: Include an academic paper and link the requirements analysis to the related work.
-     \item Requirements Analysis: Include high level diagrams.
-     \item Log: The log does not need to be converted into minutes format.
-     \item Proposal: Update the proposal when necessary.
-    \end{itemize}
-\end{itemize}
-
-\subsubsection{Next Steps}
-
-\begin{itemize}
-
- \item Email draft to get feedback.
- \item Arrange meeting for early next week to start project.
-\end{itemize}
 
 \end{appendices}
