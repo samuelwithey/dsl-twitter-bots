@@ -99,6 +99,11 @@ cd web-application/dsl_bots/
 
 <numeric_minute> ::= 0[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]
 ```
+## Example program and generated parse tree
+`tweet status : "This is a testing tweet for README" ;` \
+![Example Program](report/final-report/images/parseTree.png)
+`schedule minute : 00, hour : 17, day_of_month : 12, month : 08, tweet status : "Happy Birthday!" ;`
+![Example Schedule Program](report/final-report/images/parseTreeSchedule.png)
 ## Running management commands to execute the domain specific language
 ### Create superuser and runserver
 - Create a superuser to login to Django admin.
