@@ -108,7 +108,8 @@ class DSLParsingTest(TestCase):
         self.assertDictEqual(reply_dict, kwargs)
 
     def test_direct_message(self):
-        direct_message_dict = {'recipient_id': '231312513434', 'text': 'Hello Friend!'}
+        # enter personal account recipient id
+        direct_message_dict = {'recipient_id': '', 'text': 'Hello Friend!'}
         input_statement = 'direct_message recipient_id : %s, text : "%s" ;' % (direct_message_dict.get('recipient_id')
                                                                                , direct_message_dict.get('text'))
         kwargs = self.execute(input_statement=input_statement)
@@ -164,7 +165,8 @@ class DSLVisitorWalkerAPITests(DSLExecuteTests):
         self.assertTrue(timeline_tweet[0].place.name, "Brighton")
 
     def test_direct_message(self):
-        recipient_id = '1050149543029948416'
+        # enter personal account recipient id
+        recipient_id = ''
         text = 'Hello Friend! % s' % generate_random_string()
         input_statement = 'direct_message recipient_id : %s, text : "%s" ;' % (recipient_id, text)
         self.execute(input_statement=input_statement)
@@ -309,7 +311,8 @@ class TwitterAccountCampaignUploadTest(TestCase):
         self.assertTrue(timeline_tweet[0].place.name, "Brighton")
 
     def test_direct_message(self):
-        recipient_id = '1050149543029948416'
+        # enter personal account recipient id
+        recipient_id = ''
         text = 'Hello Friend! % s' % generate_random_string()
         input_statement = 'direct_message recipient_id : %s, text : "%s" ;' % (recipient_id, text)
         campaign = self.create_campaign(name=" test_direct_message")
