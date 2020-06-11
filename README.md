@@ -131,6 +131,7 @@ antrl4py3 NumericLexer.g4
 ```
 ## Running unit tests
 - Create `api_keys.txt` in `web-application/dsl_bots/core/` containing oauth_consumer_key, oauth_consumer_secret, oauth_token, oauth_token_secret on seperate lines
+- Enter personal "recipient_id" in all direct_message test cases
 ```bash
 cd web-application/dsl_bots
 # Run all unit tests
