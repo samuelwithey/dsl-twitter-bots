@@ -167,6 +167,6 @@ cd web-application/dsl_bots
 ```
 ## Example program and generated parse tree
 `tweet status : "This is a testing tweet for README" ;` \
-![Example Program](report/final-report/images/parseTree.png)
+![Example Program](report/final-report/images/parseTreeTransparent.png)
 `schedule minute : 00, hour : 17, day_of_month : 12, month : 08, tweet status : "Happy Birthday!" ;`
-![Example Schedule Program](report/final-report/images/parseTreeSchedule.png)
+![Example Schedule Program](report/final-report/images/parseTreeScheduleTransparent.png)
