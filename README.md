@@ -42,4 +42,18 @@ cd web-application/dsl_bots
 cd web-application/dsl_bots/core/dsl/dsl_source_files/
 echo tweet status : "Testing tokens" \; > input.txt
 pygrun dsl twitbot --tokens input.txt
+[@0,0:4='tweet',<9>,1:0]
+[@1,6:11='status',<11>,1:6]
+[@2,13:13=':',<28>,1:13]
+[@3,15:33='Pygrun Token Test',<3>,1:15]
+[@4,35:35=';',<27>,1:35]
+[@5,37:36='<EOF>',<-1>,2:0]
+
+pygrun dsl twitbot --tree input.txt
+(twitbot 
+   (stat 
+      (action 
+         (tweet tweet 
+            (tweet_required_parameter status : 
+               (stringValue Pygrun Token Test))))) ;)
 ```
