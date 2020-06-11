@@ -37,7 +37,6 @@ pygrun dsl twitbot --tree input.txt
 ## Running management commands to execute the domain specific language
 ### Create superuser and runserver
 - Create a superuser to login to Django admin.
-- Change username and password
 ```
 python manage.py createsuperuser
 Username: admin
