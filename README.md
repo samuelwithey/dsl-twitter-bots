@@ -17,7 +17,7 @@ antrl4py3 NumericLexer.g4
 ## Running Domain Specific Language token example
 ```bash
 cd web-application/dsl_bots/core/dsl/dsl_source_files/
-echo tweet status : "Pygrun Token Test" \; > input.txt
+echo tweet status : \"Pygrun Token Test\" \; > input.txt
 pygrun dsl twitbot --tokens input.txt
 [@0,0:4='tweet',<9>,1:0]
 [@1,6:11='status',<11>,1:6]
