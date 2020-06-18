@@ -17,7 +17,7 @@ antrl4py3 NumericLexer.g4
 ## Running Domain Specific Language token example
 ```bash
 cd web-application/dsl_bots/core/dsl/dsl_source_files/
-echo tweet status : "Testing tokens" \; > input.txt
+echo tweet status : \"Pygrun Token Test\" \; > input.txt
 pygrun dsl twitbot --tokens input.txt
 [@0,0:4='tweet',<9>,1:0]
 [@1,6:11='status',<11>,1:6]
@@ -166,6 +166,6 @@ cd web-application/dsl_bots
 ```
 ## Example program and generated parse tree
 `tweet status : "This is a testing tweet for README" ;` \
-![Example Program](report/final-report/images/parseTreeTransparent.png)
+![Example Program](report/final-report/latex_source_files/images/parseTreeTransparent.png)
 `schedule minute : 00, hour : 17, day_of_month : 12, month : 08, tweet status : "Happy Birthday!" ;`
-![Example Schedule Program](report/final-report/images/parseTreeScheduleTransparent.png)
+![Example Schedule Program](/report/final-report/latex_source_files/images/parseTreeScheduleTransparent.png)
